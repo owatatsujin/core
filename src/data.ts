@@ -60,5 +60,15 @@ export class Data {
 }
 
 export class NoteData {
-    constructor(public time: number, public type: number) { }
+    constructor(public time: number, public type: NoteType) { }
+}
+
+enum NoteType {
+    Don = 1,
+    Ka = 2,
+    BigDon = 3,
+    BigKa = 4,
+    Renda = 5,
+    BigRenda = 6,
+    Baloon = 7,
 }
