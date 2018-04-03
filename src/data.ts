@@ -47,8 +47,10 @@ export class Data {
                 case ',': time += unitTime; break;
                 case '[': unitTime /= 1.5; break;
                 case ']': unitTime *= 1.5; break;
-                case '1': case "3": data.push(new NoteData(time, 1)); break;
-                case '2': case "4": data.push(new NoteData(time, 2)); break;
+                case '1':
+                case '2':
+                case "3":
+                case "4": data.push(new NoteData(time, parseInt(c))); break;
                 case 'm': unitTime = this.setBpm(getArg()); break;
                 case 'x': /*TODO*/ getArg(); break;
             }

@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({636:[function(require,module,exports) {
+})({140:[function(require,module,exports) {
 /**
 * A polyfill for Array.forEach
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
@@ -113,7 +113,7 @@ if (!Array.prototype.forEach)
     };
 }
 
-},{}],637:[function(require,module,exports) {
+},{}],139:[function(require,module,exports) {
 /**
 * A polyfill for Array.isArray
 */
@@ -125,7 +125,7 @@ if (!Array.isArray)
     };
 }
 
-},{}],638:[function(require,module,exports) {
+},{}],138:[function(require,module,exports) {
 /* Copyright 2013 Chris Wilson
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -309,7 +309,7 @@ BiquadFilterNode.type and OscillatorNode.type.
 }(window));
 
 
-},{}],639:[function(require,module,exports) {
+},{}],144:[function(require,module,exports) {
 /**
  * Also fix for the absent console in IE9
  */
@@ -320,7 +320,7 @@ if (!window.console)
     window.console.warn = window.console.assert = function(){};
 }
 
-},{}],640:[function(require,module,exports) {
+},{}],141:[function(require,module,exports) {
 /**
 * A polyfill for Function.prototype.bind
 */
@@ -364,7 +364,7 @@ if (!Function.prototype.bind) {
 }
 
 
-},{}],641:[function(require,module,exports) {
+},{}],143:[function(require,module,exports) {
 // ES6 Math.trunc - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc
 if (!Math.trunc) {
     Math.trunc = function trunc(x) {
@@ -372,7 +372,7 @@ if (!Math.trunc) {
     };
 }
 
-},{}],642:[function(require,module,exports) {
+},{}],142:[function(require,module,exports) {
 /**
  * performance.now
  */
@@ -405,7 +405,7 @@ if (!Math.trunc) {
 
 })();
 
-},{}],643:[function(require,module,exports) {
+},{}],146:[function(require,module,exports) {
 var global = (1,eval)("this");
 // References:
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
@@ -474,7 +474,7 @@ if (!global.cancelAnimationFrame) {
     };
 }
 
-},{}],644:[function(require,module,exports) {
+},{}],145:[function(require,module,exports) {
 /**
 * Low-budget Float32Array knock-off, suitable for use with P2.js in IE9
 * Source: http://www.html5gamedevs.com/topic/5988-phaser-12-ie9/
@@ -523,7 +523,7 @@ if (typeof window.Uint32Array !== 'function' && typeof window.Uint32Array !== 'o
     CheapArray('ArrayBuffer'); // jshint ignore:line
 }
 
-},{}],21:[function(require,module,exports) {
+},{}],69:[function(require,module,exports) {
 require('./Array.forEach');
 require('./Array.isArray');
 require('./AudioContextMonkeyPatch');
@@ -534,7 +534,7 @@ require('./performance.now');
 require('./requestAnimationFrame');
 require('./Uint32Array');
 
-},{"./Array.forEach":636,"./Array.isArray":637,"./AudioContextMonkeyPatch":638,"./console":639,"./Function.bind":640,"./Math.trunc":641,"./performance.now":642,"./requestAnimationFrame":643,"./Uint32Array":644}],46:[function(require,module,exports) {
+},{"./Array.forEach":140,"./Array.isArray":139,"./AudioContextMonkeyPatch":138,"./console":144,"./Function.bind":141,"./Math.trunc":143,"./performance.now":142,"./requestAnimationFrame":146,"./Uint32Array":145}],16:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -711,7 +711,7 @@ module.exports = {
 
 };
 
-},{}],47:[function(require,module,exports) {
+},{}],15:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -753,7 +753,7 @@ module.exports = {
 
 };
 
-},{}],15:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -870,7 +870,7 @@ var CONST = {
 
 module.exports = CONST;
 
-},{"./renderer/BlendModes":46,"./renderer/ScaleModes":47}],49:[function(require,module,exports) {
+},{"./renderer/BlendModes":16,"./renderer/ScaleModes":15}],35:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -922,7 +922,7 @@ var IsPlainObject = function (obj)
 
 module.exports = IsPlainObject;
 
-},{}],20:[function(require,module,exports) {
+},{}],14:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1017,7 +1017,7 @@ var Extend = function ()
 
 module.exports = Extend;
 
-},{"./IsPlainObject":49}],118:[function(require,module,exports) {
+},{"./IsPlainObject":35}],160:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1078,7 +1078,7 @@ var PropertyValueInc = function (items, key, value, step, index, direction)
 
 module.exports = PropertyValueInc;
 
-},{}],103:[function(require,module,exports) {
+},{}],148:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1113,7 +1113,7 @@ var Angle = function (items, value, step, index, direction)
 
 module.exports = Angle;
 
-},{"./PropertyValueInc":118}],104:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],147:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1152,7 +1152,7 @@ var Call = function (items, callback, context)
 
 module.exports = Call;
 
-},{}],105:[function(require,module,exports) {
+},{}],153:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1204,7 +1204,7 @@ var GetFirst = function (items, compare, index)
 
 module.exports = GetFirst;
 
-},{}],106:[function(require,module,exports) {
+},{}],150:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1256,7 +1256,7 @@ var GetLast = function (items, compare, index)
 
 module.exports = GetLast;
 
-},{}],275:[function(require,module,exports) {
+},{}],349:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1386,7 +1386,7 @@ var ALIGN_CONST = {
 
 module.exports = ALIGN_CONST;
 
-},{}],706:[function(require,module,exports) {
+},{}],554:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1410,7 +1410,7 @@ var GetBottom = function (gameObject)
 
 module.exports = GetBottom;
 
-},{}],708:[function(require,module,exports) {
+},{}],560:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1434,7 +1434,7 @@ var GetCenterX = function (gameObject)
 
 module.exports = GetCenterX;
 
-},{}],714:[function(require,module,exports) {
+},{}],556:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1461,7 +1461,7 @@ var SetBottom = function (gameObject, value)
 
 module.exports = SetBottom;
 
-},{}],715:[function(require,module,exports) {
+},{}],563:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1490,7 +1490,7 @@ var SetCenterX = function (gameObject, x)
 
 module.exports = SetCenterX;
 
-},{}],722:[function(require,module,exports) {
+},{}],484:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1528,7 +1528,7 @@ var BottomCenter = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = BottomCenter;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetCenterX":708,"../../bounds/SetBottom":714,"../../bounds/SetCenterX":715}],709:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetCenterX":560,"../../bounds/SetBottom":556,"../../bounds/SetCenterX":563}],553:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1552,7 +1552,7 @@ var GetLeft = function (gameObject)
 
 module.exports = GetLeft;
 
-},{}],717:[function(require,module,exports) {
+},{}],558:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1579,7 +1579,7 @@ var SetLeft = function (gameObject, value)
 
 module.exports = SetLeft;
 
-},{}],724:[function(require,module,exports) {
+},{}],477:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1617,7 +1617,7 @@ var BottomLeft = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = BottomLeft;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetLeft":709,"../../bounds/SetBottom":714,"../../bounds/SetLeft":717}],712:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetLeft":553,"../../bounds/SetBottom":556,"../../bounds/SetLeft":558}],555:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1641,7 +1641,7 @@ var GetRight = function (gameObject)
 
 module.exports = GetRight;
 
-},{}],719:[function(require,module,exports) {
+},{}],559:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1668,7 +1668,7 @@ var SetRight = function (gameObject, value)
 
 module.exports = SetRight;
 
-},{}],723:[function(require,module,exports) {
+},{}],478:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1706,7 +1706,7 @@ var BottomRight = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = BottomRight;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetRight":712,"../../bounds/SetBottom":714,"../../bounds/SetRight":719}],716:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetRight":555,"../../bounds/SetBottom":556,"../../bounds/SetRight":559}],561:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1735,7 +1735,7 @@ var SetCenterY = function (gameObject, y)
 
 module.exports = SetCenterY;
 
-},{}],705:[function(require,module,exports) {
+},{}],557:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1766,7 +1766,7 @@ var CenterOn = function (gameObject, x, y)
 
 module.exports = CenterOn;
 
-},{"./SetCenterX":715,"./SetCenterY":716}],707:[function(require,module,exports) {
+},{"./SetCenterX":563,"./SetCenterY":561}],562:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1790,7 +1790,7 @@ var GetCenterY = function (gameObject)
 
 module.exports = GetCenterY;
 
-},{}],725:[function(require,module,exports) {
+},{}],479:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1826,7 +1826,7 @@ var Center = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = Center;
 
-},{"../../bounds/CenterOn":705,"../../bounds/GetCenterX":708,"../../bounds/GetCenterY":707}],726:[function(require,module,exports) {
+},{"../../bounds/CenterOn":557,"../../bounds/GetCenterX":560,"../../bounds/GetCenterY":562}],480:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1864,7 +1864,7 @@ var LeftCenter = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = LeftCenter;
 
-},{"../../bounds/GetCenterY":707,"../../bounds/GetLeft":709,"../../bounds/SetCenterY":716,"../../bounds/SetLeft":717}],727:[function(require,module,exports) {
+},{"../../bounds/GetCenterY":562,"../../bounds/GetLeft":553,"../../bounds/SetCenterY":561,"../../bounds/SetLeft":558}],481:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1902,7 +1902,7 @@ var RightCenter = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = RightCenter;
 
-},{"../../bounds/GetCenterY":707,"../../bounds/GetRight":712,"../../bounds/SetCenterY":716,"../../bounds/SetRight":719}],713:[function(require,module,exports) {
+},{"../../bounds/GetCenterY":562,"../../bounds/GetRight":555,"../../bounds/SetCenterY":561,"../../bounds/SetRight":559}],565:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1926,7 +1926,7 @@ var GetTop = function (gameObject)
 
 module.exports = GetTop;
 
-},{}],718:[function(require,module,exports) {
+},{}],564:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1953,7 +1953,7 @@ var SetTop = function (gameObject, value)
 
 module.exports = SetTop;
 
-},{}],728:[function(require,module,exports) {
+},{}],482:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -1991,7 +1991,7 @@ var TopCenter = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = TopCenter;
 
-},{"../../bounds/GetCenterX":708,"../../bounds/GetTop":713,"../../bounds/SetCenterX":715,"../../bounds/SetTop":718}],729:[function(require,module,exports) {
+},{"../../bounds/GetCenterX":560,"../../bounds/GetTop":565,"../../bounds/SetCenterX":563,"../../bounds/SetTop":564}],483:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2029,7 +2029,7 @@ var TopLeft = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = TopLeft;
 
-},{"../../bounds/GetLeft":709,"../../bounds/GetTop":713,"../../bounds/SetLeft":717,"../../bounds/SetTop":718}],730:[function(require,module,exports) {
+},{"../../bounds/GetLeft":553,"../../bounds/GetTop":565,"../../bounds/SetLeft":558,"../../bounds/SetTop":564}],485:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2067,7 +2067,7 @@ var TopRight = function (gameObject, alignIn, offsetX, offsetY)
 
 module.exports = TopRight;
 
-},{"../../bounds/GetRight":712,"../../bounds/GetTop":713,"../../bounds/SetRight":719,"../../bounds/SetTop":718}],277:[function(require,module,exports) {
+},{"../../bounds/GetRight":555,"../../bounds/GetTop":565,"../../bounds/SetRight":559,"../../bounds/SetTop":564}],391:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2110,7 +2110,7 @@ var QuickSet = function (child, alignIn, position, offsetX, offsetY)
 
 module.exports = QuickSet;
 
-},{"../const":275,"./BottomCenter":722,"./BottomLeft":724,"./BottomRight":723,"./Center":725,"./LeftCenter":726,"./RightCenter":727,"./TopCenter":728,"./TopLeft":729,"./TopRight":730}],268:[function(require,module,exports) {
+},{"../const":349,"./BottomCenter":484,"./BottomLeft":477,"./BottomRight":478,"./Center":479,"./LeftCenter":480,"./RightCenter":481,"./TopCenter":482,"./TopLeft":483,"./TopRight":485}],102:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2153,7 +2153,7 @@ var GetFastValue = function (source, key, defaultValue)
 
 module.exports = GetFastValue;
 
-},{}],59:[function(require,module,exports) {
+},{}],25:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2176,7 +2176,7 @@ var NOOP = function ()
 
 module.exports = NOOP;
 
-},{}],16:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2410,7 +2410,7 @@ Class.ignoreFinals = false;
 
 module.exports = Class;
 
-},{}],397:[function(require,module,exports) {
+},{}],372:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2447,7 +2447,7 @@ var Contains = function (circle, x, y)
 
 module.exports = Contains;
 
-},{}],463:[function(require,module,exports) {
+},{}],344:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2524,7 +2524,7 @@ var Point = new Class({
 
 module.exports = Point;
 
-},{"../../utils/Class":16}],395:[function(require,module,exports) {
+},{"../../utils/Class":10}],539:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2557,7 +2557,7 @@ var CircumferencePoint = function (circle, angle, out)
 
 module.exports = CircumferencePoint;
 
-},{"../point/Point":463}],165:[function(require,module,exports) {
+},{"../point/Point":344}],228:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2583,7 +2583,7 @@ var Clamp = function (value, min, max)
 
 module.exports = Clamp;
 
-},{}],171:[function(require,module,exports) {
+},{}],234:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -2613,7 +2613,7 @@ var FromPercent = function (percent, min, max)
 
 module.exports = FromPercent;
 
-},{"./Clamp":165}],296:[function(require,module,exports) {
+},{"./Clamp":228}],103:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3071,7 +3071,7 @@ var RandomDataGenerator = new Class({
 
 module.exports = RandomDataGenerator;
 
-},{"../../utils/Class":16}],159:[function(require,module,exports) {
+},{"../../utils/Class":10}],44:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3140,7 +3140,7 @@ var MATH_CONST = {
 
 module.exports = MATH_CONST;
 
-},{"./random-data-generator/RandomDataGenerator":296}],403:[function(require,module,exports) {
+},{"./random-data-generator/RandomDataGenerator":103}],427:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3177,7 +3177,7 @@ var GetPoint = function (circle, position, out)
 
 module.exports = GetPoint;
 
-},{"./CircumferencePoint":395,"../../math/FromPercent":171,"../../math/const":159,"../point/Point":463}],394:[function(require,module,exports) {
+},{"./CircumferencePoint":539,"../../math/FromPercent":234,"../../math/const":44,"../point/Point":344}],541:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3201,7 +3201,7 @@ var Circumference = function (circle)
 
 module.exports = Circumference;
 
-},{}],404:[function(require,module,exports) {
+},{}],425:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3249,7 +3249,7 @@ var GetPoints = function (circle, quantity, stepRate, out)
 
 module.exports = GetPoints;
 
-},{"./Circumference":394,"./CircumferencePoint":395,"../../math/FromPercent":171,"../../math/const":159}],280:[function(require,module,exports) {
+},{"./Circumference":541,"./CircumferencePoint":539,"../../math/FromPercent":234,"../../math/const":44}],351:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3287,7 +3287,7 @@ var Random = function (circle, out)
 
 module.exports = Random;
 
-},{"../point/Point":463}],392:[function(require,module,exports) {
+},{"../point/Point":344}],369:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3640,7 +3640,7 @@ var Circle = new Class({
 
 module.exports = Circle;
 
-},{"../../utils/Class":16,"./Contains":397,"./GetPoint":403,"./GetPoints":404,"./Random":280}],780:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Contains":372,"./GetPoint":427,"./GetPoints":425,"./Random":351}],599:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -3882,7 +3882,7 @@ var Alpha = {
 
 module.exports = Alpha;
 
-},{"../../math/Clamp":165}],781:[function(require,module,exports) {
+},{"../../math/Clamp":228}],593:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -4695,7 +4695,7 @@ var Animation = new Class({
 
 module.exports = Animation;
 
-},{"../../utils/Class":16}],782:[function(require,module,exports) {
+},{"../../utils/Class":10}],594:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -4802,7 +4802,7 @@ var BlendMode = {
 
 module.exports = BlendMode;
 
-},{"../../renderer/BlendModes":46}],783:[function(require,module,exports) {
+},{"../../renderer/BlendModes":16}],595:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -4885,7 +4885,7 @@ var ComputedSize = {
 
 module.exports = ComputedSize;
 
-},{}],784:[function(require,module,exports) {
+},{}],596:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -4965,7 +4965,7 @@ var Depth = {
 
 module.exports = Depth;
 
-},{}],785:[function(require,module,exports) {
+},{}],597:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5109,7 +5109,7 @@ var Flip = {
 
 module.exports = Flip;
 
-},{}],490:[function(require,module,exports) {
+},{}],114:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5140,7 +5140,7 @@ var Contains = function (rect, x, y)
 
 module.exports = Contains;
 
-},{}],512:[function(require,module,exports) {
+},{}],343:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5164,7 +5164,7 @@ var Perimeter = function (rect)
 
 module.exports = Perimeter;
 
-},{}],502:[function(require,module,exports) {
+},{}],115:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5235,7 +5235,7 @@ var GetPoint = function (rectangle, position, out)
 
 module.exports = GetPoint;
 
-},{"./Perimeter":512,"../point/Point":463}],503:[function(require,module,exports) {
+},{"./Perimeter":343,"../point/Point":344}],116:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5283,7 +5283,7 @@ var GetPoints = function (rectangle, quantity, stepRate, out)
 
 module.exports = GetPoints;
 
-},{"./GetPoint":502,"./Perimeter":512}],448:[function(require,module,exports) {
+},{"./GetPoint":115,"./Perimeter":343}],345:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5319,7 +5319,7 @@ var GetPoint = function (line, position, out)
 
 module.exports = GetPoint;
 
-},{"../point/Point":463}],450:[function(require,module,exports) {
+},{"../point/Point":344}],423:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5343,7 +5343,7 @@ var Length = function (line)
 
 module.exports = Length;
 
-},{}],278:[function(require,module,exports) {
+},{}],346:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5397,7 +5397,7 @@ var GetPoints = function (line, quantity, stepRate, out)
 
 module.exports = GetPoints;
 
-},{"./Length":450,"../point/Point":463}],283:[function(require,module,exports) {
+},{"./Length":423,"../point/Point":344}],347:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5431,7 +5431,7 @@ var Random = function (line, out)
 
 module.exports = Random;
 
-},{"../point/Point":463}],194:[function(require,module,exports) {
+},{"../point/Point":344}],96:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -5983,7 +5983,7 @@ Vector2.ZERO = new Vector2();
 
 module.exports = Vector2;
 
-},{"../utils/Class":16}],440:[function(require,module,exports) {
+},{"../utils/Class":10}],118:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -6289,7 +6289,7 @@ var Line = new Class({
 
 module.exports = Line;
 
-},{"../../utils/Class":16,"./GetPoint":448,"./GetPoints":278,"./Random":283,"../../math/Vector2":194}],284:[function(require,module,exports) {
+},{"../../utils/Class":10,"./GetPoint":345,"./GetPoints":346,"./Random":347,"../../math/Vector2":96}],117:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -6321,7 +6321,7 @@ var Random = function (rect, out)
 
 module.exports = Random;
 
-},{"../point/Point":463}],266:[function(require,module,exports) {
+},{"../point/Point":344}],64:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -6794,7 +6794,7 @@ var Rectangle = new Class({
 
 module.exports = Rectangle;
 
-},{"../../utils/Class":16,"./Contains":490,"./GetPoint":502,"./GetPoints":503,"../line/Line":440,"./Random":284}],184:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Contains":114,"./GetPoint":115,"./GetPoints":116,"../line/Line":118,"./Random":117}],247:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -6830,7 +6830,7 @@ var RotateAround = function (point, x, y, angle)
 
 module.exports = RotateAround;
 
-},{}],786:[function(require,module,exports) {
+},{}],598:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7020,7 +7020,7 @@ var GetBounds = {
 
 module.exports = GetBounds;
 
-},{"../../geom/rectangle/Rectangle":266,"../../math/RotateAround":184,"../../math/Vector2":194}],787:[function(require,module,exports) {
+},{"../../geom/rectangle/Rectangle":64,"../../math/RotateAround":247,"../../math/Vector2":96}],605:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7304,7 +7304,7 @@ var MatrixStack = {
 
 module.exports = MatrixStack;
 
-},{}],788:[function(require,module,exports) {
+},{}],600:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7503,7 +7503,7 @@ var Origin = {
 
 module.exports = Origin;
 
-},{}],789:[function(require,module,exports) {
+},{}],601:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7628,7 +7628,7 @@ var Pipeline = {
 
 module.exports = Pipeline;
 
-},{}],790:[function(require,module,exports) {
+},{}],602:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7695,7 +7695,7 @@ var ScaleMode = {
 
 module.exports = ScaleMode;
 
-},{"../../renderer/ScaleModes":47}],791:[function(require,module,exports) {
+},{"../../renderer/ScaleModes":15}],603:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7783,7 +7783,7 @@ var ScrollFactor = {
 
 module.exports = ScrollFactor;
 
-},{}],792:[function(require,module,exports) {
+},{}],604:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -7935,7 +7935,7 @@ var Size = {
 
 module.exports = Size;
 
-},{}],793:[function(require,module,exports) {
+},{}],608:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8051,7 +8051,7 @@ var Texture = {
 
 module.exports = Texture;
 
-},{}],794:[function(require,module,exports) {
+},{}],606:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8247,7 +8247,7 @@ var Tint = {
 
 module.exports = Tint;
 
-},{}],795:[function(require,module,exports) {
+},{}],607:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8332,7 +8332,7 @@ var ToJSON = function (gameObject)
 
 module.exports = ToJSON;
 
-},{}],193:[function(require,module,exports) {
+},{}],254:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8360,7 +8360,7 @@ var Wrap = function (value, min, max)
 
 module.exports = Wrap;
 
-},{}],561:[function(require,module,exports) {
+},{}],788:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8386,7 +8386,7 @@ var Wrap = function (angle)
 
 module.exports = Wrap;
 
-},{"../Wrap":193}],562:[function(require,module,exports) {
+},{"../Wrap":254}],789:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8412,7 +8412,7 @@ var WrapDegrees = function (angle)
 
 module.exports = WrapDegrees;
 
-},{"../Wrap":193}],796:[function(require,module,exports) {
+},{"../Wrap":254}],610:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -8761,7 +8761,7 @@ var Transform = {
 
 module.exports = Transform;
 
-},{"../../math/const":159,"../../math/angle/Wrap":561,"../../math/angle/WrapDegrees":562}],797:[function(require,module,exports) {
+},{"../../math/const":44,"../../math/angle/Wrap":788,"../../math/angle/WrapDegrees":789}],424:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -9150,7 +9150,7 @@ var TransformMatrix = new Class({
 
 module.exports = TransformMatrix;
 
-},{"../../utils/Class":16}],798:[function(require,module,exports) {
+},{"../../utils/Class":10}],609:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -9226,7 +9226,7 @@ var Visible = {
 
 module.exports = Visible;
 
-},{}],384:[function(require,module,exports) {
+},{}],500:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -9261,7 +9261,7 @@ module.exports = {
 
 };
 
-},{"./Alpha":780,"./Animation":781,"./BlendMode":782,"./ComputedSize":783,"./Depth":784,"./Flip":785,"./GetBounds":786,"./MatrixStack":787,"./Origin":788,"./Pipeline":789,"./ScaleMode":790,"./ScrollFactor":791,"./Size":792,"./Texture":793,"./Tint":794,"./ToJSON":795,"./Transform":796,"./TransformMatrix":797,"./Visible":798}],55:[function(require,module,exports) {
+},{"./Alpha":599,"./Animation":593,"./BlendMode":594,"./ComputedSize":595,"./Depth":596,"./Flip":597,"./GetBounds":598,"./MatrixStack":605,"./Origin":600,"./Pipeline":601,"./ScaleMode":602,"./ScrollFactor":603,"./Size":604,"./Texture":608,"./Tint":606,"./ToJSON":607,"./Transform":610,"./TransformMatrix":424,"./Visible":609}],21:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -9696,7 +9696,7 @@ var DataManager = new Class({
 
 module.exports = DataManager;
 
-},{"../utils/Class":16}],67:[function(require,module,exports) {
+},{"../utils/Class":10}],36:[function(require,module,exports) {
 'use strict';
 
 var has = Object.prototype.hasOwnProperty
@@ -10034,7 +10034,7 @@ if ('undefined' !== typeof module) {
   module.exports = EventEmitter;
 }
 
-},{}],542:[function(require,module,exports) {
+},{}],208:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10418,7 +10418,7 @@ GameObject.RENDER_MASK = 15;
 
 module.exports = GameObject;
 
-},{"../utils/Class":16,"./components":384,"../data/DataManager":55,"eventemitter3":67}],276:[function(require,module,exports) {
+},{"../utils/Class":10,"./components":500,"../data/DataManager":21,"eventemitter3":36}],290:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10703,7 +10703,7 @@ var Zone = new Class({
 
 module.exports = Zone;
 
-},{"../../renderer/BlendModes":46,"../../geom/circle/Circle":392,"../../geom/circle/Contains":397,"../../utils/Class":16,"../components":384,"../GameObject":542,"../../geom/rectangle/Rectangle":266,"../../geom/rectangle/Contains":490}],107:[function(require,module,exports) {
+},{"../../renderer/BlendModes":16,"../../geom/circle/Circle":369,"../../geom/circle/Contains":372,"../../utils/Class":10,"../components":500,"../GameObject":208,"../../geom/rectangle/Rectangle":64,"../../geom/rectangle/Contains":114}],149:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10821,7 +10821,7 @@ var GridAlign = function (items, options)
 
 module.exports = GridAlign;
 
-},{"../display/align/in/QuickSet":277,"../display/align/const":275,"../utils/object/GetFastValue":268,"../utils/NOOP":59,"../gameobjects/zone/Zone":276}],108:[function(require,module,exports) {
+},{"../display/align/in/QuickSet":391,"../display/align/const":349,"../utils/object/GetFastValue":102,"../utils/NOOP":25,"../gameobjects/zone/Zone":290}],151:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10856,7 +10856,7 @@ var IncAlpha = function (items, value, step, index, direction)
 
 module.exports = IncAlpha;
 
-},{"./PropertyValueInc":118}],110:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],152:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10891,7 +10891,7 @@ var IncX = function (items, value, step, index, direction)
 
 module.exports = IncX;
 
-},{"./PropertyValueInc":118}],109:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],154:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10932,7 +10932,7 @@ var IncXY = function (items, x, y, stepX, stepY, index, direction)
 
 module.exports = IncXY;
 
-},{"./PropertyValueInc":118}],111:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],155:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -10967,7 +10967,7 @@ var IncY = function (items, value, step, index, direction)
 
 module.exports = IncY;
 
-},{"./PropertyValueInc":118}],112:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],156:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11008,7 +11008,7 @@ var PlaceOnCircle = function (items, circle, startAngle, endAngle)
 
 module.exports = PlaceOnCircle;
 
-},{}],113:[function(require,module,exports) {
+},{}],157:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11052,7 +11052,7 @@ var PlaceOnEllipse = function (items, ellipse, startAngle, endAngle)
 
 module.exports = PlaceOnEllipse;
 
-},{}],114:[function(require,module,exports) {
+},{}],159:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11090,7 +11090,7 @@ var PlaceOnLine = function (items, line)
 
 module.exports = PlaceOnLine;
 
-},{"../geom/line/GetPoints":278}],272:[function(require,module,exports) {
+},{"../geom/line/GetPoints":346}],352:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11204,7 +11204,7 @@ var MarchingAnts = function (rect, step, quantity, out)
 
 module.exports = MarchingAnts;
 
-},{"./Perimeter":512,"../point/Point":463}],273:[function(require,module,exports) {
+},{"./Perimeter":343,"../point/Point":344}],353:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11240,7 +11240,7 @@ var RotateLeft = function (array, total)
 
 module.exports = RotateLeft;
 
-},{}],274:[function(require,module,exports) {
+},{}],354:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11276,7 +11276,7 @@ var RotateRight = function (array, total)
 
 module.exports = RotateRight;
 
-},{}],115:[function(require,module,exports) {
+},{}],163:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11331,7 +11331,7 @@ var PlaceOnRectangle = function (items, rect, shift)
 
 module.exports = PlaceOnRectangle;
 
-},{"../geom/rectangle/MarchingAnts":272,"../utils/array/RotateLeft":273,"../utils/array/RotateRight":274}],279:[function(require,module,exports) {
+},{"../geom/rectangle/MarchingAnts":352,"../utils/array/RotateLeft":353,"../utils/array/RotateRight":354}],350:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11400,7 +11400,7 @@ var BresenhamPoints = function (line, stepRate, results)
 
 module.exports = BresenhamPoints;
 
-},{}],116:[function(require,module,exports) {
+},{}],158:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11454,7 +11454,7 @@ var PlaceOnTriangle = function (items, triangle, stepRate)
 
 module.exports = PlaceOnTriangle;
 
-},{"../geom/line/BresenhamPoints":279}],117:[function(require,module,exports) {
+},{"../geom/line/BresenhamPoints":350}],161:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11485,7 +11485,7 @@ var PlayAnimation = function (items, key, startFrame)
 
 module.exports = PlayAnimation;
 
-},{}],119:[function(require,module,exports) {
+},{}],162:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11546,7 +11546,7 @@ var PropertyValueSet = function (items, key, value, step, index, direction)
 
 module.exports = PropertyValueSet;
 
-},{}],120:[function(require,module,exports) {
+},{}],164:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11578,7 +11578,7 @@ var RandomCircle = function (items, circle)
 
 module.exports = RandomCircle;
 
-},{"../geom/circle/Random":280}],281:[function(require,module,exports) {
+},{"../geom/circle/Random":351}],355:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11613,7 +11613,7 @@ var Random = function (ellipse, out)
 
 module.exports = Random;
 
-},{"../point/Point":463}],121:[function(require,module,exports) {
+},{"../point/Point":344}],165:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11645,7 +11645,7 @@ var RandomEllipse = function (items, ellipse)
 
 module.exports = RandomEllipse;
 
-},{"../geom/ellipse/Random":281}],122:[function(require,module,exports) {
+},{"../geom/ellipse/Random":355}],166:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11677,7 +11677,7 @@ var RandomLine = function (items, line)
 
 module.exports = RandomLine;
 
-},{"../geom/line/Random":283}],123:[function(require,module,exports) {
+},{"../geom/line/Random":347}],167:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11709,7 +11709,7 @@ var RandomRectangle = function (items, rect)
 
 module.exports = RandomRectangle;
 
-},{"../geom/rectangle/Random":284}],285:[function(require,module,exports) {
+},{"../geom/rectangle/Random":117}],356:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11759,7 +11759,7 @@ var Random = function (triangle, out)
 
 module.exports = Random;
 
-},{"../point/Point":463}],124:[function(require,module,exports) {
+},{"../point/Point":344}],168:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11791,7 +11791,7 @@ var RandomTriangle = function (items, triangle)
 
 module.exports = RandomTriangle;
 
-},{"../geom/triangle/Random":285}],125:[function(require,module,exports) {
+},{"../geom/triangle/Random":356}],169:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11826,7 +11826,7 @@ var Rotate = function (items, value, step, index, direction)
 
 module.exports = Rotate;
 
-},{"./PropertyValueInc":118}],185:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],246:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11859,7 +11859,7 @@ var RotateAroundDistance = function (point, x, y, angle, distance)
 
 module.exports = RotateAroundDistance;
 
-},{}],286:[function(require,module,exports) {
+},{}],357:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11889,7 +11889,7 @@ var DistanceBetween = function (x1, y1, x2, y2)
 
 module.exports = DistanceBetween;
 
-},{}],126:[function(require,module,exports) {
+},{}],170:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11928,7 +11928,7 @@ var RotateAround = function (items, point, angle)
 
 module.exports = RotateAround;
 
-},{"../math/RotateAroundDistance":185,"../math/distance/DistanceBetween":286}],127:[function(require,module,exports) {
+},{"../math/RotateAroundDistance":246,"../math/distance/DistanceBetween":357}],171:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -11971,7 +11971,7 @@ var RotateAroundDistance = function (items, point, angle, distance)
 
 module.exports = RotateAroundDistance;
 
-},{"../math/RotateAroundDistance":185}],128:[function(require,module,exports) {
+},{"../math/RotateAroundDistance":246}],172:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12006,7 +12006,7 @@ var ScaleX = function (items, value, step, index, direction)
 
 module.exports = ScaleX;
 
-},{"./PropertyValueInc":118}],129:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],173:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12047,7 +12047,7 @@ var ScaleXY = function (items, scaleX, scaleY, stepX, stepY, index, direction)
 
 module.exports = ScaleXY;
 
-},{"./PropertyValueInc":118}],130:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],175:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12082,7 +12082,7 @@ var ScaleY = function (items, value, step, index, direction)
 
 module.exports = ScaleY;
 
-},{"./PropertyValueInc":118}],131:[function(require,module,exports) {
+},{"./PropertyValueInc":160}],174:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12117,7 +12117,7 @@ var SetAlpha = function (items, value, step, index, direction)
 
 module.exports = SetAlpha;
 
-},{"./PropertyValueSet":119}],132:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],176:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12151,7 +12151,7 @@ var SetBlendMode = function (items, value, index, direction)
 
 module.exports = SetBlendMode;
 
-},{"./PropertyValueSet":119}],133:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],177:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12186,7 +12186,7 @@ var SetDepth = function (items, value, step, index, direction)
 
 module.exports = SetDepth;
 
-},{"./PropertyValueSet":119}],134:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],179:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12217,7 +12217,7 @@ var SetHitArea = function (items, hitArea, hitAreaCallback)
 
 module.exports = SetHitArea;
 
-},{}],135:[function(require,module,exports) {
+},{}],180:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12258,7 +12258,7 @@ var SetOrigin = function (items, originX, originY, stepX, stepY, index, directio
 
 module.exports = SetOrigin;
 
-},{"./PropertyValueSet":119}],136:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],178:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12293,7 +12293,7 @@ var SetRotation = function (items, value, step, index, direction)
 
 module.exports = SetRotation;
 
-},{"./PropertyValueSet":119}],137:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],182:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12334,7 +12334,7 @@ var SetScale = function (items, scaleX, scaleY, stepX, stepY, index, direction)
 
 module.exports = SetScale;
 
-},{"./PropertyValueSet":119}],138:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],181:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12369,7 +12369,7 @@ var SetScaleX = function (items, value, step, index, direction)
 
 module.exports = SetScaleX;
 
-},{"./PropertyValueSet":119}],139:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],183:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12404,7 +12404,7 @@ var SetScaleY = function (items, value, step, index, direction)
 
 module.exports = SetScaleY;
 
-},{"./PropertyValueSet":119}],140:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],184:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12437,7 +12437,7 @@ var SetTint = function (items, topLeft, topRight, bottomLeft, bottomRight)
 
 module.exports = SetTint;
 
-},{}],141:[function(require,module,exports) {
+},{}],185:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12469,7 +12469,7 @@ var SetVisible = function (items, value, index, direction)
 
 module.exports = SetVisible;
 
-},{"./PropertyValueSet":119}],142:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],186:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12504,7 +12504,7 @@ var SetX = function (items, value, step, index, direction)
 
 module.exports = SetX;
 
-},{"./PropertyValueSet":119}],143:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],187:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12545,7 +12545,7 @@ var SetXY = function (items, x, y, stepX, stepY, index, direction)
 
 module.exports = SetXY;
 
-},{"./PropertyValueSet":119}],144:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],190:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12580,7 +12580,7 @@ var SetY = function (items, value, step, index, direction)
 
 module.exports = SetY;
 
-},{"./PropertyValueSet":119}],145:[function(require,module,exports) {
+},{"./PropertyValueSet":162}],189:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12701,7 +12701,7 @@ var ShiftPosition = function (items, x, y, direction, output)
 
 module.exports = ShiftPosition;
 
-},{"../math/Vector2":194}],290:[function(require,module,exports) {
+},{"../math/Vector2":96}],358:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12735,7 +12735,7 @@ var Shuffle = function (array)
 
 module.exports = Shuffle;
 
-},{}],146:[function(require,module,exports) {
+},{}],191:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12761,7 +12761,7 @@ var Shuffle = function (items)
 
 module.exports = Shuffle;
 
-},{"../utils/array/Shuffle":290}],189:[function(require,module,exports) {
+},{"../utils/array/Shuffle":358}],251:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12789,7 +12789,7 @@ var SmootherStep = function (x, min, max)
 
 module.exports = SmootherStep;
 
-},{}],147:[function(require,module,exports) {
+},{}],188:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12839,7 +12839,7 @@ var SmootherStep = function (items, property, min, max, inc)
 
 module.exports = SmootherStep;
 
-},{"../math/SmootherStep":189}],190:[function(require,module,exports) {
+},{"../math/SmootherStep":251}],252:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12867,7 +12867,7 @@ var SmoothStep = function (x, min, max)
 
 module.exports = SmoothStep;
 
-},{}],148:[function(require,module,exports) {
+},{}],193:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12917,7 +12917,7 @@ var SmoothStep = function (items, property, min, max, inc)
 
 module.exports = SmoothStep;
 
-},{"../math/SmoothStep":190}],149:[function(require,module,exports) {
+},{"../math/SmoothStep":252}],192:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12965,7 +12965,7 @@ var Spread = function (items, property, min, max, inc)
 
 module.exports = Spread;
 
-},{}],150:[function(require,module,exports) {
+},{}],195:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -12994,7 +12994,7 @@ var ToggleVisible = function (items)
 
 module.exports = ToggleVisible;
 
-},{}],151:[function(require,module,exports) {
+},{}],194:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @author       samme <samme.npm@gmail.com>
@@ -13037,7 +13037,7 @@ var WrapInRectangle = function (items, rect, padding)
 
 module.exports = WrapInRectangle;
 
-},{"../math/Wrap":193}],22:[function(require,module,exports) {
+},{"../math/Wrap":254}],70:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -13102,7 +13102,7 @@ module.exports = {
 
 };
 
-},{"./Angle":103,"./Call":104,"./GetFirst":105,"./GetLast":106,"./GridAlign":107,"./IncAlpha":108,"./IncX":110,"./IncXY":109,"./IncY":111,"./PlaceOnCircle":112,"./PlaceOnEllipse":113,"./PlaceOnLine":114,"./PlaceOnRectangle":115,"./PlaceOnTriangle":116,"./PlayAnimation":117,"./PropertyValueInc":118,"./PropertyValueSet":119,"./RandomCircle":120,"./RandomEllipse":121,"./RandomLine":122,"./RandomRectangle":123,"./RandomTriangle":124,"./Rotate":125,"./RotateAround":126,"./RotateAroundDistance":127,"./ScaleX":128,"./ScaleXY":129,"./ScaleY":130,"./SetAlpha":131,"./SetBlendMode":132,"./SetDepth":133,"./SetHitArea":134,"./SetOrigin":135,"./SetRotation":136,"./SetScale":137,"./SetScaleX":138,"./SetScaleY":139,"./SetTint":140,"./SetVisible":141,"./SetX":142,"./SetXY":143,"./SetY":144,"./ShiftPosition":145,"./Shuffle":146,"./SmootherStep":147,"./SmoothStep":148,"./Spread":149,"./ToggleVisible":150,"./WrapInRectangle":151}],69:[function(require,module,exports) {
+},{"./Angle":148,"./Call":147,"./GetFirst":153,"./GetLast":150,"./GridAlign":149,"./IncAlpha":151,"./IncX":152,"./IncXY":154,"./IncY":155,"./PlaceOnCircle":156,"./PlaceOnEllipse":157,"./PlaceOnLine":159,"./PlaceOnRectangle":163,"./PlaceOnTriangle":158,"./PlayAnimation":161,"./PropertyValueInc":160,"./PropertyValueSet":162,"./RandomCircle":164,"./RandomEllipse":165,"./RandomLine":166,"./RandomRectangle":167,"./RandomTriangle":168,"./Rotate":169,"./RotateAround":170,"./RotateAroundDistance":171,"./ScaleX":172,"./ScaleXY":173,"./ScaleY":175,"./SetAlpha":174,"./SetBlendMode":176,"./SetDepth":177,"./SetHitArea":179,"./SetOrigin":180,"./SetRotation":178,"./SetScale":182,"./SetScaleX":181,"./SetScaleY":183,"./SetTint":184,"./SetVisible":185,"./SetX":186,"./SetXY":187,"./SetY":190,"./ShiftPosition":189,"./Shuffle":191,"./SmootherStep":188,"./SmoothStep":193,"./Spread":192,"./ToggleVisible":195,"./WrapInRectangle":194}],97:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -13292,7 +13292,7 @@ var AnimationFrame = new Class({
 
 module.exports = AnimationFrame;
 
-},{"../utils/Class":16}],230:[function(require,module,exports) {
+},{"../utils/Class":10}],53:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -13359,7 +13359,7 @@ var GetValue = function (source, key, defaultValue)
 
 module.exports = GetValue;
 
-},{}],68:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -14293,7 +14293,7 @@ var Animation = new Class({
 
 module.exports = Animation;
 
-},{"../utils/Class":16,"./AnimationFrame":69,"../utils/object/GetValue":230}],84:[function(require,module,exports) {
+},{"../utils/Class":10,"./AnimationFrame":97,"../utils/object/GetValue":53}],42:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -14625,7 +14625,7 @@ var Map = new Class({
 
 module.exports = Map;
 
-},{"../utils/Class":16}],257:[function(require,module,exports) {
+},{"../utils/Class":10}],54:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -14697,7 +14697,7 @@ var Pad = function (str, len, pad, dir)
 
 module.exports = Pad;
 
-},{}],51:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -15297,7 +15297,7 @@ var AnimationManager = new Class({
 
 module.exports = AnimationManager;
 
-},{"./Animation":68,"../utils/Class":16,"../structs/Map":84,"eventemitter3":67,"../utils/object/GetValue":230,"../utils/string/Pad":257}],23:[function(require,module,exports) {
+},{"./Animation":43,"../utils/Class":10,"../structs/Map":42,"eventemitter3":36,"../utils/object/GetValue":53,"../utils/string/Pad":54}],72:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -15316,7 +15316,7 @@ module.exports = {
 
 };
 
-},{"./Animation":68,"./AnimationFrame":69,"./AnimationManager":51}],73:[function(require,module,exports) {
+},{"./Animation":43,"./AnimationFrame":97,"./AnimationManager":19}],48:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -15489,7 +15489,7 @@ var BaseCache = new Class({
 
 module.exports = BaseCache;
 
-},{"../utils/Class":16,"../structs/Map":84,"eventemitter3":67}],52:[function(require,module,exports) {
+},{"../utils/Class":10,"../structs/Map":42,"eventemitter3":36}],26:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -15709,7 +15709,7 @@ var CacheManager = new Class({
 
 module.exports = CacheManager;
 
-},{"./BaseCache":73,"../utils/Class":16}],31:[function(require,module,exports) {
+},{"./BaseCache":48,"../utils/Class":10}],71:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -15727,7 +15727,7 @@ module.exports = {
 
 };
 
-},{"./BaseCache":73,"./CacheManager":52}],329:[function(require,module,exports) {
+},{"./BaseCache":48,"./CacheManager":26}],573:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -16032,7 +16032,7 @@ var FixedKeyControl = new Class({
 
 module.exports = FixedKeyControl;
 
-},{"../../utils/Class":16,"../../utils/object/GetValue":230}],330:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetValue":53}],574:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -16517,7 +16517,7 @@ var SmoothedKeyControl = new Class({
 
 module.exports = SmoothedKeyControl;
 
-},{"../../utils/Class":16,"../../utils/object/GetValue":230}],226:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetValue":53}],493:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -16535,7 +16535,7 @@ module.exports = {
 
 };
 
-},{"./FixedKeyControl":329,"./SmoothedKeyControl":330}],166:[function(require,module,exports) {
+},{"./FixedKeyControl":573,"./SmoothedKeyControl":574}],229:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -16561,7 +16561,7 @@ var DegToRad = function (degrees)
 
 module.exports = DegToRad;
 
-},{"./const":159}],312:[function(require,module,exports) {
+},{"./const":44}],123:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -16587,7 +16587,7 @@ var GetColor = function (red, green, blue)
 
 module.exports = GetColor;
 
-},{}],313:[function(require,module,exports) {
+},{}],124:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -16614,7 +16614,7 @@ var GetColor32 = function (red, green, blue, alpha)
 
 module.exports = GetColor32;
 
-},{}],262:[function(require,module,exports) {
+},{}],67:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17124,7 +17124,7 @@ var Color = new Class({
 
 module.exports = Color;
 
-},{"../../utils/Class":16,"./GetColor":312,"./GetColor32":313}],314:[function(require,module,exports) {
+},{"../../utils/Class":10,"./GetColor":123,"./GetColor32":124}],106:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17173,7 +17173,7 @@ var HexStringToColor = function (hex)
 
 module.exports = HexStringToColor;
 
-},{"./Color":262}],320:[function(require,module,exports) {
+},{"./Color":67}],340:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17217,7 +17217,7 @@ var IntegerToRGB = function (color)
 
 module.exports = IntegerToRGB;
 
-},{}],319:[function(require,module,exports) {
+},{}],107:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17246,7 +17246,7 @@ var IntegerToColor = function (input)
 
 module.exports = IntegerToColor;
 
-},{"./Color":262,"./IntegerToRGB":320}],322:[function(require,module,exports) {
+},{"./Color":67,"./IntegerToRGB":340}],108:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17272,7 +17272,7 @@ var ObjectToColor = function (input)
 
 module.exports = ObjectToColor;
 
-},{"./Color":262}],324:[function(require,module,exports) {
+},{"./Color":67}],109:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17314,7 +17314,7 @@ var RGBStringToColor = function (rgb)
 
 module.exports = RGBStringToColor;
 
-},{"./Color":262}],231:[function(require,module,exports) {
+},{"./Color":67}],55:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -17366,7 +17366,7 @@ var ValueToColor = function (input)
 
 module.exports = ValueToColor;
 
-},{"./HexStringToColor":314,"./IntegerToColor":319,"./ObjectToColor":322,"./RGBStringToColor":324}],544:[function(require,module,exports) {
+},{"./HexStringToColor":106,"./IntegerToColor":107,"./ObjectToColor":108,"./RGBStringToColor":109}],368:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -18853,7 +18853,7 @@ var Camera = new Class({
 
 module.exports = Camera;
 
-},{"../../utils/Class":16,"../../math/DegToRad":166,"../../geom/rectangle/Rectangle":266,"../../gameobjects/components/TransformMatrix":797,"../../display/color/ValueToColor":231,"../../math/Vector2":194}],60:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../math/DegToRad":229,"../../geom/rectangle/Rectangle":64,"../../gameobjects/components/TransformMatrix":424,"../../display/color/ValueToColor":55,"../../math/Vector2":96}],20:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -19031,7 +19031,7 @@ PluginManager.register = function (key, plugin, mapping)
 
 module.exports = PluginManager;
 
-},{"../utils/Class":16}],545:[function(require,module,exports) {
+},{"../utils/Class":10}],570:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -19519,7 +19519,7 @@ PluginManager.register('CameraManager', CameraManager, 'cameras');
 
 module.exports = CameraManager;
 
-},{"./Camera":544,"../../utils/Class":16,"../../utils/object/GetFastValue":268,"../../boot/PluginManager":60,"../../geom/rectangle/Contains":490}],227:[function(require,module,exports) {
+},{"./Camera":368,"../../utils/Class":10,"../../utils/object/GetFastValue":102,"../../boot/PluginManager":20,"../../geom/rectangle/Contains":114}],492:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -19537,7 +19537,7 @@ module.exports = {
 
 };
 
-},{"./Camera":544,"./CameraManager":545}],198:[function(require,module,exports) {
+},{"./Camera":368,"./CameraManager":570}],259:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -20935,7 +20935,7 @@ var _tempMat2 = new Matrix4();
 
 module.exports = Matrix4;
 
-},{"../utils/Class":16}],181:[function(require,module,exports) {
+},{"../utils/Class":10}],243:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -20971,7 +20971,7 @@ var RandomXYZ = function (vec3, radius)
 
 module.exports = RandomXYZ;
 
-},{}],182:[function(require,module,exports) {
+},{}],242:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -21004,7 +21004,7 @@ var RandomXYZW = function (vec4, scale)
 
 module.exports = RandomXYZW;
 
-},{}],195:[function(require,module,exports) {
+},{}],256:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -21771,7 +21771,7 @@ Vector3.DistanceSquared = function (value1, value2)
 
 module.exports = Vector3;
 
-},{"../utils/Class":16}],197:[function(require,module,exports) {
+},{"../utils/Class":10}],264:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -22357,7 +22357,7 @@ var Matrix3 = new Class({
 
 module.exports = Matrix3;
 
-},{"../utils/Class":16}],199:[function(require,module,exports) {
+},{"../utils/Class":10}],260:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23121,7 +23121,7 @@ var Quaternion = new Class({
 
 module.exports = Quaternion;
 
-},{"../utils/Class":16,"./Vector3":195,"./Matrix3":197}],200:[function(require,module,exports) {
+},{"../utils/Class":10,"./Vector3":256,"./Matrix3":264}],261:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23165,7 +23165,7 @@ var RotateVec3 = function (vec, axis, radians)
 
 module.exports = RotateVec3;
 
-},{"../math/Vector3":195,"../math/Matrix4":198,"../math/Quaternion":199}],87:[function(require,module,exports) {
+},{"../math/Vector3":256,"../math/Matrix4":259,"../math/Quaternion":260}],266:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23565,7 +23565,7 @@ var Set = new Class({
 
 module.exports = Set;
 
-},{"../utils/Class":16}],999:[function(require,module,exports) {
+},{"../utils/Class":10}],458:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23600,7 +23600,7 @@ var SpriteWebGLRenderer = function (renderer, src, interpolationPercentage, came
 
 module.exports = SpriteWebGLRenderer;
 
-},{"../GameObject":542}],1000:[function(require,module,exports) {
+},{"../GameObject":208}],459:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23635,7 +23635,7 @@ var SpriteCanvasRenderer = function (renderer, src, interpolationPercentage, cam
 
 module.exports = SpriteCanvasRenderer;
 
-},{"../GameObject":542}],962:[function(require,module,exports) {
+},{"../GameObject":208}],401:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23662,7 +23662,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./SpriteWebGLRenderer":999,"./SpriteCanvasRenderer":1000}],660:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./SpriteWebGLRenderer":458,"./SpriteCanvasRenderer":459}],289:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -23812,7 +23812,7 @@ var Sprite = new Class({
 
 module.exports = Sprite;
 
-},{"../../utils/Class":16,"../components":384,"../GameObject":542,"./SpriteRender":962}],196:[function(require,module,exports) {
+},{"../../utils/Class":10,"../components":500,"../GameObject":208,"./SpriteRender":401}],258:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -24338,7 +24338,7 @@ Vector4.prototype.lenSq = Vector4.prototype.lengthSq;
 
 module.exports = Vector4;
 
-},{"../utils/Class":16}],659:[function(require,module,exports) {
+},{"../utils/Class":10}],286:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -24600,7 +24600,7 @@ var Sprite3D = new Class({
 
 module.exports = Sprite3D;
 
-},{"../../utils/Class":16,"../GameObject":542,"../sprite/Sprite":660,"../../math/Vector2":194,"../../math/Vector4":196}],331:[function(require,module,exports) {
+},{"../../utils/Class":10,"../GameObject":208,"../sprite/Sprite":289,"../../math/Vector2":96,"../../math/Vector4":258}],568:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -25671,7 +25671,7 @@ Camera.NEAR_RANGE = 0.0;
 
 module.exports = Camera;
 
-},{"../../utils/Class":16,"../../math/Matrix4":198,"../../math/RandomXYZ":181,"../../math/RandomXYZW":182,"../../math/RotateVec3":200,"../../structs/Set":87,"../../gameobjects/sprite3d/Sprite3D":659,"../../math/Vector2":194,"../../math/Vector3":195,"../../math/Vector4":196}],333:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../math/Matrix4":259,"../../math/RandomXYZ":243,"../../math/RandomXYZW":242,"../../math/RotateVec3":261,"../../structs/Set":266,"../../gameobjects/sprite3d/Sprite3D":286,"../../math/Vector2":96,"../../math/Vector3":256,"../../math/Vector4":258}],569:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -25854,7 +25854,7 @@ var OrthographicCamera = new Class({
 
 module.exports = OrthographicCamera;
 
-},{"./Camera":331,"../../utils/Class":16,"../../math/Vector3":195}],334:[function(require,module,exports) {
+},{"./Camera":568,"../../utils/Class":10,"../../math/Vector3":256}],567:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -25990,7 +25990,7 @@ var PerspectiveCamera = new Class({
 
 module.exports = PerspectiveCamera;
 
-},{"./Camera":331,"../../utils/Class":16,"../../math/Vector3":195}],332:[function(require,module,exports) {
+},{"./Camera":568,"../../utils/Class":10,"../../math/Vector3":256}],566:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26241,7 +26241,7 @@ PluginManager.register('CameraManager3D', CameraManager, 'cameras3d');
 
 module.exports = CameraManager;
 
-},{"../../utils/Class":16,"./OrthographicCamera":333,"./PerspectiveCamera":334,"../../boot/PluginManager":60}],228:[function(require,module,exports) {
+},{"../../utils/Class":10,"./OrthographicCamera":569,"./PerspectiveCamera":567,"../../boot/PluginManager":20}],491:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26261,7 +26261,7 @@ module.exports = {
 
 };
 
-},{"./Camera":331,"./CameraManager":332,"./OrthographicCamera":333,"./PerspectiveCamera":334}],24:[function(require,module,exports) {
+},{"./Camera":568,"./CameraManager":566,"./OrthographicCamera":569,"./PerspectiveCamera":567}],73:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26280,7 +26280,7 @@ module.exports = {
 
 };
 
-},{"./controls":226,"./2d":227,"./sprite3d":228}],541:[function(require,module,exports) {
+},{"./controls":493,"./2d":492,"./sprite3d":491}],104:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26314,7 +26314,7 @@ module.exports = {
     F: '#B2DCEF'
 };
 
-},{}],271:[function(require,module,exports) {
+},{}],68:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26442,7 +26442,7 @@ var Smoothing = function ()
 
 module.exports = Smoothing();
 
-},{}],66:[function(require,module,exports) {
+},{}],34:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26683,7 +26683,7 @@ var CanvasPool = function ()
 //  If we export the called function here, it'll only be invoked once (not every time it's required).
 module.exports = CanvasPool();
 
-},{"../../const":15,"./Smoothing":271}],259:[function(require,module,exports) {
+},{"../../const":9,"./Smoothing":68}],49:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26794,7 +26794,7 @@ var GenerateTexture = function (config)
 
 module.exports = GenerateTexture;
 
-},{"./palettes/Arne16":541,"../display/canvas/CanvasPool":66,"../utils/object/GetValue":230}],927:[function(require,module,exports) {
+},{"./palettes/Arne16":104,"../display/canvas/CanvasPool":34,"../utils/object/GetValue":53}],589:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26828,7 +26828,7 @@ module.exports = {
     F: '#acacac'
 };
 
-},{}],928:[function(require,module,exports) {
+},{}],590:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26862,7 +26862,7 @@ module.exports = {
     F: '#fff'
 };
 
-},{}],929:[function(require,module,exports) {
+},{}],591:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26896,7 +26896,7 @@ module.exports = {
     F: '#f5f4eb'
 };
 
-},{}],930:[function(require,module,exports) {
+},{}],592:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26930,7 +26930,7 @@ module.exports = {
     F: '#fff'
 };
 
-},{}],748:[function(require,module,exports) {
+},{}],499:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26972,7 +26972,7 @@ module.exports = {
 
 };
 
-},{"./Arne16":541,"./C64":927,"./CGA":928,"./JMP":929,"./MSX":930}],25:[function(require,module,exports) {
+},{"./Arne16":104,"./C64":589,"./CGA":590,"./JMP":591,"./MSX":592}],74:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -26990,7 +26990,7 @@ module.exports = {
 
 };
 
-},{"./GenerateTexture":259,"./palettes":748}],291:[function(require,module,exports) {
+},{"./GenerateTexture":49,"./palettes":499}],365:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -27049,7 +27049,7 @@ var CubicBezierInterpolation = function (t, p0, p1, p2, p3)
 
 module.exports = CubicBezierInterpolation;
 
-},{}],294:[function(require,module,exports) {
+},{}],364:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -27128,7 +27128,7 @@ var FromPoints = function (points, out)
 
 module.exports = FromPoints;
 
-},{"./Rectangle":266}],153:[function(require,module,exports) {
+},{"./Rectangle":64}],196:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -27687,7 +27687,7 @@ var Curve = new Class({
 
 module.exports = Curve;
 
-},{"../utils/Class":16,"../geom/rectangle/FromPoints":294,"../geom/rectangle/Rectangle":266,"../math/Vector2":194}],152:[function(require,module,exports) {
+},{"../utils/Class":10,"../geom/rectangle/FromPoints":364,"../geom/rectangle/Rectangle":64,"../math/Vector2":96}],202:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -27904,7 +27904,7 @@ CubicBezierCurve.fromJSON = function (data)
 
 module.exports = CubicBezierCurve;
 
-},{"../utils/Class":16,"../math/interpolation/CubicBezierInterpolation":291,"./Curve":153,"../math/Vector2":194}],179:[function(require,module,exports) {
+},{"../utils/Class":10,"../math/interpolation/CubicBezierInterpolation":365,"./Curve":196,"../math/Vector2":96}],241:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -27930,7 +27930,7 @@ var RadToDeg = function (radians)
 
 module.exports = RadToDeg;
 
-},{"./const":159}],154:[function(require,module,exports) {
+},{"./const":44}],198:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -28537,7 +28537,7 @@ EllipseCurve.fromJSON = function (data)
 
 module.exports = EllipseCurve;
 
-},{"../utils/Class":16,"./Curve":153,"../math/DegToRad":166,"../utils/object/GetValue":230,"../math/RadToDeg":179,"../math/Vector2":194}],293:[function(require,module,exports) {
+},{"../utils/Class":10,"./Curve":196,"../math/DegToRad":229,"../utils/object/GetValue":53,"../math/RadToDeg":241,"../math/Vector2":96}],206:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -28699,7 +28699,7 @@ PluginManager.register('GameObjectFactory', GameObjectFactory, 'add');
 
 module.exports = GameObjectFactory;
 
-},{"../utils/Class":16,"../boot/PluginManager":60}],155:[function(require,module,exports) {
+},{"../utils/Class":10,"../boot/PluginManager":20}],199:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -28936,7 +28936,7 @@ LineCurve.fromJSON = function (data)
 
 module.exports = LineCurve;
 
-},{"../utils/Class":16,"./Curve":153,"../geom/rectangle/FromPoints":294,"../geom/rectangle/Rectangle":266,"../math/Vector2":194}],297:[function(require,module,exports) {
+},{"../utils/Class":10,"./Curve":196,"../geom/rectangle/FromPoints":364,"../geom/rectangle/Rectangle":64,"../math/Vector2":96}],396:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -29068,7 +29068,7 @@ var MoveTo = new Class({
 
 module.exports = MoveTo;
 
-},{"../../utils/Class":16,"../../math/Vector2":194}],295:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../math/Vector2":96}],363:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -29118,7 +29118,7 @@ var QuadraticBezierInterpolation = function (t, p0, p1, p2)
 
 module.exports = QuadraticBezierInterpolation;
 
-},{}],156:[function(require,module,exports) {
+},{}],200:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -29322,7 +29322,7 @@ QuadraticBezier.fromJSON = function (data)
 
 module.exports = QuadraticBezier;
 
-},{"../utils/Class":16,"./Curve":153,"../math/interpolation/QuadraticBezierInterpolation":295,"../math/Vector2":194}],163:[function(require,module,exports) {
+},{"../utils/Class":10,"./Curve":196,"../math/interpolation/QuadraticBezierInterpolation":363,"../math/Vector2":96}],226:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -29355,7 +29355,7 @@ var CatmullRom = function (t, p0, p1, p2, p3)
 
 module.exports = CatmullRom;
 
-},{}],157:[function(require,module,exports) {
+},{}],201:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -29572,7 +29572,7 @@ SplineCurve.fromJSON = function (data)
 
 module.exports = SplineCurve;
 
-},{"../math/CatmullRom":163,"../utils/Class":16,"./Curve":153,"../math/Vector2":194}],158:[function(require,module,exports) {
+},{"../math/CatmullRom":226,"../utils/Class":10,"./Curve":196,"../math/Vector2":96}],282:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30384,7 +30384,7 @@ GameObjectFactory.register('path', function (x, y)
 
 module.exports = Path;
 
-},{"../../utils/Class":16,"../CubicBezierCurve":152,"../EllipseCurve":154,"../../gameobjects/GameObjectFactory":293,"../LineCurve":155,"./MoveTo":297,"../QuadraticBezierCurve":156,"../../geom/rectangle/Rectangle":266,"../SplineCurve":157,"../../math/Vector2":194}],26:[function(require,module,exports) {
+},{"../../utils/Class":10,"../CubicBezierCurve":202,"../EllipseCurve":198,"../../gameobjects/GameObjectFactory":206,"../LineCurve":199,"./MoveTo":396,"../QuadraticBezierCurve":200,"../../geom/rectangle/Rectangle":64,"../SplineCurve":201,"../../math/Vector2":96}],77:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30413,7 +30413,7 @@ module.exports = {
     Spline: require('./SplineCurve')
 };
 
-},{"./path/Path":158,"./CubicBezierCurve":152,"./Curve":153,"./EllipseCurve":154,"./LineCurve":155,"./QuadraticBezierCurve":156,"./SplineCurve":157}],82:[function(require,module,exports) {
+},{"./path/Path":282,"./CubicBezierCurve":202,"./Curve":196,"./EllipseCurve":198,"./LineCurve":199,"./QuadraticBezierCurve":200,"./SplineCurve":201}],197:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30517,7 +30517,7 @@ PluginManager.register('DataManagerPlugin', DataManagerPlugin, 'data');
 
 module.exports = DataManagerPlugin;
 
-},{"../utils/Class":16,"./DataManager":55,"../boot/PluginManager":60}],36:[function(require,module,exports) {
+},{"../utils/Class":10,"./DataManager":21,"../boot/PluginManager":20}],75:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30535,7 +30535,7 @@ module.exports = {
 
 };
 
-},{"./DataManager":55,"./DataManagerPlugin":82}],306:[function(require,module,exports) {
+},{"./DataManager":21,"./DataManagerPlugin":197}],908:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30561,7 +30561,7 @@ module.exports = {
 
 };
 
-},{"./BottomCenter":722,"./BottomLeft":724,"./BottomRight":723,"./Center":725,"./LeftCenter":726,"./QuickSet":277,"./RightCenter":727,"./TopCenter":728,"./TopLeft":729,"./TopRight":730}],759:[function(require,module,exports) {
+},{"./BottomCenter":484,"./BottomLeft":477,"./BottomRight":478,"./Center":479,"./LeftCenter":480,"./QuickSet":391,"./RightCenter":481,"./TopCenter":482,"./TopLeft":483,"./TopRight":485}],938:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30599,7 +30599,7 @@ var BottomCenter = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = BottomCenter;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetCenterX":708,"../../bounds/SetCenterX":715,"../../bounds/SetTop":718}],760:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetCenterX":560,"../../bounds/SetCenterX":563,"../../bounds/SetTop":564}],933:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30637,7 +30637,7 @@ var BottomLeft = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = BottomLeft;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetLeft":709,"../../bounds/SetLeft":717,"../../bounds/SetTop":718}],761:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetLeft":553,"../../bounds/SetLeft":558,"../../bounds/SetTop":564}],934:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30675,7 +30675,7 @@ var BottomRight = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = BottomRight;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetRight":712,"../../bounds/SetRight":719,"../../bounds/SetTop":718}],762:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetRight":555,"../../bounds/SetRight":559,"../../bounds/SetTop":564}],935:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30713,7 +30713,7 @@ var LeftBottom = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = LeftBottom;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetLeft":709,"../../bounds/SetBottom":714,"../../bounds/SetRight":719}],763:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetLeft":553,"../../bounds/SetBottom":556,"../../bounds/SetRight":559}],936:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30751,7 +30751,7 @@ var LeftCenter = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = LeftCenter;
 
-},{"../../bounds/GetCenterY":707,"../../bounds/GetLeft":709,"../../bounds/SetCenterY":716,"../../bounds/SetRight":719}],764:[function(require,module,exports) {
+},{"../../bounds/GetCenterY":562,"../../bounds/GetLeft":553,"../../bounds/SetCenterY":561,"../../bounds/SetRight":559}],937:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30789,7 +30789,7 @@ var LeftTop = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = LeftTop;
 
-},{"../../bounds/GetLeft":709,"../../bounds/GetTop":713,"../../bounds/SetRight":719,"../../bounds/SetTop":718}],765:[function(require,module,exports) {
+},{"../../bounds/GetLeft":553,"../../bounds/GetTop":565,"../../bounds/SetRight":559,"../../bounds/SetTop":564}],939:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30827,7 +30827,7 @@ var RightBottom = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = RightBottom;
 
-},{"../../bounds/GetBottom":706,"../../bounds/GetRight":712,"../../bounds/SetBottom":714,"../../bounds/SetLeft":717}],766:[function(require,module,exports) {
+},{"../../bounds/GetBottom":554,"../../bounds/GetRight":555,"../../bounds/SetBottom":556,"../../bounds/SetLeft":558}],940:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30865,7 +30865,7 @@ var RightCenter = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = RightCenter;
 
-},{"../../bounds/GetCenterY":707,"../../bounds/GetRight":712,"../../bounds/SetCenterY":716,"../../bounds/SetLeft":717}],767:[function(require,module,exports) {
+},{"../../bounds/GetCenterY":562,"../../bounds/GetRight":555,"../../bounds/SetCenterY":561,"../../bounds/SetLeft":558}],941:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30903,7 +30903,7 @@ var RightTop = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = RightTop;
 
-},{"../../bounds/GetRight":712,"../../bounds/GetTop":713,"../../bounds/SetLeft":717,"../../bounds/SetTop":718}],768:[function(require,module,exports) {
+},{"../../bounds/GetRight":555,"../../bounds/GetTop":565,"../../bounds/SetLeft":558,"../../bounds/SetTop":564}],942:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30941,7 +30941,7 @@ var TopCenter = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = TopCenter;
 
-},{"../../bounds/GetCenterX":708,"../../bounds/GetTop":713,"../../bounds/SetBottom":714,"../../bounds/SetCenterX":715}],769:[function(require,module,exports) {
+},{"../../bounds/GetCenterX":560,"../../bounds/GetTop":565,"../../bounds/SetBottom":556,"../../bounds/SetCenterX":563}],943:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -30979,7 +30979,7 @@ var TopLeft = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = TopLeft;
 
-},{"../../bounds/GetLeft":709,"../../bounds/GetTop":713,"../../bounds/SetBottom":714,"../../bounds/SetLeft":717}],770:[function(require,module,exports) {
+},{"../../bounds/GetLeft":553,"../../bounds/GetTop":565,"../../bounds/SetBottom":556,"../../bounds/SetLeft":558}],944:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31017,7 +31017,7 @@ var TopRight = function (gameObject, alignTo, offsetX, offsetY)
 
 module.exports = TopRight;
 
-},{"../../bounds/GetRight":712,"../../bounds/GetTop":713,"../../bounds/SetBottom":714,"../../bounds/SetRight":719}],307:[function(require,module,exports) {
+},{"../../bounds/GetRight":555,"../../bounds/GetTop":565,"../../bounds/SetBottom":556,"../../bounds/SetRight":559}],911:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31045,7 +31045,7 @@ module.exports = {
 
 };
 
-},{"./BottomCenter":759,"./BottomLeft":760,"./BottomRight":761,"./LeftBottom":762,"./LeftCenter":763,"./LeftTop":764,"./RightBottom":765,"./RightCenter":766,"./RightTop":767,"./TopCenter":768,"./TopLeft":769,"./TopRight":770}],221:[function(require,module,exports) {
+},{"./BottomCenter":938,"./BottomLeft":933,"./BottomRight":934,"./LeftBottom":935,"./LeftCenter":936,"./LeftTop":937,"./RightBottom":939,"./RightCenter":940,"./RightTop":941,"./TopCenter":942,"./TopLeft":943,"./TopRight":944}],497:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31071,7 +31071,7 @@ Align = Extend(false, Align, CONST);
 
 module.exports = Align;
 
-},{"./const":275,"../../utils/object/Extend":20,"./in":306,"./to":307}],710:[function(require,module,exports) {
+},{"./const":349,"../../utils/object/Extend":14,"./in":908,"./to":911}],575:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31097,7 +31097,7 @@ var GetOffsetX = function (gameObject)
 
 module.exports = GetOffsetX;
 
-},{}],711:[function(require,module,exports) {
+},{}],576:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31123,7 +31123,7 @@ var GetOffsetY = function (gameObject)
 
 module.exports = GetOffsetY;
 
-},{}],222:[function(require,module,exports) {
+},{}],495:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31154,7 +31154,7 @@ module.exports = {
     
 };
 
-},{"./CenterOn":705,"./GetBottom":706,"./GetCenterX":708,"./GetCenterY":707,"./GetLeft":709,"./GetOffsetX":710,"./GetOffsetY":711,"./GetRight":712,"./GetTop":713,"./SetBottom":714,"./SetCenterX":715,"./SetCenterY":716,"./SetLeft":717,"./SetRight":719,"./SetTop":718}],237:[function(require,module,exports) {
+},{"./CenterOn":557,"./GetBottom":554,"./GetCenterX":560,"./GetCenterY":562,"./GetLeft":553,"./GetOffsetX":575,"./GetOffsetY":576,"./GetRight":555,"./GetTop":565,"./SetBottom":556,"./SetCenterX":563,"./SetCenterY":561,"./SetLeft":558,"./SetRight":559,"./SetTop":564}],63:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31213,7 +31213,7 @@ var CanvasInterpolation = {
 
 module.exports = CanvasInterpolation;
 
-},{}],308:[function(require,module,exports) {
+},{}],571:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31244,7 +31244,7 @@ var TouchAction = function (canvas, value)
 
 module.exports = TouchAction;
 
-},{}],309:[function(require,module,exports) {
+},{}],572:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31287,7 +31287,7 @@ var UserSelect = function (canvas, value)
 
 module.exports = UserSelect;
 
-},{}],223:[function(require,module,exports) {
+},{}],494:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31308,7 +31308,7 @@ module.exports = {
     
 };
 
-},{"./CanvasInterpolation":237,"./CanvasPool":66,"./Smoothing":271,"./TouchAction":308,"./UserSelect":309}],310:[function(require,module,exports) {
+},{"./CanvasInterpolation":63,"./CanvasPool":34,"./Smoothing":68,"./TouchAction":571,"./UserSelect":572}],579:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31344,7 +31344,7 @@ var ColorToRGBA = function (color)
 
 module.exports = ColorToRGBA;
 
-},{}],311:[function(require,module,exports) {
+},{}],580:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31370,7 +31370,7 @@ var ComponentToHex = function (color)
 
 module.exports = ComponentToHex;
 
-},{}],318:[function(require,module,exports) {
+},{}],584:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31422,7 +31422,7 @@ var HueToComponent = function (p, q, t)
 
 module.export = HueToComponent;
 
-},{}],315:[function(require,module,exports) {
+},{}],581:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31468,7 +31468,7 @@ var HSLToColor = function (h, s, l)
 
 module.exports = HSLToColor;
 
-},{"./Color":262,"./HueToComponent":318}],317:[function(require,module,exports) {
+},{"./Color":67,"./HueToComponent":584}],583:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31548,7 +31548,7 @@ var HSVToRGB = function (h, s, v)
 
 module.exports = HSVToRGB;
 
-},{"./GetColor":312}],316:[function(require,module,exports) {
+},{"./GetColor":123}],582:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31585,7 +31585,7 @@ var HSVColorWheel = function (s, v)
 
 module.exports = HSVColorWheel;
 
-},{"./HSVToRGB":317}],175:[function(require,module,exports) {
+},{"./HSVToRGB":583}],237:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31611,7 +31611,7 @@ var Linear = function (p0, p1, t)
 
 module.exports = Linear;
 
-},{}],321:[function(require,module,exports) {
+},{}],585:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31710,7 +31710,7 @@ module.exports = {
 
 };
 
-},{"../../math/Linear":175}],162:[function(require,module,exports) {
+},{"../../math/Linear":237}],225:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31735,7 +31735,7 @@ var Between = function (min, max)
 
 module.exports = Between;
 
-},{}],323:[function(require,module,exports) {
+},{}],586:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31767,7 +31767,7 @@ var RandomRGB = function (min, max)
 
 module.exports = RandomRGB;
 
-},{"../../math/Between":162,"./Color":262}],325:[function(require,module,exports) {
+},{"../../math/Between":225,"./Color":67}],587:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31835,7 +31835,7 @@ var RGBToHSV = function (r, g, b)
 
 module.exports = RGBToHSV;
 
-},{}],326:[function(require,module,exports) {
+},{}],588:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31875,7 +31875,7 @@ var RGBToString = function (r, g, b, a, prefix)
 
 module.exports = RGBToString;
 
-},{"./ComponentToHex":311}],224:[function(require,module,exports) {
+},{"./ComponentToHex":580}],498:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -31926,7 +31926,7 @@ Color.ValueToColor = require('./ValueToColor');
 
 module.exports = Color;
 
-},{"./Color":262,"./ColorToRGBA":310,"./ComponentToHex":311,"./GetColor":312,"./GetColor32":313,"./HexStringToColor":314,"./HSLToColor":315,"./HSVColorWheel":316,"./HSVToRGB":317,"./HueToComponent":318,"./IntegerToColor":319,"./IntegerToRGB":320,"./Interpolate":321,"./ObjectToColor":322,"./RandomRGB":323,"./RGBStringToColor":324,"./RGBToHSV":325,"./RGBToString":326,"./ValueToColor":231}],327:[function(require,module,exports) {
+},{"./Color":67,"./ColorToRGBA":579,"./ComponentToHex":580,"./GetColor":123,"./GetColor32":124,"./HexStringToColor":106,"./HSLToColor":581,"./HSVColorWheel":582,"./HSVToRGB":583,"./HueToComponent":584,"./IntegerToColor":107,"./IntegerToRGB":340,"./Interpolate":585,"./ObjectToColor":108,"./RandomRGB":586,"./RGBStringToColor":109,"./RGBToHSV":587,"./RGBToString":588,"./ValueToColor":55}],577:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32126,7 +32126,7 @@ var BitmapMask = new Class({
 
 module.exports = BitmapMask;
 
-},{"../../utils/Class":16}],328:[function(require,module,exports) {
+},{"../../utils/Class":10}],578:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32266,7 +32266,7 @@ var GeometryMask = new Class({
 
 module.exports = GeometryMask;
 
-},{"../../utils/Class":16}],225:[function(require,module,exports) {
+},{"../../utils/Class":10}],496:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32284,7 +32284,7 @@ module.exports = {
 
 };
 
-},{"./BitmapMask":327,"./GeometryMask":328}],27:[function(require,module,exports) {
+},{"./BitmapMask":577,"./GeometryMask":578}],76:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32305,7 +32305,7 @@ module.exports = {
   
 };
 
-},{"./align":221,"./bounds":222,"./canvas":223,"./color":224,"./mask":225}],50:[function(require,module,exports) {
+},{"./align":497,"./bounds":495,"./canvas":494,"./color":498,"./mask":496}],18:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32363,7 +32363,7 @@ var AddToDOM = function (element, parent, overflowHidden)
 
 module.exports = AddToDOM;
 
-},{}],540:[function(require,module,exports) {
+},{}],94:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -32550,7 +32550,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],258:[function(require,module,exports) {
+},{}],45:[function(require,module,exports) {
 var process = require("process");
 /**
  * @author       Richard Davey <rich@photonstorm.com>
@@ -32735,7 +32735,7 @@ function init ()
 
 module.exports = init();
 
-},{"process":540}],57:[function(require,module,exports) {
+},{"process":94}],23:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32794,7 +32794,7 @@ var DOMContentLoaded = function (callback)
 
 module.exports = DOMContentLoaded;
 
-},{"../device/OS":258}],70:[function(require,module,exports) {
+},{"../device/OS":45}],211:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32847,7 +32847,7 @@ var ParseXML = function (data)
 
 module.exports = ParseXML;
 
-},{}],71:[function(require,module,exports) {
+},{}],212:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -32872,7 +32872,7 @@ var RemoveFromDOM = function (element)
 
 module.exports = RemoveFromDOM;
 
-},{}],72:[function(require,module,exports) {
+},{}],52:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33065,7 +33065,7 @@ var RequestAnimationFrame = new Class({
 
 module.exports = RequestAnimationFrame;
 
-},{"../utils/Class":16,"../utils/NOOP":59}],28:[function(require,module,exports) {
+},{"../utils/Class":10,"../utils/NOOP":25}],79:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33086,7 +33086,7 @@ module.exports = {
 
 };
 
-},{"./AddToDOM":50,"./DOMContentLoaded":57,"./ParseXML":70,"./RemoveFromDOM":71,"./RequestAnimationFrame":72}],17:[function(require,module,exports) {
+},{"./AddToDOM":18,"./DOMContentLoaded":23,"./ParseXML":211,"./RemoveFromDOM":212,"./RequestAnimationFrame":52}],11:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33269,7 +33269,7 @@ PluginManager.register('EventEmitter', EventEmitter, 'events');
 
 module.exports = EventEmitter;
 
-},{"../utils/Class":16,"eventemitter3":67,"../boot/PluginManager":60}],218:[function(require,module,exports) {
+},{"../utils/Class":10,"eventemitter3":36,"../boot/PluginManager":20}],37:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33359,7 +33359,7 @@ var Plugins = {
 
 module.exports = Plugins;
 
-},{}],53:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33620,7 +33620,7 @@ var Config = new Class({
 
 module.exports = Config;
 
-},{"../utils/Class":16,"../const":15,"../utils/object/GetValue":230,"../math/const":159,"../utils/NOOP":59,"../plugins":218,"../display/color/ValueToColor":231}],299:[function(require,module,exports) {
+},{"../utils/Class":10,"../const":9,"../utils/object/GetValue":53,"../math/const":44,"../utils/NOOP":25,"../plugins":37,"../display/color/ValueToColor":55}],98:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33727,7 +33727,7 @@ function init ()
 
 module.exports = init();
 
-},{"./OS":258}],235:[function(require,module,exports) {
+},{"./OS":45}],50:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33921,7 +33921,7 @@ function init ()
 
 module.exports = init();
 
-},{"./OS":258,"./Browser":299,"../display/canvas/CanvasPool":66}],386:[function(require,module,exports) {
+},{"./OS":45,"./Browser":98,"../display/canvas/CanvasPool":34}],131:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -33973,7 +33973,7 @@ module.exports = function (configRoundPixels)
     return BlitImage;
 };
 
-},{}],385:[function(require,module,exports) {
+},{}],119:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34008,7 +34008,7 @@ var CanvasSnapshot = function (canvas, type, encoderOptions)
 
 module.exports = CanvasSnapshot;
 
-},{}],387:[function(require,module,exports) {
+},{}],132:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34119,7 +34119,7 @@ module.exports = function (configRoundPixels)
     return DrawImage;
 };
 
-},{}],304:[function(require,module,exports) {
+},{}],348:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34230,7 +34230,7 @@ function init ()
 
 module.exports = init();
 
-},{"../display/canvas/CanvasPool":66}],388:[function(require,module,exports) {
+},{"../display/canvas/CanvasPool":34}],133:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34276,7 +34276,7 @@ var GetBlendModes = function ()
 
 module.exports = GetBlendModes;
 
-},{"../../BlendModes":46,"../../../device/CanvasFeatures":304}],238:[function(require,module,exports) {
+},{"../../BlendModes":16,"../../../device/CanvasFeatures":348}],65:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34802,7 +34802,7 @@ var CanvasRenderer = new Class({
 
 module.exports = CanvasRenderer;
 
-},{"./utils/BlitImage":386,"../snapshot/CanvasSnapshot":385,"../../utils/Class":16,"../../const":15,"./utils/DrawImage":387,"./utils/GetBlendModes":388,"../ScaleModes":47,"../../display/canvas/Smoothing":271}],389:[function(require,module,exports) {
+},{"./utils/BlitImage":131,"../snapshot/CanvasSnapshot":119,"../../utils/Class":10,"../../const":9,"./utils/DrawImage":132,"./utils/GetBlendModes":133,"../ScaleModes":15,"../../display/canvas/Smoothing":68}],120:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34828,7 +34828,7 @@ var IsSizePowerOfTwo = function (width, height)
 
 module.exports = IsSizePowerOfTwo;
 
-},{}],390:[function(require,module,exports) {
+},{}],121:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -34955,7 +34955,7 @@ module.exports = {
 
 };
 
-},{}],391:[function(require,module,exports) {
+},{}],122:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -35020,11 +35020,11 @@ var WebGLSnapshot = function (sourceCanvas, type, encoderOptions)
 
 module.exports = WebGLSnapshot;
 
-},{}],809:[function(require,module,exports) {
+},{}],377:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_BITMAP_MASK_FS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nuniform vec2 uResolution;\nuniform sampler2D uMainSampler;\nuniform sampler2D uMaskSampler;\nuniform bool uInvertMaskAlpha;\n\nvoid main()\n{\n    vec2 uv = gl_FragCoord.xy / uResolution;\n    vec4 mainColor = texture2D(uMainSampler, uv);\n    vec4 maskColor = texture2D(uMaskSampler, uv);\n    float alpha = mainColor.a;\n\n    if (!uInvertMaskAlpha)\n    {\n        alpha *= (maskColor.a);\n    }\n    else\n    {\n        alpha *= (1.0 - maskColor.a);\n    }\n    \n    gl_FragColor = vec4(mainColor.rgb * alpha, alpha);\n}\n";
-},{}],810:[function(require,module,exports) {
+},{}],379:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_BITMAP_MASK_VS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nattribute vec2 inPosition;\n\nvoid main()\n{\n    gl_Position = vec4(inPosition, 0.0, 1.0);\n}\n";
-},{}],811:[function(require,module,exports) {
+},{}],376:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -35647,7 +35647,7 @@ var WebGLPipeline = new Class({
 
 module.exports = WebGLPipeline;
 
-},{"../../utils/Class":16,"./Utils":390}],422:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Utils":121}],134:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -35853,7 +35853,7 @@ var BitmapMaskPipeline = new Class({
 
 module.exports = BitmapMaskPipeline;
 
-},{"../../../utils/Class":16,"../shaders/BitmapMask.frag":809,"../shaders/BitmapMask.vert":810,"../WebGLPipeline":811}],843:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../shaders/BitmapMask.frag":377,"../shaders/BitmapMask.vert":379,"../WebGLPipeline":376}],383:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -35888,7 +35888,7 @@ module.exports = {
 
 };
 
-},{}],813:[function(require,module,exports) {
+},{}],384:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -36558,7 +36558,7 @@ earcut.flatten = function (data) {
     }
     return result;
 };
-},{}],847:[function(require,module,exports) {
+},{}],412:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -37057,11 +37057,11 @@ var ModelViewProjection = {
 
 module.exports = ModelViewProjection;
 
-},{}],844:[function(require,module,exports) {
+},{}],385:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_FLAT_TINT_FS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nvarying vec4 outTint;\n\nvoid main() {\n    gl_FragColor = vec4(outTint.rgb * outTint.a, outTint.a);\n}\n";
-},{}],845:[function(require,module,exports) {
+},{}],386:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_FLAT_TINT_VS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nuniform mat4 uProjectionMatrix;\nuniform mat4 uViewMatrix;\nuniform mat4 uModelMatrix;\n\nattribute vec2 inPosition;\nattribute vec4 inTint;\n\nvarying vec4 outTint;\n\nvoid main () {\n    gl_Position = uProjectionMatrix * uViewMatrix * uModelMatrix * vec4(inPosition, 1.0, 1.0);\n    outTint = inTint;\n}\n";
-},{}],423:[function(require,module,exports) {
+},{}],135:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -38286,13 +38286,13 @@ var FlatTintPipeline = new Class({
 
 module.exports = FlatTintPipeline;
 
-},{"../../../utils/Class":16,"../../../gameobjects/graphics/Commands":843,"../../../geom/polygon/Earcut":813,"./components/ModelViewProjection":847,"../shaders/FlatTint.frag":844,"../shaders/FlatTint.vert":845,"../Utils":390,"../WebGLPipeline":811}],812:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../../../gameobjects/graphics/Commands":383,"../../../geom/polygon/Earcut":384,"./components/ModelViewProjection":412,"../shaders/FlatTint.frag":385,"../shaders/FlatTint.vert":386,"../Utils":121,"../WebGLPipeline":376}],387:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_FORWARD_DIFFUSE_FS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nstruct Light\n{\n    vec2 position;\n    vec3 color;\n    float intensity;\n    float radius;\n};\n\nconst int kMaxLights = %LIGHT_COUNT%;\n\nuniform vec4 uCamera; /* x, y, rotation, zoom */\nuniform vec2 uResolution;\nuniform sampler2D uMainSampler;\nuniform sampler2D uNormSampler;\nuniform vec3 uAmbientLightColor;\nuniform Light uLights[kMaxLights];\n\nvarying vec2 outTexCoord;\nvarying vec4 outTint;\n\nvoid main()\n{\n    vec3 finalColor = vec3(0.0, 0.0, 0.0);\n    vec4 color = texture2D(uMainSampler, outTexCoord) * vec4(outTint.rgb * outTint.a, outTint.a);\n    vec3 normalMap = texture2D(uNormSampler, outTexCoord).rgb;\n    vec3 normal = normalize(vec3(normalMap * 2.0 - 1.0));\n    vec2 res = vec2(min(uResolution.x, uResolution.y)) * uCamera.w;\n\n    for (int index = 0; index < kMaxLights; ++index)\n    {\n        Light light = uLights[index];\n        vec3 lightDir = vec3((light.position.xy / res) - (gl_FragCoord.xy / res), 0.1);\n        vec3 lightNormal = normalize(lightDir);\n        float distToSurf = length(lightDir) * uCamera.w;\n        float diffuseFactor = max(dot(normal, lightNormal), 0.0);\n        float radius = (light.radius / res.x * uCamera.w) * uCamera.w;\n        float attenuation = clamp(1.0 - distToSurf * distToSurf / (radius * radius), 0.0, 1.0);\n        vec3 diffuse = light.color * diffuseFactor;\n        finalColor += (attenuation * diffuse) * light.intensity;\n    }\n\n    vec4 colorOutput = vec4(uAmbientLightColor + finalColor, 1.0);\n    gl_FragColor = color * vec4(colorOutput.rgb * colorOutput.a, colorOutput.a);\n\n}\n";
-},{}],869:[function(require,module,exports) {
+},{}],389:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_TEXTURE_TINT_FS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nuniform sampler2D uMainSampler;\n\nvarying vec2 outTexCoord;\nvarying vec4 outTint;\n\nvoid main() \n{\n    vec4 texel = texture2D(uMainSampler, outTexCoord);\n    texel *= vec4(outTint.rgb * outTint.a, outTint.a);\n    gl_FragColor = texel;\n}\n";
-},{}],870:[function(require,module,exports) {
+},{}],390:[function(require,module,exports) {
 module.exports="#define SHADER_NAME PHASER_TEXTURE_TINT_VS\n\nprecision mediump float;\n#define GLSLIFY 1\n\nuniform mat4 uProjectionMatrix;\nuniform mat4 uViewMatrix;\nuniform mat4 uModelMatrix;\n\nattribute vec2 inPosition;\nattribute vec2 inTexCoord;\nattribute vec4 inTint;\n\nvarying vec2 outTexCoord;\nvarying vec4 outTint;\n\nvoid main () \n{\n    gl_Position = uProjectionMatrix * uViewMatrix * uModelMatrix * vec4(inPosition, 1.0, 1.0);\n    outTexCoord = inTexCoord;\n    outTint = inTint;\n}\n\n";
-},{}],425:[function(require,module,exports) {
+},{}],137:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -40120,7 +40120,7 @@ var TextureTintPipeline = new Class({
 
 module.exports = TextureTintPipeline;
 
-},{"../../../utils/Class":16,"./components/ModelViewProjection":847,"../shaders/TextureTint.frag":869,"../shaders/TextureTint.vert":870,"../Utils":390,"../WebGLPipeline":811}],424:[function(require,module,exports) {
+},{"../../../utils/Class":10,"./components/ModelViewProjection":412,"../shaders/TextureTint.frag":389,"../shaders/TextureTint.vert":390,"../Utils":121,"../WebGLPipeline":376}],136:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -40518,7 +40518,7 @@ ForwardDiffuseLightPipeline.LIGHT_COUNT = LIGHT_COUNT;
 
 module.exports = ForwardDiffuseLightPipeline;
 
-},{"../../../utils/Class":16,"../shaders/ForwardDiffuse.frag":812,"./TextureTintPipeline":425}],239:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../shaders/ForwardDiffuse.frag":387,"./TextureTintPipeline":137}],66:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -42444,7 +42444,7 @@ var WebGLRenderer = new Class({
 
 module.exports = WebGLRenderer;
 
-},{"../../utils/Class":16,"../../const":15,"../../math/pow2/IsSizePowerOfTwo":389,"./Utils":390,"../snapshot/WebGLSnapshot":391,"./pipelines/BitmapMaskPipeline":422,"./pipelines/FlatTintPipeline":423,"./pipelines/ForwardDiffuseLightPipeline":424,"./pipelines/TextureTintPipeline":425}],54:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../const":9,"../../math/pow2/IsSizePowerOfTwo":120,"./Utils":121,"../snapshot/WebGLSnapshot":122,"./pipelines/BitmapMaskPipeline":134,"./pipelines/FlatTintPipeline":135,"./pipelines/ForwardDiffuseLightPipeline":136,"./pipelines/TextureTintPipeline":137}],30:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -42579,7 +42579,7 @@ var CreateRenderer = function (game)
 
 module.exports = CreateRenderer;
 
-},{"../display/canvas/CanvasInterpolation":237,"../display/canvas/CanvasPool":66,"../const":15,"../device/Features":235,"../renderer/canvas/CanvasRenderer":238,"../renderer/webgl/WebGLRenderer":239}],56:[function(require,module,exports) {
+},{"../display/canvas/CanvasInterpolation":63,"../display/canvas/CanvasPool":34,"../const":9,"../device/Features":50,"../renderer/canvas/CanvasRenderer":65,"../renderer/webgl/WebGLRenderer":66}],31:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -42703,7 +42703,7 @@ var DebugHeader = function (game)
 
 module.exports = DebugHeader;
 
-},{"../const":15}],300:[function(require,module,exports) {
+},{"../const":9}],359:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -42779,7 +42779,7 @@ function init ()
 
 module.exports = init();
 
-},{"./OS":258,"./Browser":299}],301:[function(require,module,exports) {
+},{"./OS":45,"./Browser":98}],362:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -42901,7 +42901,7 @@ function init ()
 
 module.exports = init();
 
-},{"./Browser":299}],302:[function(require,module,exports) {
+},{"./Browser":98}],360:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -42983,7 +42983,7 @@ function init ()
 
 module.exports = init();
 
-},{}],303:[function(require,module,exports) {
+},{}],361:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -43078,7 +43078,7 @@ function init ()
 
 module.exports = init();
 
-},{}],217:[function(require,module,exports) {
+},{}],281:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -43121,7 +43121,7 @@ module.exports = {
 
 };
 
-},{"./OS":258,"./Browser":299,"./Features":235,"./Input":300,"./Audio":301,"./Video":302,"./Fullscreen":303,"./CanvasFeatures":304}],878:[function(require,module,exports) {
+},{"./OS":45,"./Browser":98,"./Features":50,"./Input":359,"./Audio":362,"./Video":360,"./Fullscreen":361,"./CanvasFeatures":348}],342:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -43225,7 +43225,7 @@ var Axis = new Class({
 
 module.exports = Axis;
 
-},{"../../utils/Class":16}],879:[function(require,module,exports) {
+},{"../../utils/Class":10}],341:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -43341,7 +43341,7 @@ var Button = new Class({
 
 module.exports = Button;
 
-},{"../../utils/Class":16}],645:[function(require,module,exports) {
+},{"../../utils/Class":10}],113:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -43496,7 +43496,7 @@ var Gamepad = new Class({
 
 module.exports = Gamepad;
 
-},{"./Axis":878,"./Button":879,"../../utils/Class":16}],263:[function(require,module,exports) {
+},{"./Axis":342,"./Button":341,"../../utils/Class":10}],59:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -43888,7 +43888,7 @@ var GamepadManager = new Class({
 
 module.exports = GamepadManager;
 
-},{"../../utils/Class":16,"./Gamepad":645}],629:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Gamepad":113}],125:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -44082,7 +44082,7 @@ var Key = new Class({
 
 module.exports = Key;
 
-},{"../../../utils/Class":16}],630:[function(require,module,exports) {
+},{"../../../utils/Class":10}],126:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -44653,7 +44653,7 @@ module.exports = {
 
 };
 
-},{}],996:[function(require,module,exports) {
+},{}],486:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -44690,7 +44690,7 @@ var AdvanceKeyCombo = function (event, combo)
 
 module.exports = AdvanceKeyCombo;
 
-},{}],890:[function(require,module,exports) {
+},{}],393:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -44766,7 +44766,7 @@ var ProcessKeyCombo = function (event, combo)
 
 module.exports = ProcessKeyCombo;
 
-},{"./AdvanceKeyCombo":996}],891:[function(require,module,exports) {
+},{"./AdvanceKeyCombo":486}],394:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -44796,7 +44796,7 @@ var ResetKeyCombo = function (combo)
 
 module.exports = ResetKeyCombo;
 
-},{}],632:[function(require,module,exports) {
+},{}],130:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -45077,7 +45077,7 @@ var KeyCombo = new Class({
 
 module.exports = KeyCombo;
 
-},{"../../../utils/Class":16,"../../../utils/object/GetFastValue":268,"./ProcessKeyCombo":890,"./ResetKeyCombo":891}],631:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../../../utils/object/GetFastValue":102,"./ProcessKeyCombo":393,"./ResetKeyCombo":394}],127:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -45095,7 +45095,7 @@ for (var key in KeyCodes)
 
 module.exports = KeyMap;
 
-},{"./KeyCodes":630}],633:[function(require,module,exports) {
+},{"./KeyCodes":126}],128:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -45150,7 +45150,7 @@ var ProcessKeyDown = function (key, event)
 
 module.exports = ProcessKeyDown;
 
-},{}],634:[function(require,module,exports) {
+},{}],129:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -45196,7 +45196,7 @@ var ProcessKeyUp = function (key, event)
 
 module.exports = ProcessKeyUp;
 
-},{}],264:[function(require,module,exports) {
+},{}],60:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -45623,7 +45623,7 @@ var KeyboardManager = new Class({
 
 module.exports = KeyboardManager;
 
-},{"../../utils/Class":16,"eventemitter3":67,"./keys/Key":629,"./keys/KeyCodes":630,"./combo/KeyCombo":632,"./keys/KeyMap":631,"./keys/ProcessKeyDown":633,"./keys/ProcessKeyUp":634}],265:[function(require,module,exports) {
+},{"../../utils/Class":10,"eventemitter3":36,"./keys/Key":125,"./keys/KeyCodes":126,"./combo/KeyCombo":130,"./keys/KeyMap":127,"./keys/ProcessKeyDown":128,"./keys/ProcessKeyUp":129}],61:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -45925,7 +45925,7 @@ var MouseManager = new Class({
 
 module.exports = MouseManager;
 
-},{"../../utils/Class":16,"../../device/Features":235}],261:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../device/Features":50}],46:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -46560,7 +46560,7 @@ var Pointer = new Class({
 
 module.exports = Pointer;
 
-},{"../utils/Class":16,"../math/Vector2":194}],267:[function(require,module,exports) {
+},{"../utils/Class":10,"../math/Vector2":96}],62:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -46759,7 +46759,7 @@ var TouchManager = new Class({
 
 module.exports = TouchManager;
 
-},{"../../utils/Class":16}],191:[function(require,module,exports) {
+},{"../../utils/Class":10}],47:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -46821,7 +46821,7 @@ var TransformXY = function (x, y, positionX, positionY, rotation, scaleX, scaleY
 
 module.exports = TransformXY;
 
-},{"./Vector2":194}],58:[function(require,module,exports) {
+},{"./Vector2":96}],24:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47402,7 +47402,7 @@ var InputManager = new Class({
 
 module.exports = InputManager;
 
-},{"../utils/Class":16,"eventemitter3":67,"./gamepad/GamepadManager":263,"./keyboard/KeyboardManager":264,"./mouse/MouseManager":265,"./Pointer":261,"../geom/rectangle/Rectangle":266,"./touch/TouchManager":267,"../math/TransformXY":191}],201:[function(require,module,exports) {
+},{"../utils/Class":10,"eventemitter3":36,"./gamepad/GamepadManager":59,"./keyboard/KeyboardManager":60,"./mouse/MouseManager":61,"./Pointer":46,"../geom/rectangle/Rectangle":64,"./touch/TouchManager":62,"../math/TransformXY":47}],38:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47504,7 +47504,7 @@ module.exports = {
 
 };
 
-},{}],305:[function(require,module,exports) {
+},{}],101:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47528,7 +47528,7 @@ var UppercaseFirst = function (str)
 
 module.exports = UppercaseFirst;
 
-},{}],219:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47586,7 +47586,7 @@ var GetPhysicsPlugins = function (sys)
 
 module.exports = GetPhysicsPlugins;
 
-},{"../utils/object/GetFastValue":268,"../utils/string/UppercaseFirst":305}],220:[function(require,module,exports) {
+},{"../utils/object/GetFastValue":102,"../utils/string/UppercaseFirst":101}],39:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47628,7 +47628,7 @@ var GetScenePlugins = function (sys)
 
 module.exports = GetScenePlugins;
 
-},{"../utils/object/GetFastValue":268}],298:[function(require,module,exports) {
+},{"../utils/object/GetFastValue":102}],95:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47672,7 +47672,7 @@ var InjectionMap = {
 
 module.exports = InjectionMap;
 
-},{}],203:[function(require,module,exports) {
+},{}],41:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -47783,7 +47783,7 @@ var Settings = {
 
 module.exports = Settings;
 
-},{"./const":201,"../utils/object/GetValue":230,"./InjectionMap":298}],48:[function(require,module,exports) {
+},{"./const":38,"../utils/object/GetValue":53,"./InjectionMap":95}],17:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -48346,7 +48346,7 @@ var Systems = new Class({
 
 module.exports = Systems;
 
-},{"../utils/Class":16,"./const":201,"./GetPhysicsPlugins":219,"./GetScenePlugins":220,"../plugins":218,"./Settings":203}],19:[function(require,module,exports) {
+},{"../utils/Class":10,"./const":38,"./GetPhysicsPlugins":40,"./GetScenePlugins":39,"../plugins":37,"./Settings":41}],13:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -48398,7 +48398,7 @@ var Scene = new Class({
 
 module.exports = Scene;
 
-},{"../utils/Class":16,"./Systems":48}],61:[function(require,module,exports) {
+},{"../utils/Class":10,"./Systems":17}],28:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -49792,7 +49792,7 @@ var SceneManager = new Class({
 
 module.exports = SceneManager;
 
-},{"../utils/Class":16,"./const":201,"../utils/object/GetValue":230,"../utils/NOOP":59,"./Scene":19,"./Systems":48}],89:[function(require,module,exports) {
+},{"../utils/Class":10,"./const":38,"../utils/object/GetValue":53,"../utils/NOOP":25,"./Scene":13,"./Systems":17}],105:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -50441,7 +50441,7 @@ var BaseSoundManager = new Class({
 
 module.exports = BaseSoundManager;
 
-},{"../utils/Class":16,"eventemitter3":67,"../utils/NOOP":59}],88:[function(require,module,exports) {
+},{"../utils/Class":10,"eventemitter3":36,"../utils/NOOP":25}],223:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -51107,7 +51107,7 @@ var BaseSound = new Class({
 
 module.exports = BaseSound;
 
-},{"../utils/Class":16,"eventemitter3":67,"../utils/object/Extend":20,"../utils/NOOP":59}],94:[function(require,module,exports) {
+},{"../utils/Class":10,"eventemitter3":36,"../utils/object/Extend":14,"../utils/NOOP":25}],110:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -51804,7 +51804,7 @@ Object.defineProperty(HTML5AudioSound.prototype, 'loop', {
 });
 module.exports = HTML5AudioSound;
 
-},{"../../utils/Class":16,"../BaseSound":88}],95:[function(require,module,exports) {
+},{"../../utils/Class":10,"../BaseSound":223}],56:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -52229,7 +52229,7 @@ var HTML5AudioSoundManager = new Class({
 
 module.exports = HTML5AudioSoundManager;
 
-},{"../BaseSoundManager":89,"../../utils/Class":16,"./HTML5AudioSound":94}],96:[function(require,module,exports) {
+},{"../BaseSoundManager":105,"../../utils/Class":10,"./HTML5AudioSound":110}],112:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -52333,7 +52333,7 @@ var NoAudioSound = new Class({
 });
 module.exports = NoAudioSound;
 
-},{"../BaseSound":88,"../../utils/Class":16,"eventemitter3":67,"../../utils/object/Extend":20}],97:[function(require,module,exports) {
+},{"../BaseSound":223,"../../utils/Class":10,"eventemitter3":36,"../../utils/object/Extend":14}],57:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -52447,7 +52447,7 @@ var NoAudioSoundManager = new Class({
 
 module.exports = NoAudioSoundManager;
 
-},{"../BaseSoundManager":89,"../../utils/Class":16,"eventemitter3":67,"./NoAudioSound":96,"../../utils/NOOP":59}],92:[function(require,module,exports) {
+},{"../BaseSoundManager":105,"../../utils/Class":10,"eventemitter3":36,"./NoAudioSound":112,"../../utils/NOOP":25}],111:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53113,7 +53113,7 @@ Object.defineProperty(WebAudioSound.prototype, 'loop', {
 });
 module.exports = WebAudioSound;
 
-},{"../../utils/Class":16,"../BaseSound":88}],93:[function(require,module,exports) {
+},{"../../utils/Class":10,"../BaseSound":223}],58:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
@@ -53420,7 +53420,7 @@ var WebAudioSoundManager = new Class({
 
 module.exports = WebAudioSoundManager;
 
-},{"../BaseSoundManager":89,"../../utils/Class":16,"./WebAudioSound":92}],62:[function(require,module,exports) {
+},{"../BaseSoundManager":105,"../../utils/Class":10,"./WebAudioSound":111}],27:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53464,7 +53464,7 @@ var SoundManagerCreator = {
 
 module.exports = SoundManagerCreator;
 
-},{"./html5/HTML5AudioSoundManager":95,"./noaudio/NoAudioSoundManager":97,"./webaudio/WebAudioSoundManager":93}],739:[function(require,module,exports) {
+},{"./html5/HTML5AudioSoundManager":56,"./noaudio/NoAudioSoundManager":57,"./webaudio/WebAudioSoundManager":58}],446:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53494,7 +53494,7 @@ var Canvas = function (texture, sourceIndex)
 
 module.exports = Canvas;
 
-},{}],740:[function(require,module,exports) {
+},{}],441:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53524,7 +53524,7 @@ var Image = function (texture, sourceIndex)
 
 module.exports = Image;
 
-},{}],771:[function(require,module,exports) {
+},{}],436:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53562,7 +53562,7 @@ var Clone = function (obj)
 
 module.exports = Clone;
 
-},{}],741:[function(require,module,exports) {
+},{}],445:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53664,7 +53664,7 @@ var JSONArray = function (texture, sourceIndex, json)
 
 module.exports = JSONArray;
 
-},{"../../utils/object/Clone":771}],742:[function(require,module,exports) {
+},{"../../utils/object/Clone":436}],442:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53758,7 +53758,7 @@ var JSONHash = function (texture, sourceIndex, json)
 
 module.exports = JSONHash;
 
-},{"../../utils/object/Clone":771}],743:[function(require,module,exports) {
+},{"../../utils/object/Clone":436}],443:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53828,7 +53828,7 @@ var Pyxel = function (texture, json)
 
 module.exports = Pyxel;
 
-},{}],744:[function(require,module,exports) {
+},{}],444:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -53937,7 +53937,7 @@ var SpriteSheet = function (texture, sourceIndex, x, y, width, height, config)
 
 module.exports = SpriteSheet;
 
-},{"../../utils/object/GetFastValue":268}],745:[function(require,module,exports) {
+},{"../../utils/object/GetFastValue":102}],448:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -54117,7 +54117,7 @@ var SpriteSheetFromAtlas = function (texture, frame, config)
 
 module.exports = SpriteSheetFromAtlas;
 
-},{"../../utils/object/GetFastValue":268}],746:[function(require,module,exports) {
+},{"../../utils/object/GetFastValue":102}],447:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -54197,7 +54197,7 @@ var StarlingXML = function (texture, xml)
 
 module.exports = StarlingXML;
 
-},{}],747:[function(require,module,exports) {
+},{}],449:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -54362,7 +54362,7 @@ TextureImporter:
   spritePackingTag: Asteroids
 */
 
-},{}],269:[function(require,module,exports) {
+},{}],392:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -54387,7 +54387,7 @@ module.exports = {
 
 };
 
-},{"./Canvas":739,"./Image":740,"./JSONArray":741,"./JSONHash":742,"./Pyxel":743,"./SpriteSheet":744,"./SpriteSheetFromAtlas":745,"./StarlingXML":746,"./UnityYAML":747}],702:[function(require,module,exports) {
+},{"./Canvas":446,"./Image":441,"./JSONArray":445,"./JSONHash":442,"./Pyxel":443,"./SpriteSheet":444,"./SpriteSheetFromAtlas":448,"./StarlingXML":447,"./UnityYAML":449}],99:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -54968,7 +54968,7 @@ var Frame = new Class({
 
 module.exports = Frame;
 
-},{"../utils/Class":16,"../utils/object/Extend":20}],703:[function(require,module,exports) {
+},{"../utils/Class":10,"../utils/object/Extend":14}],100:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -55164,7 +55164,7 @@ var TextureSource = new Class({
 
 module.exports = TextureSource;
 
-},{"../utils/Class":16,"../const":15,"../math/pow2/IsSizePowerOfTwo":389,"../renderer/ScaleModes":47}],260:[function(require,module,exports) {
+},{"../utils/Class":10,"../const":9,"../math/pow2/IsSizePowerOfTwo":120,"../renderer/ScaleModes":15}],51:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -55592,7 +55592,7 @@ var Texture = new Class({
 
 module.exports = Texture;
 
-},{"../utils/Class":16,"./Frame":702,"./TextureSource":703}],63:[function(require,module,exports) {
+},{"../utils/Class":10,"./Frame":99,"./TextureSource":100}],29:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -56383,7 +56383,7 @@ var TextureManager = new Class({
 
 module.exports = TextureManager;
 
-},{"../display/canvas/CanvasPool":66,"../utils/Class":16,"../display/color/Color":262,"eventemitter3":67,"../create/GenerateTexture":259,"../utils/object/GetValue":230,"./parsers":269,"./Texture":260}],64:[function(require,module,exports) {
+},{"../display/canvas/CanvasPool":34,"../utils/Class":10,"../display/color/Color":67,"eventemitter3":36,"../create/GenerateTexture":49,"../utils/object/GetValue":53,"./parsers":392,"./Texture":51}],33:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -57009,7 +57009,7 @@ var TimeStep = new Class({
 
 module.exports = TimeStep;
 
-},{"../utils/Class":16,"../utils/object/GetValue":230,"../utils/NOOP":59,"../dom/RequestAnimationFrame":72}],65:[function(require,module,exports) {
+},{"../utils/Class":10,"../utils/object/GetValue":53,"../utils/NOOP":25,"../dom/RequestAnimationFrame":52}],32:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -57119,7 +57119,7 @@ var VisibilityHandler = function (eventEmitter)
 
 module.exports = VisibilityHandler;
 
-},{}],18:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -57678,7 +57678,7 @@ var Game = new Class({
 
 module.exports = Game;
 
-},{"../dom/AddToDOM":50,"../animations/AnimationManager":51,"../cache/CacheManager":52,"../display/canvas/CanvasPool":66,"../utils/Class":16,"./Config":53,"./CreateRenderer":54,"../data/DataManager":55,"./DebugHeader":56,"../device":217,"../dom/DOMContentLoaded":57,"eventemitter3":67,"../input/InputManager":58,"../utils/NOOP":59,"./PluginManager":60,"../scene/SceneManager":61,"../sound/SoundManagerCreator":62,"../textures/TextureManager":63,"./TimeStep":64,"./VisibilityHandler":65}],83:[function(require,module,exports) {
+},{"../dom/AddToDOM":18,"../animations/AnimationManager":19,"../cache/CacheManager":26,"../display/canvas/CanvasPool":34,"../utils/Class":10,"./Config":22,"./CreateRenderer":30,"../data/DataManager":21,"./DebugHeader":31,"../device":281,"../dom/DOMContentLoaded":23,"eventemitter3":36,"../input/InputManager":24,"../utils/NOOP":25,"./PluginManager":20,"../scene/SceneManager":28,"../sound/SoundManagerCreator":27,"../textures/TextureManager":29,"./TimeStep":33,"./VisibilityHandler":32}],262:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -58596,7 +58596,7 @@ var List = new Class({
 
 module.exports = List;
 
-},{"../utils/Class":16}],900:[function(require,module,exports) {
+},{"../utils/Class":10}],366:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -58714,7 +58714,7 @@ else {
 }
 
 })();
-},{}],646:[function(require,module,exports) {
+},{}],204:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -58882,7 +58882,7 @@ PluginManager.register('DisplayList', DisplayList, 'displayList');
 
 module.exports = DisplayList;
 
-},{"../utils/Class":16,"../structs/List":83,"../boot/PluginManager":60,"../utils/array/StableSort":900}],292:[function(require,module,exports) {
+},{"../utils/Class":10,"../structs/List":262,"../boot/PluginManager":20,"../utils/array/StableSort":366}],203:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59017,7 +59017,7 @@ PluginManager.register('GameObjectCreator', GameObjectCreator, 'make');
 
 module.exports = GameObjectCreator;
 
-},{"../utils/Class":16,"../boot/PluginManager":60}],647:[function(require,module,exports) {
+},{"../utils/Class":10,"../boot/PluginManager":20}],210:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59283,7 +59283,7 @@ PluginManager.register('UpdateList', UpdateList, 'updateList');
 
 module.exports = UpdateList;
 
-},{"../utils/Class":16,"../boot/PluginManager":60}],738:[function(require,module,exports) {
+},{"../utils/Class":10,"../boot/PluginManager":20}],367:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59365,7 +59365,7 @@ var GetAdvancedValue = function (source, key, defaultValue)
 
 module.exports = GetAdvancedValue;
 
-},{"../../math/const":159,"./GetValue":230}],648:[function(require,module,exports) {
+},{"../../math/const":44,"./GetValue":53}],205:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59514,7 +59514,7 @@ var BuildGameObject = function (scene, gameObject, config)
 
 module.exports = BuildGameObject;
 
-},{"../renderer/BlendModes":46,"../utils/object/GetAdvancedValue":738,"../renderer/ScaleModes":47}],649:[function(require,module,exports) {
+},{"../renderer/BlendModes":16,"../utils/object/GetAdvancedValue":367,"../renderer/ScaleModes":15}],207:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59599,7 +59599,7 @@ var BuildGameObjectAnimation = function (sprite, config)
 
 module.exports = BuildGameObjectAnimation;
 
-},{"../utils/object/GetAdvancedValue":738}],911:[function(require,module,exports) {
+},{"../utils/object/GetAdvancedValue":367}],415:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59743,7 +59743,7 @@ var GetBitmapTextSize = function (src, round)
 
 module.exports = GetBitmapTextSize;
 
-},{}],270:[function(require,module,exports) {
+},{}],375:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59869,7 +59869,7 @@ var ParseXMLBitmapFont = function (xml, xSpacing, ySpacing, frame)
 
 module.exports = ParseXMLBitmapFont;
 
-},{}],912:[function(require,module,exports) {
+},{}],416:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -59906,7 +59906,7 @@ var ParseFromAtlas = function (scene, fontName, textureKey, frameKey, xmlKey, xS
 
 module.exports = ParseFromAtlas;
 
-},{"./ParseXMLBitmapFont":270}],913:[function(require,module,exports) {
+},{"./ParseXMLBitmapFont":375}],417:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60104,7 +60104,7 @@ ParseRetroFont.TEXT_SET11 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ.,"-+!?()\':;0123456789';
 
 module.exports = ParseRetroFont;
 
-},{"../../utils/object/GetValue":230}],992:[function(require,module,exports) {
+},{"../../utils/object/GetValue":53}],533:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60142,7 +60142,7 @@ var BitmapTextWebGLRenderer = function (renderer, gameObject, interpolationPerce
 
 module.exports = BitmapTextWebGLRenderer;
 
-},{"../../GameObject":542}],993:[function(require,module,exports) {
+},{"../../GameObject":208}],534:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60318,7 +60318,7 @@ var BitmapTextCanvasRenderer = function (renderer, src, interpolationPercentage,
 
 module.exports = BitmapTextCanvasRenderer;
 
-},{"../../GameObject":542}],914:[function(require,module,exports) {
+},{"../../GameObject":208}],420:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60345,7 +60345,7 @@ module.exports = {
 
 };
 
-},{"../../../utils/NOOP":59,"./BitmapTextWebGLRenderer":992,"./BitmapTextCanvasRenderer":993}],692:[function(require,module,exports) {
+},{"../../../utils/NOOP":25,"./BitmapTextWebGLRenderer":533,"./BitmapTextCanvasRenderer":534}],331:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60630,7 +60630,7 @@ BitmapText.ParseFromAtlas = ParseFromAtlas;
 
 module.exports = BitmapText;
 
-},{"../../../utils/Class":16,"../../components":384,"../../GameObject":542,"../GetBitmapTextSize":911,"../ParseFromAtlas":912,"../ParseRetroFont":913,"./BitmapTextRender":914}],987:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../../components":500,"../../GameObject":208,"../GetBitmapTextSize":415,"../ParseFromAtlas":416,"../ParseRetroFont":417,"./BitmapTextRender":420}],454:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60665,7 +60665,7 @@ var BlitterWebGLRenderer = function (renderer, gameObject, interpolationPercenta
 
 module.exports = BlitterWebGLRenderer;
 
-},{"../GameObject":542}],988:[function(require,module,exports) {
+},{"../GameObject":208}],455:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60744,7 +60744,7 @@ var BlitterCanvasRenderer = function (renderer, src, interpolationPercentage, ca
 
 module.exports = BlitterCanvasRenderer;
 
-},{"../GameObject":542}],892:[function(require,module,exports) {
+},{"../GameObject":208}],398:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -60771,7 +60771,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./BlitterWebGLRenderer":987,"./BlitterCanvasRenderer":988}],893:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./BlitterWebGLRenderer":454,"./BlitterCanvasRenderer":455}],399:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -61112,7 +61112,7 @@ var Bob = new Class({
 
 module.exports = Bob;
 
-},{"../../utils/Class":16}],653:[function(require,module,exports) {
+},{"../../utils/Class":10}],283:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -61373,7 +61373,7 @@ var Blitter = new Class({
 
 module.exports = Blitter;
 
-},{"./BlitterRender":892,"./Bob":893,"../../utils/Class":16,"../components":384,"../../textures/Frame":702,"../GameObject":542,"../../structs/List":83}],994:[function(require,module,exports) {
+},{"./BlitterRender":398,"./Bob":399,"../../utils/Class":10,"../components":500,"../../textures/Frame":99,"../GameObject":208,"../../structs/List":262}],535:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -61411,7 +61411,7 @@ var DynamicBitmapTextWebGLRenderer = function (renderer, bitmapText, interpolati
 
 module.exports = DynamicBitmapTextWebGLRenderer;
 
-},{"../../GameObject":542}],995:[function(require,module,exports) {
+},{"../../GameObject":208}],536:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -61612,7 +61612,7 @@ var DynamicBitmapTextCanvasRenderer = function (renderer, src, interpolationPerc
 
 module.exports = DynamicBitmapTextCanvasRenderer;
 
-},{"../../GameObject":542}],915:[function(require,module,exports) {
+},{"../../GameObject":208}],421:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -61639,7 +61639,7 @@ module.exports = {
 
 };
 
-},{"../../../utils/NOOP":59,"./DynamicBitmapTextWebGLRenderer":994,"./DynamicBitmapTextCanvasRenderer":995}],693:[function(require,module,exports) {
+},{"../../../utils/NOOP":25,"./DynamicBitmapTextWebGLRenderer":535,"./DynamicBitmapTextCanvasRenderer":536}],332:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62025,7 +62025,7 @@ var DynamicBitmapText = new Class({
 
 module.exports = DynamicBitmapText;
 
-},{"../../../utils/Class":16,"../../components":384,"../../GameObject":542,"../GetBitmapTextSize":911,"./DynamicBitmapTextRender":915}],412:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../../components":500,"../../GameObject":208,"../GetBitmapTextSize":415,"./DynamicBitmapTextRender":421}],374:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62063,7 +62063,7 @@ var Contains = function (ellipse, x, y)
 
 module.exports = Contains;
 
-},{}],410:[function(require,module,exports) {
+},{}],540:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62099,7 +62099,7 @@ var CircumferencePoint = function (ellipse, angle, out)
 
 module.exports = CircumferencePoint;
 
-},{"../point/Point":463}],418:[function(require,module,exports) {
+},{"../point/Point":344}],426:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62136,7 +62136,7 @@ var GetPoint = function (ellipse, position, out)
 
 module.exports = GetPoint;
 
-},{"./CircumferencePoint":410,"../../math/FromPercent":171,"../../math/const":159,"../point/Point":463}],409:[function(require,module,exports) {
+},{"./CircumferencePoint":540,"../../math/FromPercent":234,"../../math/const":44,"../point/Point":344}],542:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62164,7 +62164,7 @@ var Circumference = function (ellipse)
 
 module.exports = Circumference;
 
-},{}],419:[function(require,module,exports) {
+},{}],428:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62212,7 +62212,7 @@ var GetPoints = function (ellipse, quantity, stepRate, out)
 
 module.exports = GetPoints;
 
-},{"./Circumference":409,"./CircumferencePoint":410,"../../math/FromPercent":171,"../../math/const":159}],407:[function(require,module,exports) {
+},{"./Circumference":542,"./CircumferencePoint":540,"../../math/FromPercent":234,"../../math/const":44}],370:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62572,7 +62572,7 @@ var Ellipse = new Class({
 
 module.exports = Ellipse;
 
-},{"../../utils/Class":16,"./Contains":412,"./GetPoint":418,"./GetPoints":419,"./Random":281}],408:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Contains":374,"./GetPoint":426,"./GetPoints":428,"./Random":355}],612:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62602,7 +62602,7 @@ var Area = function (ellipse)
 
 module.exports = Area;
 
-},{}],411:[function(require,module,exports) {
+},{}],611:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62628,7 +62628,7 @@ var Clone = function (source)
 
 module.exports = Clone;
 
-},{"./Ellipse":407}],413:[function(require,module,exports) {
+},{"./Ellipse":370}],613:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62655,7 +62655,7 @@ var ContainsPoint = function (ellipse, point)
 
 module.exports = ContainsPoint;
 
-},{"./Contains":412}],414:[function(require,module,exports) {
+},{"./Contains":374}],614:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62687,7 +62687,7 @@ var ContainsRect = function (ellipse, rect)
 
 module.exports = ContainsRect;
 
-},{"./Contains":412}],415:[function(require,module,exports) {
+},{"./Contains":374}],615:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62713,7 +62713,7 @@ var CopyFrom = function (source, dest)
 
 module.exports = CopyFrom;
 
-},{}],416:[function(require,module,exports) {
+},{}],616:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62744,7 +62744,7 @@ var Equals = function (ellipse, toCompare)
 
 module.exports = Equals;
 
-},{}],417:[function(require,module,exports) {
+},{}],617:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62778,7 +62778,7 @@ var GetBounds = function (ellipse, out)
 
 module.exports = GetBounds;
 
-},{"../rectangle/Rectangle":266}],420:[function(require,module,exports) {
+},{"../rectangle/Rectangle":64}],618:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62807,7 +62807,7 @@ var Offset = function (ellipse, x, y)
 
 module.exports = Offset;
 
-},{}],421:[function(require,module,exports) {
+},{}],619:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62835,7 +62835,7 @@ var OffsetPoint = function (ellipse, point)
 
 module.exports = OffsetPoint;
 
-},{}],241:[function(require,module,exports) {
+},{}],502:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62862,7 +62862,7 @@ Ellipse.Random = require('./Random');
 
 module.exports = Ellipse;
 
-},{"./Ellipse":407,"./Area":408,"./Circumference":409,"./CircumferencePoint":410,"./Clone":411,"./Contains":412,"./ContainsPoint":413,"./ContainsRect":414,"./CopyFrom":415,"./Equals":416,"./GetBounds":417,"./GetPoint":418,"./GetPoints":419,"./Offset":420,"./OffsetPoint":421,"./Random":281}],1019:[function(require,module,exports) {
+},{"./Ellipse":370,"./Area":612,"./Circumference":542,"./CircumferencePoint":540,"./Clone":611,"./Contains":374,"./ContainsPoint":613,"./ContainsRect":614,"./CopyFrom":615,"./Equals":616,"./GetBounds":617,"./GetPoint":426,"./GetPoints":428,"./Offset":618,"./OffsetPoint":619,"./Random":355}],450:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -62897,7 +62897,7 @@ var GraphicsWebGLRenderer = function (renderer, graphics, interpolationPercentag
 
 module.exports = GraphicsWebGLRenderer;
 
-},{"../GameObject":542}],1020:[function(require,module,exports) {
+},{"../GameObject":208}],451:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -63159,7 +63159,7 @@ var GraphicsCanvasRenderer = function (renderer, src, interpolationPercentage, c
 
 module.exports = GraphicsCanvasRenderer;
 
-},{"./Commands":843,"../GameObject":542}],909:[function(require,module,exports) {
+},{"./Commands":383,"../GameObject":208}],395:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -63189,7 +63189,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./GraphicsWebGLRenderer":1019,"./GraphicsCanvasRenderer":1020}],650:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./GraphicsWebGLRenderer":450,"./GraphicsCanvasRenderer":451}],209:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -64312,7 +64312,7 @@ Graphics.TargetCamera = new Camera(0, 0, 0, 0);
 
 module.exports = Graphics;
 
-},{"../../cameras/2d/Camera.js":544,"../../utils/Class":16,"./Commands":843,"../components":384,"../../geom/ellipse/":241,"../GameObject":542,"../../utils/object/GetValue":230,"../../math/const":159,"./GraphicsRender":909}],922:[function(require,module,exports) {
+},{"../../cameras/2d/Camera.js":368,"../../utils/Class":10,"./Commands":383,"../components":500,"../../geom/ellipse/":502,"../GameObject":208,"../../utils/object/GetValue":53,"../../math/const":44,"./GraphicsRender":395}],400:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -64448,7 +64448,7 @@ var Range = function (a, b, options)
 
 module.exports = Range;
 
-},{"../object/GetValue":230,"./Shuffle":290}],654:[function(require,module,exports) {
+},{"../object/GetValue":53,"./Shuffle":358}],285:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65358,7 +65358,7 @@ var Group = new Class({
 
 module.exports = Group;
 
-},{"../../actions/":22,"../../utils/Class":16,"../../utils/object/GetFastValue":268,"../../utils/object/GetValue":230,"../../utils/array/Range":922,"../../structs/Set":87,"../sprite/Sprite":660}],1013:[function(require,module,exports) {
+},{"../../actions/":70,"../../utils/Class":10,"../../utils/object/GetFastValue":102,"../../utils/object/GetValue":53,"../../utils/array/Range":400,"../../structs/Set":266,"../sprite/Sprite":289}],456:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65393,7 +65393,7 @@ var ImageWebGLRenderer = function (renderer, src, interpolationPercentage, camer
 
 module.exports = ImageWebGLRenderer;
 
-},{"../GameObject":542}],1014:[function(require,module,exports) {
+},{"../GameObject":208}],457:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65428,7 +65428,7 @@ var ImageCanvasRenderer = function (renderer, src, interpolationPercentage, came
 
 module.exports = ImageCanvasRenderer;
 
-},{"../GameObject":542}],904:[function(require,module,exports) {
+},{"../GameObject":208}],397:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65455,7 +65455,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./ImageWebGLRenderer":1013,"./ImageCanvasRenderer":1014}],655:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./ImageWebGLRenderer":456,"./ImageCanvasRenderer":457}],284:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65542,7 +65542,7 @@ var Image = new Class({
 
 module.exports = Image;
 
-},{"../../utils/Class":16,"../components":384,"../GameObject":542,"./ImageRender":904}],901:[function(require,module,exports) {
+},{"../../utils/Class":10,"../components":500,"../GameObject":208,"./ImageRender":397}],408:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65753,7 +65753,7 @@ var GravityWell = new Class({
 
 module.exports = GravityWell;
 
-},{"../../utils/Class":16,"../../utils/object/GetFastValue":268}],1010:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetFastValue":102}],488:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -65827,7 +65827,7 @@ var DeathZone = new Class({
 
 module.exports = DeathZone;
 
-},{"../../../utils/Class":16}],1011:[function(require,module,exports) {
+},{"../../../utils/Class":10}],487:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66062,7 +66062,7 @@ var EdgeZone = new Class({
 
 module.exports = EdgeZone;
 
-},{"../../../utils/Class":16}],169:[function(require,module,exports) {
+},{"../../../utils/Class":10}],232:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66087,7 +66087,7 @@ var FloatBetween = function (min, max)
 
 module.exports = FloatBetween;
 
-},{}],853:[function(require,module,exports) {
+},{}],955:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66114,7 +66114,7 @@ var In = function (v, overshoot)
 
 module.exports = In;
 
-},{}],854:[function(require,module,exports) {
+},{}],951:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66141,7 +66141,7 @@ var Out = function (v, overshoot)
 
 module.exports = Out;
 
-},{}],855:[function(require,module,exports) {
+},{}],952:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66177,7 +66177,7 @@ var InOut = function (v, overshoot)
 
 module.exports = InOut;
 
-},{}],613:[function(require,module,exports) {
+},{}],917:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66194,7 +66194,7 @@ module.exports = {
 
 };
 
-},{"./In":853,"./Out":854,"./InOut":855}],850:[function(require,module,exports) {
+},{"./In":955,"./Out":951,"./InOut":952}],959:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66235,7 +66235,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],851:[function(require,module,exports) {
+},{}],954:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66274,7 +66274,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],852:[function(require,module,exports) {
+},{}],956:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66334,7 +66334,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],612:[function(require,module,exports) {
+},{}],914:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66351,7 +66351,7 @@ module.exports = {
 
 };
 
-},{"./In":850,"./Out":851,"./InOut":852}],860:[function(require,module,exports) {
+},{"./In":959,"./Out":954,"./InOut":956}],961:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66375,7 +66375,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],861:[function(require,module,exports) {
+},{}],957:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66399,7 +66399,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],862:[function(require,module,exports) {
+},{}],958:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66430,7 +66430,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],614:[function(require,module,exports) {
+},{}],916:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66447,7 +66447,7 @@ module.exports = {
 
 };
 
-},{"./In":860,"./Out":861,"./InOut":862}],863:[function(require,module,exports) {
+},{"./In":961,"./Out":957,"./InOut":958}],953:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66471,7 +66471,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],864:[function(require,module,exports) {
+},{}],950:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66495,7 +66495,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],865:[function(require,module,exports) {
+},{}],949:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66526,7 +66526,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],615:[function(require,module,exports) {
+},{}],915:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66543,7 +66543,7 @@ module.exports = {
 
 };
 
-},{"./In":863,"./Out":864,"./InOut":865}],866:[function(require,module,exports) {
+},{"./In":953,"./Out":950,"./InOut":949}],964:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66594,7 +66594,7 @@ var In = function (v, amplitude, period)
 
 module.exports = In;
 
-},{}],867:[function(require,module,exports) {
+},{}],960:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66645,7 +66645,7 @@ var Out = function (v, amplitude, period)
 
 module.exports = Out;
 
-},{}],868:[function(require,module,exports) {
+},{}],966:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66703,7 +66703,7 @@ var InOut = function (v, amplitude, period)
 
 module.exports = InOut;
 
-},{}],616:[function(require,module,exports) {
+},{}],919:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66720,7 +66720,7 @@ module.exports = {
 
 };
 
-},{"./In":866,"./Out":867,"./InOut":868}],871:[function(require,module,exports) {
+},{"./In":964,"./Out":960,"./InOut":966}],989:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66744,7 +66744,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],872:[function(require,module,exports) {
+},{}],987:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66768,7 +66768,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],873:[function(require,module,exports) {
+},{}],988:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66799,7 +66799,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],617:[function(require,module,exports) {
+},{}],925:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66816,7 +66816,7 @@ module.exports = {
 
 };
 
-},{"./In":871,"./Out":872,"./InOut":873}],856:[function(require,module,exports) {
+},{"./In":989,"./Out":987,"./InOut":988}],962:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66840,7 +66840,7 @@ var Linear = function (v)
 
 module.exports = Linear;
 
-},{}],618:[function(require,module,exports) {
+},{}],918:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66851,7 +66851,7 @@ module.exports = Linear;
 
 module.exports = require('./Linear');
 
-},{"./Linear":856}],894:[function(require,module,exports) {
+},{"./Linear":962}],968:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66875,7 +66875,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],895:[function(require,module,exports) {
+},{}],965:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66899,7 +66899,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],896:[function(require,module,exports) {
+},{}],967:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66930,7 +66930,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],620:[function(require,module,exports) {
+},{}],922:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66947,7 +66947,7 @@ module.exports = {
 
 };
 
-},{"./In":894,"./Out":895,"./InOut":896}],857:[function(require,module,exports) {
+},{"./In":968,"./Out":965,"./InOut":967}],971:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66971,7 +66971,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],858:[function(require,module,exports) {
+},{}],969:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -66995,7 +66995,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],859:[function(require,module,exports) {
+},{}],970:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67026,7 +67026,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],619:[function(require,module,exports) {
+},{}],920:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67043,7 +67043,7 @@ module.exports = {
 
 };
 
-},{"./In":857,"./Out":858,"./InOut":859}],897:[function(require,module,exports) {
+},{"./In":971,"./Out":969,"./InOut":970}],974:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67067,7 +67067,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],898:[function(require,module,exports) {
+},{}],972:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67091,7 +67091,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],899:[function(require,module,exports) {
+},{}],973:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67122,7 +67122,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],621:[function(require,module,exports) {
+},{}],924:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67139,7 +67139,7 @@ module.exports = {
 
 };
 
-},{"./In":897,"./Out":898,"./InOut":899}],874:[function(require,module,exports) {
+},{"./In":974,"./Out":972,"./InOut":973}],978:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67174,7 +67174,7 @@ var In = function (v)
 
 module.exports = In;
 
-},{}],875:[function(require,module,exports) {
+},{}],975:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67209,7 +67209,7 @@ var Out = function (v)
 
 module.exports = Out;
 
-},{}],876:[function(require,module,exports) {
+},{}],976:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67244,7 +67244,7 @@ var InOut = function (v)
 
 module.exports = InOut;
 
-},{}],622:[function(require,module,exports) {
+},{}],926:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67261,7 +67261,7 @@ module.exports = {
 
 };
 
-},{"./In":874,"./Out":875,"./InOut":876}],877:[function(require,module,exports) {
+},{"./In":978,"./Out":975,"./InOut":976}],963:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67299,7 +67299,7 @@ var Stepped = function (v, steps)
 
 module.exports = Stepped;
 
-},{}],623:[function(require,module,exports) {
+},{}],921:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67310,7 +67310,7 @@ module.exports = Stepped;
 
 module.exports = require('./Stepped');
 
-},{"./Stepped":877}],778:[function(require,module,exports) {
+},{"./Stepped":963}],544:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67387,7 +67387,7 @@ module.exports = {
 
 };
 
-},{"./back":613,"./bounce":612,"./circular":614,"./cubic":615,"./elastic":616,"./expo":617,"./linear":618,"./quadratic":620,"./quartic":619,"./quintic":621,"./sine":622,"./stepped":623}],378:[function(require,module,exports) {
+},{"./back":917,"./bounce":914,"./circular":916,"./cubic":915,"./elastic":919,"./expo":925,"./linear":918,"./quadratic":922,"./quartic":920,"./quintic":924,"./sine":926,"./stepped":921}],431:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -67445,7 +67445,7 @@ var GetEaseFunction = function (ease, easeParams)
 
 module.exports = GetEaseFunction;
 
-},{"../../math/easing/EaseMap":778}],1008:[function(require,module,exports) {
+},{"../../math/easing/EaseMap":544}],470:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -68023,7 +68023,7 @@ var EmitterOp = new Class({
 
 module.exports = EmitterOp;
 
-},{"../../utils/Class":16,"../../math/FloatBetween":169,"../../tweens/builders/GetEaseFunction":378,"../../utils/object/GetFastValue":268,"../../math/Wrap":193}],848:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../math/FloatBetween":232,"../../tweens/builders/GetEaseFunction":431,"../../utils/object/GetFastValue":102,"../../math/Wrap":254}],468:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -68054,7 +68054,7 @@ var GetRandomElement = function (array, start, length)
 
 module.exports = GetRandomElement;
 
-},{}],933:[function(require,module,exports) {
+},{}],469:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -68087,7 +68087,7 @@ var HasAny = function (source, keys)
 
 module.exports = HasAny;
 
-},{}],775:[function(require,module,exports) {
+},{}],472:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -68112,7 +68112,7 @@ var HasValue = function (source, key)
 
 module.exports = HasValue;
 
-},{}],1009:[function(require,module,exports) {
+},{}],471:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -68709,7 +68709,7 @@ var Particle = new Class({
 
 module.exports = Particle;
 
-},{"../../utils/Class":16,"../../math/DegToRad":166,"../../math/distance/DistanceBetween":286}],1012:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../math/DegToRad":229,"../../math/distance/DistanceBetween":357}],489:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -68778,7 +68778,7 @@ var RandomZone = new Class({
 
 module.exports = RandomZone;
 
-},{"../../../utils/Class":16,"../../../math/Vector2":194}],902:[function(require,module,exports) {
+},{"../../../utils/Class":10,"../../../math/Vector2":96}],410:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -70768,7 +70768,7 @@ var ParticleEmitter = new Class({
 
 module.exports = ParticleEmitter;
 
-},{"../../renderer/BlendModes":46,"../../utils/Class":16,"../components":384,"./zones/DeathZone":1010,"./zones/EdgeZone":1011,"./EmitterOp":1008,"../../utils/object/GetFastValue":268,"../../utils/array/GetRandomElement":848,"../../utils/object/HasAny":933,"../../utils/object/HasValue":775,"./Particle":1009,"./zones/RandomZone":1012,"../../geom/rectangle/Rectangle":266,"../../utils/array/StableSort":900,"../../math/Vector2":194,"../../math/Wrap":193}],985:[function(require,module,exports) {
+},{"../../renderer/BlendModes":16,"../../utils/Class":10,"../components":500,"./zones/DeathZone":488,"./zones/EdgeZone":487,"./EmitterOp":470,"../../utils/object/GetFastValue":102,"../../utils/array/GetRandomElement":468,"../../utils/object/HasAny":469,"../../utils/object/HasValue":472,"./Particle":471,"./zones/RandomZone":489,"../../geom/rectangle/Rectangle":64,"../../utils/array/StableSort":366,"../../math/Vector2":96,"../../math/Wrap":254}],464:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -70805,7 +70805,7 @@ var ParticleManagerWebGLRenderer = function (renderer, emitterManager, interpola
 
 module.exports = ParticleManagerWebGLRenderer;
 
-},{"../GameObject":542}],986:[function(require,module,exports) {
+},{"../GameObject":208}],467:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -70914,7 +70914,7 @@ var ParticleManagerCanvasRenderer = function (renderer, emitterManager, interpol
 
 module.exports = ParticleManagerCanvasRenderer;
 
-},{"../GameObject":542}],903:[function(require,module,exports) {
+},{"../GameObject":208}],409:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -70941,7 +70941,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./ParticleManagerWebGLRenderer":985,"./ParticleManagerCanvasRenderer":986}],656:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./ParticleManagerWebGLRenderer":464,"./ParticleManagerCanvasRenderer":467}],304:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -71360,7 +71360,7 @@ var ParticleEmitterManager = new Class({
 
 module.exports = ParticleEmitterManager;
 
-},{"../../utils/Class":16,"../components":384,"../GameObject":542,"./GravityWell":901,"../../structs/List":83,"./ParticleEmitter":902,"./ParticleManagerRender":903}],377:[function(require,module,exports) {
+},{"../../utils/Class":10,"../components":500,"../GameObject":208,"./GravityWell":408,"../../structs/List":262,"./ParticleEmitter":410,"./ParticleManagerRender":409}],402:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -71397,7 +71397,7 @@ var GetBoolean = function (source, key, defaultValue)
 
 module.exports = GetBoolean;
 
-},{}],100:[function(require,module,exports) {
+},{}],323:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -71565,7 +71565,7 @@ var TWEEN_CONST = {
 
 module.exports = TWEEN_CONST;
 
-},{}],657:[function(require,module,exports) {
+},{}],287:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -71994,7 +71994,7 @@ var PathFollower = new Class({
 
 module.exports = PathFollower;
 
-},{"../../utils/Class":16,"../../math/DegToRad":166,"../../tweens/builders/GetBoolean":377,"../../utils/object/GetValue":230,"../sprite/Sprite":660,"../../tweens/tween/const":100,"../../math/Vector2":194}],1015:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../math/DegToRad":229,"../../tweens/builders/GetBoolean":402,"../../utils/object/GetValue":53,"../sprite/Sprite":289,"../../tweens/tween/const":323,"../../math/Vector2":96}],462:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72044,7 +72044,7 @@ var RenderTextureWebGLRenderer = function (renderer, renderTexture, interpolatio
 
 module.exports = RenderTextureWebGLRenderer;
 
-},{"../GameObject":542}],1016:[function(require,module,exports) {
+},{"../GameObject":208}],463:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72130,7 +72130,7 @@ var RenderTextureCanvasRenderer = function (renderer, renderTexture, interpolati
 
 module.exports = RenderTextureCanvasRenderer;
 
-},{"../GameObject":542}],905:[function(require,module,exports) {
+},{"../GameObject":208}],405:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72157,7 +72157,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./RenderTextureWebGLRenderer":1015,"./RenderTextureCanvasRenderer":1016}],906:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./RenderTextureWebGLRenderer":462,"./RenderTextureCanvasRenderer":463}],406:[function(require,module,exports) {
 var RenderTextureCanvas = {
 
     fill: function (rgb)
@@ -72195,7 +72195,7 @@ var RenderTextureCanvas = {
 
 module.exports = RenderTextureCanvas;
 
-},{}],907:[function(require,module,exports) {
+},{}],407:[function(require,module,exports) {
 var RenderTextureWebGL = {
 
     fill: function (rgb)
@@ -72236,7 +72236,7 @@ var RenderTextureWebGL = {
 
 module.exports = RenderTextureWebGL;
 
-},{}],658:[function(require,module,exports) {
+},{}],303:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72433,7 +72433,7 @@ var RenderTexture = new Class({
 
 module.exports = RenderTexture;
 
-},{"../../display/canvas/CanvasPool":66,"../../utils/Class":16,"../components":384,"../../const":15,"../GameObject":542,"./RenderTextureRender":905,"./RenderTextureCanvas":906,"./RenderTextureWebGL":907}],959:[function(require,module,exports) {
+},{"../../display/canvas/CanvasPool":34,"../../utils/Class":10,"../components":500,"../../const":9,"../GameObject":208,"./RenderTextureRender":405,"./RenderTextureCanvas":406,"./RenderTextureWebGL":407}],419:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72516,7 +72516,7 @@ var GetTextSize = function (text, size, lines)
 
 module.exports = GetTextSize;
 
-},{}],1001:[function(require,module,exports) {
+},{}],537:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72557,7 +72557,7 @@ var TextWebGLRenderer = function (renderer, src, interpolationPercentage, camera
 
 module.exports = TextWebGLRenderer;
 
-},{"../../GameObject":542}],1002:[function(require,module,exports) {
+},{"../../GameObject":208}],538:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72641,7 +72641,7 @@ var TextCanvasRenderer = function (renderer, src, interpolationPercentage, camer
 
 module.exports = TextCanvasRenderer;
 
-},{"../../GameObject":542}],961:[function(require,module,exports) {
+},{"../../GameObject":208}],422:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72668,7 +72668,7 @@ module.exports = {
 
 };
 
-},{"../../../utils/NOOP":59,"./TextWebGLRenderer":1001,"./TextCanvasRenderer":1002}],1021:[function(require,module,exports) {
+},{"../../../utils/NOOP":25,"./TextWebGLRenderer":537,"./TextCanvasRenderer":538}],490:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -72799,7 +72799,7 @@ var MeasureText = function (textStyle)
 
 module.exports = MeasureText;
 
-},{"../../display/canvas/CanvasPool":66}],960:[function(require,module,exports) {
+},{"../../display/canvas/CanvasPool":34}],418:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -73745,7 +73745,7 @@ var TextStyle = new Class({
 
 module.exports = TextStyle;
 
-},{"../../utils/Class":16,"../../utils/object/GetAdvancedValue":738,"../../utils/object/GetValue":230,"./MeasureText":1021}],694:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetAdvancedValue":367,"../../utils/object/GetValue":53,"./MeasureText":490}],333:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -74854,7 +74854,7 @@ var Text = new Class({
 
 module.exports = Text;
 
-},{"../../../dom/AddToDOM":50,"../../../display/canvas/CanvasPool":66,"../../../utils/Class":16,"../../components":384,"../../../const":15,"../../GameObject":542,"../GetTextSize":959,"../../../utils/object/GetValue":230,"../../../dom/RemoveFromDOM":71,"./TextRender":961,"../TextStyle":960}],568:[function(require,module,exports) {
+},{"../../../dom/AddToDOM":18,"../../../display/canvas/CanvasPool":34,"../../../utils/Class":10,"../../components":500,"../../../const":9,"../../GameObject":208,"../GetTextSize":419,"../../../utils/object/GetValue":53,"../../../dom/RemoveFromDOM":212,"./TextRender":422,"../TextStyle":418}],403:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -74881,7 +74881,7 @@ var GetPowerOfTwo = function (value)
 
 module.exports = GetPowerOfTwo;
 
-},{}],997:[function(require,module,exports) {
+},{}],460:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -74918,7 +74918,7 @@ var TileSpriteWebGLRenderer = function (renderer, src, interpolationPercentage, 
 
 module.exports = TileSpriteWebGLRenderer;
 
-},{"../GameObject":542}],998:[function(require,module,exports) {
+},{"../GameObject":208}],461:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75032,7 +75032,7 @@ var TileSpriteCanvasRenderer = function (renderer, src, interpolationPercentage,
 
 module.exports = TileSpriteCanvasRenderer;
 
-},{"../GameObject":542}],910:[function(require,module,exports) {
+},{"../GameObject":208}],404:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75059,7 +75059,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./TileSpriteWebGLRenderer":997,"./TileSpriteCanvasRenderer":998}],661:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./TileSpriteWebGLRenderer":460,"./TileSpriteCanvasRenderer":461}],288:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75355,7 +75355,7 @@ var TileSprite = new Class({
 
 module.exports = TileSprite;
 
-},{"../../display/canvas/CanvasPool":66,"../../utils/Class":16,"../components":384,"../../const":15,"../GameObject":542,"../../math/pow2/GetPowerOfTwo":568,"./TileSpriteRender":910}],662:[function(require,module,exports) {
+},{"../../display/canvas/CanvasPool":34,"../../utils/Class":10,"../components":500,"../../const":9,"../GameObject":208,"../../math/pow2/GetPowerOfTwo":403,"./TileSpriteRender":404}],291:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75393,7 +75393,7 @@ GameObjectFactory.register('blitter', function (x, y, key, frame)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Blitter":653,"../GameObjectFactory":293}],695:[function(require,module,exports) {
+},{"./Blitter":283,"../GameObjectFactory":206}],334:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75432,7 +75432,7 @@ GameObjectFactory.register('dynamicBitmapText', function (x, y, font, text, size
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./DynamicBitmapText":693,"../../GameObjectFactory":293}],663:[function(require,module,exports) {
+},{"./DynamicBitmapText":332,"../../GameObjectFactory":206}],293:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75467,7 +75467,7 @@ GameObjectFactory.register('graphics', function (config)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Graphics":650,"../GameObjectFactory":293}],664:[function(require,module,exports) {
+},{"./Graphics":209,"../GameObjectFactory":206}],292:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75509,7 +75509,7 @@ GameObjectFactory.register('group', function (children, config)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Group":654,"../GameObjectFactory":293}],665:[function(require,module,exports) {
+},{"./Group":285,"../GameObjectFactory":206}],295:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75547,7 +75547,7 @@ GameObjectFactory.register('image', function (x, y, key, frame)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Image":655,"../GameObjectFactory":293}],666:[function(require,module,exports) {
+},{"./Image":284,"../GameObjectFactory":206}],297:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75589,7 +75589,7 @@ GameObjectFactory.register('particles', function (key, frame, emitters)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"../GameObjectFactory":293,"./ParticleEmitterManager":656}],667:[function(require,module,exports) {
+},{"../GameObjectFactory":206,"./ParticleEmitterManager":304}],296:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75633,7 +75633,7 @@ GameObjectFactory.register('follower', function (path, x, y, key, frame)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"../GameObjectFactory":293,"./PathFollower":657}],668:[function(require,module,exports) {
+},{"../GameObjectFactory":206,"./PathFollower":287}],294:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75663,7 +75663,7 @@ GameObjectFactory.register('renderTexture', function (x, y, width, height)
     return this.displayList.add(new RenderTexture(this.scene, x, y, width, height));
 });
 
-},{"../GameObjectFactory":293,"./RenderTexture":658}],669:[function(require,module,exports) {
+},{"../GameObjectFactory":206,"./RenderTexture":303}],299:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75707,7 +75707,7 @@ GameObjectFactory.register('sprite3D', function (x, y, z, key, frame)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Sprite3D":659,"../GameObjectFactory":293}],670:[function(require,module,exports) {
+},{"./Sprite3D":286,"../GameObjectFactory":206}],298:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75750,7 +75750,7 @@ GameObjectFactory.register('sprite', function (x, y, key, frame)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"../GameObjectFactory":293,"./Sprite":660}],696:[function(require,module,exports) {
+},{"../GameObjectFactory":206,"./Sprite":289}],335:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75789,7 +75789,7 @@ GameObjectFactory.register('bitmapText', function (x, y, font, text, size)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./BitmapText":692,"../../GameObjectFactory":293}],697:[function(require,module,exports) {
+},{"./BitmapText":331,"../../GameObjectFactory":206}],336:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75827,7 +75827,7 @@ GameObjectFactory.register('text', function (x, y, text, style)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Text":694,"../../GameObjectFactory":293}],671:[function(require,module,exports) {
+},{"./Text":333,"../../GameObjectFactory":206}],300:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75867,7 +75867,7 @@ GameObjectFactory.register('tileSprite', function (x, y, width, height, key, fra
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./TileSprite":661,"../GameObjectFactory":293}],672:[function(require,module,exports) {
+},{"./TileSprite":288,"../GameObjectFactory":206}],301:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75905,7 +75905,7 @@ GameObjectFactory.register('zone', function (x, y, width, height)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Zone":276,"../GameObjectFactory":293}],673:[function(require,module,exports) {
+},{"./Zone":290,"../GameObjectFactory":206}],302:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75943,7 +75943,7 @@ GameObjectCreator.register('blitter', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"./Blitter":653,"../BuildGameObject":648,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738}],698:[function(require,module,exports) {
+},{"./Blitter":283,"../BuildGameObject":205,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367}],337:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -75993,7 +75993,7 @@ GameObjectCreator.register('dynamicBitmapText', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"./DynamicBitmapText":693,"../../BuildGameObject":648,"../../GameObjectCreator":292,"../../../utils/object/GetAdvancedValue":738}],674:[function(require,module,exports) {
+},{"./DynamicBitmapText":332,"../../BuildGameObject":205,"../../GameObjectCreator":203,"../../../utils/object/GetAdvancedValue":367}],307:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76022,7 +76022,7 @@ GameObjectCreator.register('graphics', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../GameObjectCreator":292,"./Graphics":650}],675:[function(require,module,exports) {
+},{"../GameObjectCreator":203,"./Graphics":209}],305:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76051,7 +76051,7 @@ GameObjectCreator.register('group', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../GameObjectCreator":292,"./Group":654}],676:[function(require,module,exports) {
+},{"../GameObjectCreator":203,"./Group":285}],310:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76089,7 +76089,7 @@ GameObjectCreator.register('image', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../BuildGameObject":648,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./Image":655}],677:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./Image":284}],306:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76142,7 +76142,7 @@ GameObjectCreator.register('particles', function (config)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"../../utils/object/GetFastValue":268,"./ParticleEmitterManager":656}],678:[function(require,module,exports) {
+},{"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"../../utils/object/GetFastValue":102,"./ParticleEmitterManager":304}],308:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76188,7 +76188,7 @@ GameObjectCreator.register('renderTexture', function (config)
     return renderTexture;
 });
 
-},{"../BuildGameObject":648,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./RenderTexture":658}],679:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./RenderTexture":303}],311:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76233,7 +76233,7 @@ GameObjectCreator.register('sprite3D', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../BuildGameObject":648,"../BuildGameObjectAnimation":649,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./Sprite3D":659}],680:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../BuildGameObjectAnimation":207,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./Sprite3D":286}],309:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76278,7 +76278,7 @@ GameObjectCreator.register('sprite', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../BuildGameObject":648,"../BuildGameObjectAnimation":649,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./Sprite":660}],699:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../BuildGameObjectAnimation":207,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./Sprite":289}],339:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76320,7 +76320,7 @@ GameObjectCreator.register('bitmapText', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"./BitmapText":692,"../../BuildGameObject":648,"../../GameObjectCreator":292,"../../../utils/object/GetAdvancedValue":738,"../../../utils/object/GetValue":230}],700:[function(require,module,exports) {
+},{"./BitmapText":331,"../../BuildGameObject":205,"../../GameObjectCreator":203,"../../../utils/object/GetAdvancedValue":367,"../../../utils/object/GetValue":53}],338:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76395,7 +76395,7 @@ GameObjectCreator.register('text', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../../BuildGameObject":648,"../../GameObjectCreator":292,"../../../utils/object/GetAdvancedValue":738,"./Text":694}],681:[function(require,module,exports) {
+},{"../../BuildGameObject":205,"../../GameObjectCreator":203,"../../../utils/object/GetAdvancedValue":367,"./Text":333}],314:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76449,7 +76449,7 @@ GameObjectCreator.register('tileSprite', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../BuildGameObject":648,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./TileSprite":661}],682:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./TileSprite":288}],313:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76484,7 +76484,7 @@ GameObjectCreator.register('zone', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./Zone":276}],1017:[function(require,module,exports) {
+},{"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./Zone":290}],465:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76519,7 +76519,7 @@ var MeshWebGLRenderer = function (renderer, src, interpolationPercentage, camera
 
 module.exports = MeshWebGLRenderer;
 
-},{"../GameObject":542}],1018:[function(require,module,exports) {
+},{"../GameObject":208}],466:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76544,7 +76544,7 @@ var MeshCanvasRenderer = function ()
 
 module.exports = MeshCanvasRenderer;
 
-},{}],908:[function(require,module,exports) {
+},{}],411:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76571,7 +76571,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./MeshWebGLRenderer":1017,"./MeshCanvasRenderer":1018}],683:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./MeshWebGLRenderer":465,"./MeshCanvasRenderer":466}],315:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -76727,7 +76727,7 @@ var Mesh = new Class({
 
 module.exports = Mesh;
 
-},{"../../utils/Class":16,"../components":384,"../GameObject":542,"./MeshRender":908}],684:[function(require,module,exports) {
+},{"../../utils/Class":10,"../components":500,"../GameObject":208,"./MeshRender":411}],312:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -77322,7 +77322,7 @@ var Quad = new Class({
 
 module.exports = Quad;
 
-},{"../../utils/Class":16,"../mesh/Mesh":683}],685:[function(require,module,exports) {
+},{"../../utils/Class":10,"../mesh/Mesh":315}],316:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -77368,7 +77368,7 @@ if (WEBGL_RENDERER)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Mesh":683,"../GameObjectFactory":293}],686:[function(require,module,exports) {
+},{"./Mesh":315,"../GameObjectFactory":206}],318:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -77410,7 +77410,7 @@ if (WEBGL_RENDERER)
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"./Quad":684,"../GameObjectFactory":293}],687:[function(require,module,exports) {
+},{"./Quad":312,"../GameObjectFactory":206}],319:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -77453,7 +77453,7 @@ GameObjectCreator.register('mesh', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../BuildGameObject":648,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"../../utils/object/GetValue":230,"./Mesh":683}],688:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"../../utils/object/GetValue":53,"./Mesh":315}],321:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -77493,7 +77493,7 @@ GameObjectCreator.register('quad', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../BuildGameObject":648,"../GameObjectCreator":292,"../../utils/object/GetAdvancedValue":738,"./Quad":684}],689:[function(require,module,exports) {
+},{"../BuildGameObject":205,"../GameObjectCreator":203,"../../utils/object/GetAdvancedValue":367,"./Quad":312}],317:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -77743,7 +77743,7 @@ var Light = new Class({
 
 module.exports = Light;
 
-},{"../../utils/Class":16,"../../renderer/webgl/Utils":390}],690:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../renderer/webgl/Utils":121}],320:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78075,7 +78075,7 @@ var LightsManager = new Class({
 
 module.exports = LightsManager;
 
-},{"../../utils/Class":16,"./Light":689,"../../renderer/webgl/pipelines/ForwardDiffuseLightPipeline":424,"../../renderer/webgl/Utils":390}],691:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Light":317,"../../renderer/webgl/pipelines/ForwardDiffuseLightPipeline":136,"../../renderer/webgl/Utils":121}],322:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78166,7 +78166,7 @@ PluginManager.register('LightsPlugin', LightsPlugin, 'lights');
 
 module.exports = LightsPlugin;
 
-},{"../../utils/Class":16,"./LightsManager":690,"../../boot/PluginManager":60}],29:[function(require,module,exports) {
+},{"../../utils/Class":10,"./LightsManager":320,"../../boot/PluginManager":20}],78:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78261,7 +78261,7 @@ if (WEBGL_RENDERER)
 
 module.exports = GameObjects;
 
-},{"./DisplayList":646,"./GameObjectCreator":292,"./GameObjectFactory":293,"./UpdateList":647,"./components":384,"./BuildGameObject":648,"./BuildGameObjectAnimation":649,"./GameObject":542,"./bitmaptext/static/BitmapText":692,"./blitter/Blitter":653,"./bitmaptext/dynamic/DynamicBitmapText":693,"./graphics/Graphics.js":650,"./group/Group":654,"./image/Image":655,"./particles/ParticleEmitterManager":656,"./pathfollower/PathFollower":657,"./rendertexture/RenderTexture":658,"./sprite3d/Sprite3D":659,"./sprite/Sprite":660,"./text/static/Text":694,"./tilesprite/TileSprite":661,"./zone/Zone":276,"./blitter/BlitterFactory":662,"./bitmaptext/dynamic/DynamicBitmapTextFactory":695,"./graphics/GraphicsFactory":663,"./group/GroupFactory":664,"./image/ImageFactory":665,"./particles/ParticleManagerFactory":666,"./pathfollower/PathFollowerFactory":667,"./rendertexture/RenderTextureFactory":668,"./sprite3d/Sprite3DFactory":669,"./sprite/SpriteFactory":670,"./bitmaptext/static/BitmapTextFactory":696,"./text/static/TextFactory":697,"./tilesprite/TileSpriteFactory":671,"./zone/ZoneFactory":672,"./blitter/BlitterCreator":673,"./bitmaptext/dynamic/DynamicBitmapTextCreator":698,"./graphics/GraphicsCreator":674,"./group/GroupCreator":675,"./image/ImageCreator":676,"./particles/ParticleManagerCreator":677,"./rendertexture/RenderTextureCreator":678,"./sprite3d/Sprite3DCreator":679,"./sprite/SpriteCreator":680,"./bitmaptext/static/BitmapTextCreator":699,"./text/static/TextCreator":700,"./tilesprite/TileSpriteCreator":681,"./zone/ZoneCreator":682,"./mesh/Mesh":683,"./quad/Quad":684,"./mesh/MeshFactory":685,"./quad/QuadFactory":686,"./mesh/MeshCreator":687,"./quad/QuadCreator":688,"./lights/Light":689,"./lights/LightsManager":690,"./lights/LightsPlugin":691}],393:[function(require,module,exports) {
+},{"./DisplayList":204,"./GameObjectCreator":203,"./GameObjectFactory":206,"./UpdateList":210,"./components":500,"./BuildGameObject":205,"./BuildGameObjectAnimation":207,"./GameObject":208,"./bitmaptext/static/BitmapText":331,"./blitter/Blitter":283,"./bitmaptext/dynamic/DynamicBitmapText":332,"./graphics/Graphics.js":209,"./group/Group":285,"./image/Image":284,"./particles/ParticleEmitterManager":304,"./pathfollower/PathFollower":287,"./rendertexture/RenderTexture":303,"./sprite3d/Sprite3D":286,"./sprite/Sprite":289,"./text/static/Text":333,"./tilesprite/TileSprite":288,"./zone/Zone":290,"./blitter/BlitterFactory":291,"./bitmaptext/dynamic/DynamicBitmapTextFactory":334,"./graphics/GraphicsFactory":293,"./group/GroupFactory":292,"./image/ImageFactory":295,"./particles/ParticleManagerFactory":297,"./pathfollower/PathFollowerFactory":296,"./rendertexture/RenderTextureFactory":294,"./sprite3d/Sprite3DFactory":299,"./sprite/SpriteFactory":298,"./bitmaptext/static/BitmapTextFactory":335,"./text/static/TextFactory":336,"./tilesprite/TileSpriteFactory":300,"./zone/ZoneFactory":301,"./blitter/BlitterCreator":302,"./bitmaptext/dynamic/DynamicBitmapTextCreator":337,"./graphics/GraphicsCreator":307,"./group/GroupCreator":305,"./image/ImageCreator":310,"./particles/ParticleManagerCreator":306,"./rendertexture/RenderTextureCreator":308,"./sprite3d/Sprite3DCreator":311,"./sprite/SpriteCreator":309,"./bitmaptext/static/BitmapTextCreator":339,"./text/static/TextCreator":338,"./tilesprite/TileSpriteCreator":314,"./zone/ZoneCreator":313,"./mesh/Mesh":315,"./quad/Quad":312,"./mesh/MeshFactory":316,"./quad/QuadFactory":318,"./mesh/MeshCreator":319,"./quad/QuadCreator":321,"./lights/Light":317,"./lights/LightsManager":320,"./lights/LightsPlugin":322}],641:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78285,7 +78285,7 @@ var Area = function (circle)
 
 module.exports = Area;
 
-},{}],396:[function(require,module,exports) {
+},{}],640:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78311,7 +78311,7 @@ var Clone = function (source)
 
 module.exports = Clone;
 
-},{"./Circle":392}],398:[function(require,module,exports) {
+},{"./Circle":369}],642:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78338,7 +78338,7 @@ var ContainsPoint = function (circle, point)
 
 module.exports = ContainsPoint;
 
-},{"./Contains":397}],399:[function(require,module,exports) {
+},{"./Contains":372}],643:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78370,7 +78370,7 @@ var ContainsRect = function (circle, rect)
 
 module.exports = ContainsRect;
 
-},{"./Contains":397}],400:[function(require,module,exports) {
+},{"./Contains":372}],644:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78396,7 +78396,7 @@ var CopyFrom = function (source, dest)
 
 module.exports = CopyFrom;
 
-},{}],401:[function(require,module,exports) {
+},{}],645:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78426,7 +78426,7 @@ var Equals = function (circle, toCompare)
 
 module.exports = Equals;
 
-},{}],402:[function(require,module,exports) {
+},{}],646:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78460,7 +78460,7 @@ var GetBounds = function (circle, out)
 
 module.exports = GetBounds;
 
-},{"../rectangle/Rectangle":266}],405:[function(require,module,exports) {
+},{"../rectangle/Rectangle":64}],647:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78489,7 +78489,7 @@ var Offset = function (circle, x, y)
 
 module.exports = Offset;
 
-},{}],406:[function(require,module,exports) {
+},{}],648:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78517,7 +78517,7 @@ var OffsetPoint = function (circle, point)
 
 module.exports = OffsetPoint;
 
-},{}],240:[function(require,module,exports) {
+},{}],503:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78544,7 +78544,7 @@ Circle.Random = require('./Random');
 
 module.exports = Circle;
 
-},{"./Circle":392,"./Area":393,"./Circumference":394,"./CircumferencePoint":395,"./Clone":396,"./Contains":397,"./ContainsPoint":398,"./ContainsRect":399,"./CopyFrom":400,"./Equals":401,"./GetBounds":402,"./GetPoint":403,"./GetPoints":404,"./Offset":405,"./OffsetPoint":406,"./Random":280}],426:[function(require,module,exports) {
+},{"./Circle":369,"./Area":641,"./Circumference":541,"./CircumferencePoint":539,"./Clone":640,"./Contains":372,"./ContainsPoint":642,"./ContainsRect":643,"./CopyFrom":644,"./Equals":645,"./GetBounds":646,"./GetPoint":427,"./GetPoints":425,"./Offset":647,"./OffsetPoint":648,"./Random":351}],623:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78571,7 +78571,7 @@ var CircleToCircle = function (circleA, circleB)
 
 module.exports = CircleToCircle;
 
-},{"../../math/distance/DistanceBetween":286}],427:[function(require,module,exports) {
+},{"../../math/distance/DistanceBetween":357}],620:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78621,7 +78621,7 @@ var CircleToRectangle = function (circle, rect)
 
 module.exports = CircleToRectangle;
 
-},{}],434:[function(require,module,exports) {
+},{}],628:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78651,7 +78651,7 @@ var RectangleToRectangle = function (rectA, rectB)
 
 module.exports = RectangleToRectangle;
 
-},{}],428:[function(require,module,exports) {
+},{}],621:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78690,7 +78690,7 @@ var GetRectangleIntersection = function (rectA, rectB, output)
 
 module.exports = GetRectangleIntersection;
 
-},{"../rectangle/Rectangle":266,"./RectangleToRectangle":434}],429:[function(require,module,exports) {
+},{"../rectangle/Rectangle":64,"./RectangleToRectangle":628}],622:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78771,7 +78771,7 @@ var LineToCircle = function (line, circle, nearest)
 
 module.exports = LineToCircle;
 
-},{"../circle/Contains":397,"../point/Point":463}],430:[function(require,module,exports) {
+},{"../circle/Contains":372,"../point/Point":344}],627:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78843,7 +78843,7 @@ var LineToLine = function (line1, line2, out)
 
 module.exports = LineToLine;
 
-},{"../point/Point":463}],431:[function(require,module,exports) {
+},{"../point/Point":344}],624:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78940,7 +78940,7 @@ var LineToRectangle = function (line, rect)
 
 module.exports = LineToRectangle;
 
-},{}],432:[function(require,module,exports) {
+},{}],625:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -78965,7 +78965,7 @@ var PointToLine = function (point, line)
 
 module.exports = PointToLine;
 
-},{}],433:[function(require,module,exports) {
+},{}],626:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79002,7 +79002,7 @@ var PointToLineSegment = function (point, line)
 
 module.exports = PointToLineSegment;
 
-},{"./PointToLine":432}],527:[function(require,module,exports) {
+},{"./PointToLine":625}],699:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79084,7 +79084,7 @@ var ContainsArray = function (triangle, points, returnFirst, out)
 
 module.exports = ContainsArray;
 
-},{}],494:[function(require,module,exports) {
+},{}],657:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79116,7 +79116,7 @@ var Decompose = function (rect, out)
 
 module.exports = Decompose;
 
-},{}],435:[function(require,module,exports) {
+},{}],629:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79205,7 +79205,7 @@ var RectangleToTriangle = function (rect, triangle)
 
 module.exports = RectangleToTriangle;
 
-},{"./LineToLine":430,"../rectangle/Contains":490,"../triangle/ContainsArray":527,"../rectangle/Decompose":494}],436:[function(require,module,exports) {
+},{"./LineToLine":627,"../rectangle/Contains":114,"../triangle/ContainsArray":699,"../rectangle/Decompose":657}],630:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79241,7 +79241,7 @@ var RectangleToValues = function (rect, left, right, top, bottom, tolerance)
 
 module.exports = RectangleToValues;
 
-},{}],526:[function(require,module,exports) {
+},{}],373:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79290,7 +79290,7 @@ var Contains = function (triangle, x, y)
 
 module.exports = Contains;
 
-},{}],437:[function(require,module,exports) {
+},{}],634:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79349,7 +79349,7 @@ var TriangleToCircle = function (triangle, circle)
 
 module.exports = TriangleToCircle;
 
-},{"./LineToCircle":429,"../triangle/Contains":526}],438:[function(require,module,exports) {
+},{"./LineToCircle":622,"../triangle/Contains":373}],631:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79399,7 +79399,7 @@ var TriangleToLine = function (triangle, line)
 
 module.exports = TriangleToLine;
 
-},{"../triangle/Contains":526,"./LineToLine":430}],530:[function(require,module,exports) {
+},{"../triangle/Contains":373,"./LineToLine":627}],703:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79430,7 +79430,7 @@ var Decompose = function (triangle, out)
 
 module.exports = Decompose;
 
-},{}],439:[function(require,module,exports) {
+},{}],632:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79514,7 +79514,7 @@ var TriangleToTriangle = function (triangleA, triangleB)
 
 module.exports = TriangleToTriangle;
 
-},{"../triangle/ContainsArray":527,"../triangle/Decompose":530,"./LineToLine":430}],242:[function(require,module,exports) {
+},{"../triangle/ContainsArray":699,"../triangle/Decompose":703,"./LineToLine":627}],501:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79544,7 +79544,7 @@ module.exports = {
 
 };
 
-},{"./CircleToCircle":426,"./CircleToRectangle":427,"./GetRectangleIntersection":428,"./LineToCircle":429,"./LineToLine":430,"./LineToRectangle":431,"./PointToLine":432,"./PointToLineSegment":433,"./RectangleToRectangle":434,"./RectangleToTriangle":435,"./RectangleToValues":436,"./TriangleToCircle":437,"./TriangleToLine":438,"./TriangleToTriangle":439}],441:[function(require,module,exports) {
+},{"./CircleToCircle":623,"./CircleToRectangle":620,"./GetRectangleIntersection":621,"./LineToCircle":622,"./LineToLine":627,"./LineToRectangle":624,"./PointToLine":625,"./PointToLineSegment":626,"./RectangleToRectangle":628,"./RectangleToTriangle":629,"./RectangleToValues":630,"./TriangleToCircle":634,"./TriangleToLine":631,"./TriangleToTriangle":632}],715:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79568,7 +79568,7 @@ var Angle = function (line)
 
 module.exports = Angle;
 
-},{}],442:[function(require,module,exports) {
+},{}],711:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79604,7 +79604,7 @@ var CenterOn = function (line, x, y)
 
 module.exports = CenterOn;
 
-},{}],443:[function(require,module,exports) {
+},{}],712:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79630,7 +79630,7 @@ var Clone = function (source)
 
 module.exports = Clone;
 
-},{"./Line":440}],444:[function(require,module,exports) {
+},{"./Line":118}],713:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79655,7 +79655,7 @@ var CopyFrom = function (source, dest)
 
 module.exports = CopyFrom;
 
-},{}],445:[function(require,module,exports) {
+},{}],714:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79685,7 +79685,7 @@ var Equals = function (line, toCompare)
 
 module.exports = Equals;
 
-},{}],446:[function(require,module,exports) {
+},{}],716:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79717,7 +79717,7 @@ var GetMidPoint = function (line, out)
 
 module.exports = GetMidPoint;
 
-},{"../point/Point":463}],447:[function(require,module,exports) {
+},{"../point/Point":344}],717:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79753,7 +79753,7 @@ var GetNormal = function (line, out)
 
 module.exports = GetNormal;
 
-},{"../../math/const":159,"./Angle":441,"../point/Point":463}],449:[function(require,module,exports) {
+},{"../../math/const":44,"./Angle":715,"../point/Point":344}],718:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79777,7 +79777,7 @@ var Height = function (line)
 
 module.exports = Height;
 
-},{}],451:[function(require,module,exports) {
+},{}],719:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79807,7 +79807,7 @@ var NormalAngle = function (line)
 
 module.exports = NormalAngle;
 
-},{"../../math/const":159,"../../math/Wrap":193,"./Angle":441}],452:[function(require,module,exports) {
+},{"../../math/const":44,"../../math/Wrap":254,"./Angle":715}],720:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79834,7 +79834,7 @@ var NormalX = function (line)
 
 module.exports = NormalX;
 
-},{"../../math/const":159,"./Angle":441}],453:[function(require,module,exports) {
+},{"../../math/const":44,"./Angle":715}],721:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79861,7 +79861,7 @@ var NormalY = function (line)
 
 module.exports = NormalY;
 
-},{"../../math/const":159,"./Angle":441}],454:[function(require,module,exports) {
+},{"../../math/const":44,"./Angle":715}],722:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79893,7 +79893,7 @@ var Offset = function (line, x, y)
 
 module.exports = Offset;
 
-},{}],455:[function(require,module,exports) {
+},{}],727:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79917,7 +79917,7 @@ var PerpSlope = function (line)
 
 module.exports = PerpSlope;
 
-},{}],456:[function(require,module,exports) {
+},{}],723:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79949,7 +79949,7 @@ var ReflectAngle = function (lineA, lineB)
 
 module.exports = ReflectAngle;
 
-},{"./Angle":441,"./NormalAngle":451}],459:[function(require,module,exports) {
+},{"./Angle":715,"./NormalAngle":719}],726:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -79991,7 +79991,7 @@ var RotateAroundXY = function (line, x, y, angle)
 
 module.exports = RotateAroundXY;
 
-},{}],457:[function(require,module,exports) {
+},{}],724:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80021,7 +80021,7 @@ var Rotate = function (line, angle)
 
 module.exports = Rotate;
 
-},{"./RotateAroundXY":459}],458:[function(require,module,exports) {
+},{"./RotateAroundXY":726}],725:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80049,7 +80049,7 @@ var RotateAroundPoint = function (line, point, angle)
 
 module.exports = RotateAroundPoint;
 
-},{"./RotateAroundXY":459}],460:[function(require,module,exports) {
+},{"./RotateAroundXY":726}],728:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80083,7 +80083,7 @@ var SetToAngle = function (line, x, y, angle, length)
 
 module.exports = SetToAngle;
 
-},{}],461:[function(require,module,exports) {
+},{}],729:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80107,7 +80107,7 @@ var Slope = function (line)
 
 module.exports = Slope;
 
-},{}],462:[function(require,module,exports) {
+},{}],730:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80131,7 +80131,7 @@ var Width = function (line)
 
 module.exports = Width;
 
-},{}],243:[function(require,module,exports) {
+},{}],510:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80168,7 +80168,7 @@ Line.Width = require('./Width');
 
 module.exports = Line;
 
-},{"./Line":440,"./Angle":441,"./BresenhamPoints":279,"./CenterOn":442,"./Clone":443,"./CopyFrom":444,"./Equals":445,"./GetMidPoint":446,"./GetNormal":447,"./GetPoint":448,"./GetPoints":278,"./Height":449,"./Length":450,"./NormalAngle":451,"./NormalX":452,"./NormalY":453,"./Offset":454,"./PerpSlope":455,"./Random":283,"./ReflectAngle":456,"./Rotate":457,"./RotateAroundPoint":458,"./RotateAroundXY":459,"./SetToAngle":460,"./Slope":461,"./Width":462}],464:[function(require,module,exports) {
+},{"./Line":118,"./Angle":715,"./BresenhamPoints":350,"./CenterOn":711,"./Clone":712,"./CopyFrom":713,"./Equals":714,"./GetMidPoint":716,"./GetNormal":717,"./GetPoint":345,"./GetPoints":346,"./Height":718,"./Length":423,"./NormalAngle":719,"./NormalX":720,"./NormalY":721,"./Offset":722,"./PerpSlope":727,"./Random":347,"./ReflectAngle":723,"./Rotate":724,"./RotateAroundPoint":725,"./RotateAroundXY":726,"./SetToAngle":728,"./Slope":729,"./Width":730}],679:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80192,7 +80192,7 @@ var Ceil = function (point)
 
 module.exports = Ceil;
 
-},{}],465:[function(require,module,exports) {
+},{}],676:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80218,7 +80218,7 @@ var Clone = function (source)
 
 module.exports = Clone;
 
-},{"./Point":463}],466:[function(require,module,exports) {
+},{"./Point":344}],677:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80243,7 +80243,7 @@ var CopyFrom = function (source, dest)
 
 module.exports = CopyFrom;
 
-},{}],467:[function(require,module,exports) {
+},{}],678:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80268,7 +80268,7 @@ var Equals = function (point, toCompare)
 
 module.exports = Equals;
 
-},{}],468:[function(require,module,exports) {
+},{}],680:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80292,7 +80292,7 @@ var Floor = function (point)
 
 module.exports = Floor;
 
-},{}],469:[function(require,module,exports) {
+},{}],681:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80349,7 +80349,7 @@ var GetCentroid = function (points, out)
 
 module.exports = GetCentroid;
 
-},{"./Point":463}],470:[function(require,module,exports) {
+},{"./Point":344}],682:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80373,7 +80373,7 @@ var GetMagnitude = function (point)
 
 module.exports = GetMagnitude;
 
-},{}],471:[function(require,module,exports) {
+},{}],683:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80397,7 +80397,7 @@ var GetMagnitudeSq = function (point)
 
 module.exports = GetMagnitudeSq;
 
-},{}],472:[function(require,module,exports) {
+},{}],684:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80461,7 +80461,7 @@ var GetRectangleFromPoints = function (points, out)
 
 module.exports = GetRectangleFromPoints;
 
-},{"../rectangle/Rectangle":266}],473:[function(require,module,exports) {
+},{"../rectangle/Rectangle":64}],685:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80496,7 +80496,7 @@ var Interpolate = function (pointA, pointB, t, out)
 
 module.exports = Interpolate;
 
-},{"./Point":463}],474:[function(require,module,exports) {
+},{"./Point":344}],686:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80520,7 +80520,7 @@ var Invert = function (point)
 
 module.exports = Invert;
 
-},{}],475:[function(require,module,exports) {
+},{}],687:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80549,7 +80549,7 @@ var Negative = function (point, out)
 
 module.exports = Negative;
 
-},{"./Point":463}],476:[function(require,module,exports) {
+},{"./Point":344}],688:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80589,7 +80589,7 @@ var Project = function (pointA, pointB, out)
 
 module.exports = Project;
 
-},{"./Point":463,"./GetMagnitudeSq":471}],477:[function(require,module,exports) {
+},{"./Point":344,"./GetMagnitudeSq":683}],689:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80627,7 +80627,7 @@ var ProjectUnit = function (pointA, pointB, out)
 
 module.exports = ProjectUnit;
 
-},{"./Point":463}],478:[function(require,module,exports) {
+},{"./Point":344}],690:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80665,7 +80665,7 @@ var SetMagnitude = function (point, magnitude)
 
 module.exports = SetMagnitude;
 
-},{"./GetMagnitude":470}],244:[function(require,module,exports) {
+},{"./GetMagnitude":682}],506:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80692,7 +80692,7 @@ Point.SetMagnitude = require('./SetMagnitude');
 
 module.exports = Point;
 
-},{"./Point":463,"./Ceil":464,"./Clone":465,"./CopyFrom":466,"./Equals":467,"./Floor":468,"./GetCentroid":469,"./GetMagnitude":470,"./GetMagnitudeSq":471,"./GetRectangleFromPoints":472,"./Interpolate":473,"./Invert":474,"./Negative":475,"./Project":476,"./ProjectUnit":477,"./SetMagnitude":478}],481:[function(require,module,exports) {
+},{"./Point":344,"./Ceil":679,"./Clone":676,"./CopyFrom":677,"./Equals":678,"./Floor":680,"./GetCentroid":681,"./GetMagnitude":682,"./GetMagnitudeSq":683,"./GetRectangleFromPoints":684,"./Interpolate":685,"./Invert":686,"./Negative":687,"./Project":688,"./ProjectUnit":689,"./SetMagnitude":690}],635:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80737,7 +80737,7 @@ var Contains = function (polygon, x, y)
 
 module.exports = Contains;
 
-},{}],479:[function(require,module,exports) {
+},{}],633:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80918,7 +80918,7 @@ var Polygon = new Class({
 
 module.exports = Polygon;
 
-},{"../../utils/Class":16,"./Contains":481}],480:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Contains":635}],638:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80944,7 +80944,7 @@ var Clone = function (polygon)
 
 module.exports = Clone;
 
-},{"./Polygon":479}],482:[function(require,module,exports) {
+},{"./Polygon":633}],636:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -80971,7 +80971,7 @@ var ContainsPoint = function (polygon, point)
 
 module.exports = ContainsPoint;
 
-},{"./Contains":481}],483:[function(require,module,exports) {
+},{"./Contains":635}],637:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81021,7 +81021,7 @@ var GetAABB = function (polygon, out)
 
 module.exports = GetAABB;
 
-},{"../rectangle/Rectangle":266}],484:[function(require,module,exports) {
+},{"../rectangle/Rectangle":64}],639:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81056,7 +81056,7 @@ var GetNumberArray = function (polygon, output)
 
 module.exports = GetNumberArray;
 
-},{}],245:[function(require,module,exports) {
+},{}],504:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81073,7 +81073,7 @@ Polygon.GetNumberArray = require('./GetNumberArray');
 
 module.exports = Polygon;
 
-},{"./Polygon":479,"./Clone":480,"./Contains":481,"./ContainsPoint":482,"./GetAABB":483,"./GetNumberArray":484}],485:[function(require,module,exports) {
+},{"./Polygon":633,"./Clone":638,"./Contains":635,"./ContainsPoint":636,"./GetAABB":637,"./GetNumberArray":639}],652:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81097,7 +81097,7 @@ var Area = function (rect)
 
 module.exports = Area;
 
-},{}],486:[function(require,module,exports) {
+},{}],649:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81124,7 +81124,7 @@ var Ceil = function (rect)
 
 module.exports = Ceil;
 
-},{}],487:[function(require,module,exports) {
+},{}],650:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81153,7 +81153,7 @@ var CeilAll = function (rect)
 
 module.exports = CeilAll;
 
-},{}],488:[function(require,module,exports) {
+},{}],651:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81184,7 +81184,7 @@ var CenterOn = function (rect, x, y)
 
 module.exports = CenterOn;
 
-},{}],489:[function(require,module,exports) {
+},{}],653:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81210,7 +81210,7 @@ var Clone = function (source)
 
 module.exports = Clone;
 
-},{"./Rectangle":266}],491:[function(require,module,exports) {
+},{"./Rectangle":64}],654:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81237,7 +81237,7 @@ var ContainsPoint = function (rect, point)
 
 module.exports = ContainsPoint;
 
-},{"./Contains":490}],492:[function(require,module,exports) {
+},{"./Contains":114}],655:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81275,7 +81275,7 @@ var ContainsRect = function (rectA, rectB)
 
 module.exports = ContainsRect;
 
-},{}],493:[function(require,module,exports) {
+},{}],656:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81300,7 +81300,7 @@ var CopyFrom = function (source, dest)
 
 module.exports = CopyFrom;
 
-},{}],495:[function(require,module,exports) {
+},{}],658:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81330,7 +81330,7 @@ var Equals = function (rect, toCompare)
 
 module.exports = Equals;
 
-},{}],500:[function(require,module,exports) {
+},{}],663:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81354,7 +81354,7 @@ var GetAspectRatio = function (rect)
 
 module.exports = GetAspectRatio;
 
-},{}],496:[function(require,module,exports) {
+},{}],659:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81401,7 +81401,7 @@ var FitInside = function (target, source)
 
 module.exports = FitInside;
 
-},{"./GetAspectRatio":500}],497:[function(require,module,exports) {
+},{"./GetAspectRatio":663}],660:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81448,7 +81448,7 @@ var FitOutside = function (target, source)
 
 module.exports = FitOutside;
 
-},{"./GetAspectRatio":500}],498:[function(require,module,exports) {
+},{"./GetAspectRatio":663}],661:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81475,7 +81475,7 @@ var Floor = function (rect)
 
 module.exports = Floor;
 
-},{}],499:[function(require,module,exports) {
+},{}],662:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81504,7 +81504,7 @@ var FloorAll = function (rect)
 
 module.exports = FloorAll;
 
-},{}],501:[function(require,module,exports) {
+},{}],664:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81538,7 +81538,7 @@ var GetCenter = function (rect, out)
 
 module.exports = GetCenter;
 
-},{"../point/Point":463}],504:[function(require,module,exports) {
+},{"../point/Point":344}],665:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81573,7 +81573,7 @@ var GetSize = function (rect, out)
 
 module.exports = GetSize;
 
-},{"../point/Point":463}],505:[function(require,module,exports) {
+},{"../point/Point":344}],666:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81610,7 +81610,7 @@ var Inflate = function (rect, x, y)
 
 module.exports = Inflate;
 
-},{"./CenterOn":488}],506:[function(require,module,exports) {
+},{"./CenterOn":651}],667:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81656,7 +81656,7 @@ var MergePoints = function (target, points)
 
 module.exports = MergePoints;
 
-},{}],507:[function(require,module,exports) {
+},{}],668:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81696,7 +81696,7 @@ var MergeRect = function (target, source)
 
 module.exports = MergeRect;
 
-},{}],508:[function(require,module,exports) {
+},{}],669:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81734,7 +81734,7 @@ var MergeXY = function (target, x, y)
 
 module.exports = MergeXY;
 
-},{}],509:[function(require,module,exports) {
+},{}],670:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81763,7 +81763,7 @@ var Offset = function (rect, x, y)
 
 module.exports = Offset;
 
-},{}],510:[function(require,module,exports) {
+},{}],671:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81791,7 +81791,7 @@ var OffsetPoint = function (rect, point)
 
 module.exports = OffsetPoint;
 
-},{}],511:[function(require,module,exports) {
+},{}],672:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81821,7 +81821,7 @@ var Overlaps = function (rectA, rectB)
 
 module.exports = Overlaps;
 
-},{}],513:[function(require,module,exports) {
+},{}],673:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81872,7 +81872,7 @@ var PerimeterPoint = function (rectangle, angle, out)
 
 module.exports = PerimeterPoint;
 
-},{"../point/Point":463,"../../math/DegToRad":166}],514:[function(require,module,exports) {
+},{"../point/Point":344,"../../math/DegToRad":229}],674:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81905,7 +81905,7 @@ var Scale = function (rect, x, y)
 
 module.exports = Scale;
 
-},{}],515:[function(require,module,exports) {
+},{}],675:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81943,7 +81943,7 @@ var Union = function (rectA, rectB, out)
 
 module.exports = Union;
 
-},{"./Rectangle":266}],246:[function(require,module,exports) {
+},{"./Rectangle":64}],505:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -81989,7 +81989,7 @@ Rectangle.Union = require('./Union');
 
 module.exports = Rectangle;
 
-},{"./Rectangle":266,"./Area":485,"./Ceil":486,"./CeilAll":487,"./CenterOn":488,"./Clone":489,"./Contains":490,"./ContainsPoint":491,"./ContainsRect":492,"./CopyFrom":493,"./Decompose":494,"./Equals":495,"./FitInside":496,"./FitOutside":497,"./Floor":498,"./FloorAll":499,"./FromPoints":294,"./GetAspectRatio":500,"./GetCenter":501,"./GetPoint":502,"./GetPoints":503,"./GetSize":504,"./Inflate":505,"./MarchingAnts":272,"./MergePoints":506,"./MergeRect":507,"./MergeXY":508,"./Offset":509,"./OffsetPoint":510,"./Overlaps":511,"./Perimeter":512,"./PerimeterPoint":513,"./Random":284,"./Scale":514,"./Union":515}],532:[function(require,module,exports) {
+},{"./Rectangle":64,"./Area":652,"./Ceil":649,"./CeilAll":650,"./CenterOn":651,"./Clone":653,"./Contains":114,"./ContainsPoint":654,"./ContainsRect":655,"./CopyFrom":656,"./Decompose":657,"./Equals":658,"./FitInside":659,"./FitOutside":660,"./Floor":661,"./FloorAll":662,"./FromPoints":364,"./GetAspectRatio":663,"./GetCenter":664,"./GetPoint":115,"./GetPoints":116,"./GetSize":665,"./Inflate":666,"./MarchingAnts":352,"./MergePoints":667,"./MergeRect":668,"./MergeXY":669,"./Offset":670,"./OffsetPoint":671,"./Overlaps":672,"./Perimeter":343,"./PerimeterPoint":673,"./Random":117,"./Scale":674,"./Union":675}],429:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82071,7 +82071,7 @@ var GetPoint = function (triangle, position, out)
 
 module.exports = GetPoint;
 
-},{"../point/Point":463,"../line/Length":450}],533:[function(require,module,exports) {
+},{"../point/Point":344,"../line/Length":423}],430:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82158,7 +82158,7 @@ var GetPoints = function (triangle, quantity, stepRate, out)
 
 module.exports = GetPoints;
 
-},{"../line/Length":450,"../point/Point":463}],516:[function(require,module,exports) {
+},{"../line/Length":423,"../point/Point":344}],371:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82577,7 +82577,7 @@ var Triangle = new Class({
 
 module.exports = Triangle;
 
-},{"../../utils/Class":16,"./Contains":526,"./GetPoint":532,"./GetPoints":533,"../line/Line":440,"./Random":285}],517:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Contains":373,"./GetPoint":429,"./GetPoints":430,"../line/Line":118,"./Random":356}],696:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82612,7 +82612,7 @@ var Area = function (triangle)
 
 module.exports = Area;
 
-},{}],518:[function(require,module,exports) {
+},{}],691:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82658,7 +82658,7 @@ var BuildEquilateral = function (x, y, length)
 
 module.exports = BuildEquilateral;
 
-},{"./Triangle":516}],519:[function(require,module,exports) {
+},{"./Triangle":371}],692:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82727,7 +82727,7 @@ var BuildFromPolygon = function (data, holes, scaleX, scaleY, out)
 
 module.exports = BuildFromPolygon;
 
-},{"../polygon/Earcut":813,"./Triangle":516}],520:[function(require,module,exports) {
+},{"../polygon/Earcut":384,"./Triangle":371}],693:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82772,7 +82772,7 @@ var BuildRight = function (x, y, width, height)
 
 module.exports = BuildRight;
 
-},{"./Triangle":516}],522:[function(require,module,exports) {
+},{"./Triangle":371}],695:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82808,7 +82808,7 @@ var Centroid = function (triangle, out)
 
 module.exports = Centroid;
 
-},{"../point/Point":463}],536:[function(require,module,exports) {
+},{"../point/Point":344}],707:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82843,7 +82843,7 @@ var Offset = function (triangle, x, y)
 
 module.exports = Offset;
 
-},{}],521:[function(require,module,exports) {
+},{}],694:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82890,7 +82890,7 @@ var CenterOn = function (triangle, x, y, centerFunc)
 
 module.exports = CenterOn;
 
-},{"./Centroid":522,"./Offset":536}],523:[function(require,module,exports) {
+},{"./Centroid":695,"./Offset":707}],697:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -82960,7 +82960,7 @@ var CircumCenter = function (triangle, out)
 
 module.exports = CircumCenter;
 
-},{"../../math/Vector2":194}],524:[function(require,module,exports) {
+},{"../../math/Vector2":96}],698:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83037,7 +83037,7 @@ var CircumCircle = function (triangle, out)
 
 module.exports = CircumCircle;
 
-},{"../circle/Circle":392}],525:[function(require,module,exports) {
+},{"../circle/Circle":369}],700:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83063,7 +83063,7 @@ var Clone = function (source)
 
 module.exports = Clone;
 
-},{"./Triangle":516}],528:[function(require,module,exports) {
+},{"./Triangle":371}],701:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83090,7 +83090,7 @@ var ContainsPoint = function (triangle, point)
 
 module.exports = ContainsPoint;
 
-},{"./Contains":526}],529:[function(require,module,exports) {
+},{"./Contains":373}],702:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83115,7 +83115,7 @@ var CopyFrom = function (source, dest)
 
 module.exports = CopyFrom;
 
-},{}],531:[function(require,module,exports) {
+},{}],704:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83147,7 +83147,7 @@ var Equals = function (triangle, toCompare)
 
 module.exports = Equals;
 
-},{}],534:[function(require,module,exports) {
+},{}],705:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83206,7 +83206,7 @@ var InCenter = function (triangle, out)
 
 module.exports = InCenter;
 
-},{"../point/Point":463}],535:[function(require,module,exports) {
+},{"../point/Point":344}],706:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83238,7 +83238,7 @@ var Perimeter = function (triangle)
 
 module.exports = Perimeter;
 
-},{"../line/Length":450}],539:[function(require,module,exports) {
+},{"../line/Length":423}],709:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83286,7 +83286,7 @@ var RotateAroundXY = function (triangle, x, y, angle)
 
 module.exports = RotateAroundXY;
 
-},{}],537:[function(require,module,exports) {
+},{}],708:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83316,7 +83316,7 @@ var Rotate = function (triangle, angle)
 
 module.exports = Rotate;
 
-},{"./RotateAroundXY":539,"./InCenter":534}],538:[function(require,module,exports) {
+},{"./RotateAroundXY":709,"./InCenter":705}],710:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83344,7 +83344,7 @@ var RotateAroundPoint = function (triangle, point, angle)
 
 module.exports = RotateAroundPoint;
 
-},{"./RotateAroundXY":539}],247:[function(require,module,exports) {
+},{"./RotateAroundXY":709}],508:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83380,7 +83380,7 @@ Triangle.RotateAroundXY = require('./RotateAroundXY');
 
 module.exports = Triangle;
 
-},{"./Triangle":516,"./Area":517,"./BuildEquilateral":518,"./BuildFromPolygon":519,"./BuildRight":520,"./CenterOn":521,"./Centroid":522,"./CircumCenter":523,"./CircumCircle":524,"./Clone":525,"./Contains":526,"./ContainsArray":527,"./ContainsPoint":528,"./CopyFrom":529,"./Decompose":530,"./Equals":531,"./GetPoint":532,"./GetPoints":533,"./InCenter":534,"./Perimeter":535,"./Offset":536,"./Random":285,"./Rotate":537,"./RotateAroundPoint":538,"./RotateAroundXY":539}],30:[function(require,module,exports) {
+},{"./Triangle":371,"./Area":696,"./BuildEquilateral":691,"./BuildFromPolygon":692,"./BuildRight":693,"./CenterOn":694,"./Centroid":695,"./CircumCenter":697,"./CircumCircle":698,"./Clone":700,"./Contains":373,"./ContainsArray":699,"./ContainsPoint":701,"./CopyFrom":702,"./Decompose":703,"./Equals":704,"./GetPoint":429,"./GetPoints":430,"./InCenter":705,"./Perimeter":706,"./Offset":707,"./Random":356,"./Rotate":708,"./RotateAroundPoint":710,"./RotateAroundXY":709}],80:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83404,7 +83404,7 @@ module.exports = {
 
 };
 
-},{"./circle":240,"./ellipse":241,"./intersects":242,"./line":243,"./point":244,"./polygon":245,"./rectangle":246,"./triangle":247}],1003:[function(require,module,exports) {
+},{"./circle":503,"./ellipse":502,"./intersects":501,"./line":510,"./point":506,"./polygon":504,"./rectangle":505,"./triangle":508}],946:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83450,7 +83450,7 @@ module.exports = {
 
 };
 
-},{}],1004:[function(require,module,exports) {
+},{}],947:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83485,7 +83485,7 @@ module.exports = {
 
 };
 
-},{}],1005:[function(require,module,exports) {
+},{}],948:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83532,7 +83532,7 @@ module.exports = {
 
 };
 
-},{}],965:[function(require,module,exports) {
+},{}],913:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83551,7 +83551,7 @@ module.exports = {
 
 };
 
-},{"./Sony_PlayStation_DualShock_4":1003,"./SNES_USB_Controller":1004,"./XBox360_Controller":1005}],750:[function(require,module,exports) {
+},{"./Sony_PlayStation_DualShock_4":946,"./SNES_USB_Controller":947,"./XBox360_Controller":948}],511:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83572,7 +83572,7 @@ module.exports = {
     Configs: require('./configs/')
 };
 
-},{"./Axis":878,"./Button":879,"./Gamepad":645,"./GamepadManager":263,"./configs/":965}],652:[function(require,module,exports) {
+},{"./Axis":342,"./Button":341,"./Gamepad":113,"./GamepadManager":59,"./configs/":913}],213:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -83660,7 +83660,7 @@ var InteractiveObject = function (gameObject, hitArea, hitAreaCallback)
 
 module.exports = InteractiveObject;
 
-},{}],651:[function(require,module,exports) {
+},{}],214:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85299,7 +85299,7 @@ PluginManager.register('InputPlugin', InputPlugin, 'input');
 
 module.exports = InputPlugin;
 
-},{"../geom/circle/Circle":392,"../geom/circle/Contains":397,"../utils/Class":16,"../math/distance/DistanceBetween":286,"../geom/ellipse/Ellipse":407,"../geom/ellipse/Contains":412,"eventemitter3":67,"./InteractiveObject":652,"../boot/PluginManager":60,"../geom/rectangle/Rectangle":266,"../geom/rectangle/Contains":490,"../geom/triangle/Triangle":516,"../geom/triangle/Contains":526}],916:[function(require,module,exports) {
+},{"../geom/circle/Circle":369,"../geom/circle/Contains":372,"../utils/Class":10,"../math/distance/DistanceBetween":357,"../geom/ellipse/Ellipse":370,"../geom/ellipse/Contains":374,"eventemitter3":36,"./InteractiveObject":213,"../boot/PluginManager":20,"../geom/rectangle/Rectangle":64,"../geom/rectangle/Contains":114,"../geom/triangle/Triangle":371,"../geom/triangle/Contains":373}],857:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85334,7 +85334,7 @@ var JustDown = function (key)
 
 module.exports = JustDown;
 
-},{}],917:[function(require,module,exports) {
+},{}],858:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85369,7 +85369,7 @@ var JustUp = function (key)
 
 module.exports = JustUp;
 
-},{}],918:[function(require,module,exports) {
+},{}],860:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85397,7 +85397,7 @@ var DownDuration = function (key, duration)
 
 module.exports = DownDuration;
 
-},{}],919:[function(require,module,exports) {
+},{}],859:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85425,7 +85425,7 @@ var UpDuration = function (key, duration)
 
 module.exports = UpDuration;
 
-},{}],749:[function(require,module,exports) {
+},{}],509:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85452,7 +85452,7 @@ module.exports = {
     
 };
 
-},{"./KeyboardManager":264,"./keys/Key":629,"./keys/KeyCodes":630,"./combo/KeyCombo":632,"./keys/JustDown":916,"./keys/JustUp":917,"./keys/DownDuration":918,"./keys/UpDuration":919}],751:[function(require,module,exports) {
+},{"./KeyboardManager":60,"./keys/Key":125,"./keys/KeyCodes":126,"./combo/KeyCombo":130,"./keys/JustDown":857,"./keys/JustUp":858,"./keys/DownDuration":860,"./keys/UpDuration":859}],513:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85471,7 +85471,7 @@ module.exports = {
 };
 /* eslint-enable */
 
-},{"./MouseManager":265}],752:[function(require,module,exports) {
+},{"./MouseManager":61}],507:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85490,7 +85490,7 @@ module.exports = {
 };
 /* eslint-enable */
 
-},{"./TouchManager":267}],33:[function(require,module,exports) {
+},{"./TouchManager":62}],81:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85514,7 +85514,7 @@ module.exports = {
 
 };
 
-},{"./gamepad":750,"./InputManager":58,"./InputPlugin":651,"./InteractiveObject":652,"./keyboard":749,"./mouse":751,"./Pointer":261,"./touch":752}],74:[function(require,module,exports) {
+},{"./gamepad":511,"./InputManager":24,"./InputPlugin":214,"./InteractiveObject":213,"./keyboard":509,"./mouse":513,"./Pointer":46,"./touch":507}],215:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85689,7 +85689,7 @@ var FILE_CONST = {
 
 module.exports = FILE_CONST;
 
-},{}],76:[function(require,module,exports) {
+},{}],218:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85724,7 +85724,7 @@ var FileTypesManager = {
 
 module.exports = FileTypesManager;
 
-},{}],77:[function(require,module,exports) {
+},{}],216:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85761,7 +85761,7 @@ var GetURL = function (file, baseURL)
 
 module.exports = GetURL;
 
-},{}],81:[function(require,module,exports) {
+},{}],222:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85833,7 +85833,7 @@ var XHRSettings = function (responseType, async, user, password, timeout)
 
 module.exports = XHRSettings;
 
-},{}],79:[function(require,module,exports) {
+},{}],221:[function(require,module,exports) {
 var global = (1,eval)("this");
 /**
  * @author       Richard Davey <rich@photonstorm.com>
@@ -85878,7 +85878,7 @@ var MergeXHRSettings = function (global, local)
 
 module.exports = MergeXHRSettings;
 
-},{"../utils/object/Extend":20,"./XHRSettings":81}],80:[function(require,module,exports) {
+},{"../utils/object/Extend":14,"./XHRSettings":222}],220:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -85937,7 +85937,7 @@ var XHRLoader = function (file, globalXHRSettings)
 
 module.exports = XHRLoader;
 
-},{"./MergeXHRSettings":79}],75:[function(require,module,exports) {
+},{"./MergeXHRSettings":221}],217:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -86401,7 +86401,7 @@ File.revokeObjectURL = function (image)
 
 module.exports = File;
 
-},{"../utils/Class":16,"./const":74,"../utils/object/GetFastValue":268,"./GetURL":77,"./MergeXHRSettings":79,"./XHRLoader":80,"./XHRSettings":81}],366:[function(require,module,exports) {
+},{"../utils/Class":10,"./const":215,"../utils/object/GetFastValue":102,"./GetURL":216,"./MergeXHRSettings":221,"./XHRLoader":220,"./XHRSettings":222}],742:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -86513,7 +86513,7 @@ FileTypesManager.register('json', function (key, url, xhrSettings)
 
 module.exports = JSONFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],356:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],731:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -86591,7 +86591,7 @@ FileTypesManager.register('animation', function (key, url, xhrSettings)
 
 module.exports = AnimationJSONFile;
 
-},{"../FileTypesManager":76,"./JSONFile.js":366}],365:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./JSONFile.js":742}],740:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -86759,7 +86759,7 @@ FileTypesManager.register('image', function (key, url, xhrSettings)
 
 module.exports = ImageFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],357:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],735:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -86846,7 +86846,7 @@ FileTypesManager.register('atlas', function (key, textureURL, atlasURL, textureX
 
 module.exports = AtlasJSONFile;
 
-},{"../FileTypesManager":76,"./ImageFile.js":365,"./JSONFile.js":366}],363:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./ImageFile.js":740,"./JSONFile.js":742}],737:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -86990,7 +86990,7 @@ var HTML5AudioFile = new Class({
 
 module.exports = HTML5AudioFile;
 
-},{"../../utils/Class":16,"../File":75,"../../utils/object/GetFastValue":268,"../GetURL":77}],358:[function(require,module,exports) {
+},{"../../utils/Class":10,"../File":217,"../../utils/object/GetFastValue":102,"../GetURL":216}],732:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87227,7 +87227,7 @@ AudioFile.findAudioURL = function (game, urls)
 
 module.exports = AudioFile;
 
-},{"../../utils/Class":16,"../../const":15,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268,"./HTML5AudioFile":363}],359:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../const":9,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102,"./HTML5AudioFile":737}],733:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87297,7 +87297,7 @@ FileTypesManager.register('audioSprite', function (key, urls, json, config, audi
     return this;
 });
 
-},{"./AudioFile.js":358,"../const":74,"../FileTypesManager":76,"./JSONFile.js":366}],360:[function(require,module,exports) {
+},{"./AudioFile.js":732,"../const":215,"../FileTypesManager":218,"./JSONFile.js":742}],734:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87399,7 +87399,7 @@ FileTypesManager.register('binary', function (key, url, xhrSettings)
 
 module.exports = BinaryFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],376:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],751:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87507,7 +87507,7 @@ FileTypesManager.register('xml', function (key, url, xhrSettings)
 
 module.exports = XMLFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268,"../../dom/ParseXML":70}],361:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102,"../../dom/ParseXML":211}],739:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87581,7 +87581,7 @@ FileTypesManager.register('bitmapFont', function (key, textureURL, xmlURL, textu
 
 module.exports = BitmapFontFile;
 
-},{"../FileTypesManager":76,"./ImageFile.js":365,"./XMLFile.js":376}],362:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./ImageFile.js":740,"./XMLFile.js":751}],736:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87683,7 +87683,7 @@ FileTypesManager.register('glsl', function (key, url, xhrSettings)
 
 module.exports = GLSLFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],364:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],738:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87843,7 +87843,7 @@ FileTypesManager.register('html', function (key, url, width, height, xhrSettings
 
 module.exports = HTMLFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],777:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],852:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87903,7 +87903,7 @@ var NumberArray = function (start, end, prefix, suffix)
 
 module.exports = NumberArray;
 
-},{}],367:[function(require,module,exports) {
+},{}],741:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -87988,7 +87988,7 @@ FileTypesManager.register('multiatlas', function (key, textureURLs, atlasURLs, t
     return this;
 });
 
-},{"../FileTypesManager":76,"./ImageFile.js":365,"./JSONFile.js":366,"../../utils/array/NumberArray":777}],368:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./ImageFile.js":740,"./JSONFile.js":742,"../../utils/array/NumberArray":852}],743:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88108,7 +88108,7 @@ FileTypesManager.register('plugin', function (key, url, xhrSettings)
 
 module.exports = PluginFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268,"../../boot/PluginManager":60}],369:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102,"../../boot/PluginManager":20}],744:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88216,7 +88216,7 @@ FileTypesManager.register('script', function (key, url, xhrSettings)
 
 module.exports = ScriptFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],370:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],745:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88289,7 +88289,7 @@ FileTypesManager.register('spritesheet', function (key, url, config, xhrSettings
 
 module.exports = SpriteSheetFile;
 
-},{"../FileTypesManager":76,"./ImageFile.js":365}],371:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./ImageFile.js":740}],746:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88440,7 +88440,7 @@ FileTypesManager.register('svg', function (key, url, xhrSettings)
 
 module.exports = SVGFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../utils/object/GetFastValue":268}],372:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../utils/object/GetFastValue":102}],747:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88539,7 +88539,7 @@ FileTypesManager.register('text', function (key, url, xhrSettings)
 
 module.exports = TextFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76}],204:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218}],271:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88590,7 +88590,7 @@ module.exports = {
 
 };
 
-},{}],373:[function(require,module,exports) {
+},{}],748:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88693,7 +88693,7 @@ FileTypesManager.register('tilemapCSV', function (key, url, xhrSettings)
 
 module.exports = TilemapCSVFile;
 
-},{"../../utils/Class":16,"../const":74,"../File":75,"../FileTypesManager":76,"../../tilemaps/Formats":204}],374:[function(require,module,exports) {
+},{"../../utils/Class":10,"../const":215,"../File":217,"../FileTypesManager":218,"../../tilemaps/Formats":271}],749:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88804,7 +88804,7 @@ FileTypesManager.register('tilemapWeltmeister', function (key, url, xhrSettings)
 
 module.exports = TilemapJSONFile;
 
-},{"../FileTypesManager":76,"./JSONFile.js":366,"../../tilemaps/Formats":204}],375:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./JSONFile.js":742,"../../tilemaps/Formats":271}],750:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88879,7 +88879,7 @@ FileTypesManager.register('unityAtlas', function (key, textureURL, atlasURL, tex
 
 module.exports = UnityAtlasFile;
 
-},{"../FileTypesManager":76,"./ImageFile.js":365,"./TextFile.js":372}],234:[function(require,module,exports) {
+},{"../FileTypesManager":218,"./ImageFile.js":740,"./TextFile.js":747}],512:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -88939,7 +88939,7 @@ module.exports = {
 
 };
 
-},{"./AnimationJSONFile":356,"./AtlasJSONFile":357,"./AudioFile":358,"./AudioSprite":359,"./BinaryFile":360,"./BitmapFontFile":361,"./GLSLFile":362,"./HTML5AudioFile":363,"./HTMLFile":364,"./ImageFile":365,"./JSONFile":366,"./MultiAtlas":367,"./PluginFile":368,"./ScriptFile":369,"./SpriteSheetFile":370,"./SVGFile":371,"./TextFile":372,"./TilemapCSVFile":373,"./TilemapJSONFile":374,"./UnityAtlasFile":375,"./XMLFile":376}],78:[function(require,module,exports) {
+},{"./AnimationJSONFile":731,"./AtlasJSONFile":735,"./AudioFile":732,"./AudioSprite":733,"./BinaryFile":734,"./BitmapFontFile":739,"./GLSLFile":736,"./HTML5AudioFile":737,"./HTMLFile":738,"./ImageFile":740,"./JSONFile":742,"./MultiAtlas":741,"./PluginFile":743,"./ScriptFile":744,"./SpriteSheetFile":745,"./SVGFile":746,"./TextFile":747,"./TilemapCSVFile":748,"./TilemapJSONFile":749,"./UnityAtlasFile":750,"./XMLFile":751}],219:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -89939,7 +89939,7 @@ PluginManager.register('Loader', LoaderPlugin, 'load');
 
 module.exports = LoaderPlugin;
 
-},{"../utils/Class":16,"./const":74,"../structs/Set":87,"eventemitter3":67,"./FileTypesManager":76,"../utils/object/GetFastValue":268,"../gameobjects/bitmaptext/ParseXMLBitmapFont":270,"../boot/PluginManager":60,"./XHRSettings":81}],32:[function(require,module,exports) {
+},{"../utils/Class":10,"./const":215,"../structs/Set":266,"eventemitter3":36,"./FileTypesManager":218,"../utils/object/GetFastValue":102,"../gameobjects/bitmaptext/ParseXMLBitmapFont":375,"../boot/PluginManager":20,"./XHRSettings":222}],82:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -89972,7 +89972,7 @@ Loader = Extend(false, Loader, CONST);
 
 module.exports = Loader;
 
-},{"./const":74,"../utils/object/Extend":20,"./filetypes":234,"./File":75,"./FileTypesManager":76,"./GetURL":77,"./LoaderPlugin":78,"./MergeXHRSettings":79,"./XHRLoader":80,"./XHRSettings":81}],553:[function(require,module,exports) {
+},{"./const":215,"../utils/object/Extend":14,"./filetypes":512,"./File":217,"./FileTypesManager":218,"./GetURL":216,"./LoaderPlugin":219,"./MergeXHRSettings":221,"./XHRLoader":220,"./XHRSettings":222}],784:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -89999,7 +89999,7 @@ var Between = function (x1, y1, x2, y2)
 
 module.exports = Between;
 
-},{}],554:[function(require,module,exports) {
+},{}],780:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90026,7 +90026,7 @@ var BetweenY = function (x1, y1, x2, y2)
 
 module.exports = BetweenY;
 
-},{}],555:[function(require,module,exports) {
+},{}],781:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90051,7 +90051,7 @@ var BetweenPoints = function (point1, point2)
 
 module.exports = BetweenPoints;
 
-},{}],556:[function(require,module,exports) {
+},{}],782:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90076,7 +90076,7 @@ var BetweenPointsY = function (point1, point2)
 
 module.exports = BetweenPointsY;
 
-},{}],560:[function(require,module,exports) {
+},{}],787:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90109,7 +90109,7 @@ var Normalize = function (angle)
 
 module.exports = Normalize;
 
-},{}],557:[function(require,module,exports) {
+},{}],783:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90135,7 +90135,7 @@ var Reverse = function (angle)
 
 module.exports = Reverse;
 
-},{"./Normalize":560}],558:[function(require,module,exports) {
+},{"./Normalize":787}],785:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90198,7 +90198,7 @@ var RotateTo = function (currentAngle, targetAngle, lerp)
 
 module.exports = RotateTo;
 
-},{"../const":159}],559:[function(require,module,exports) {
+},{"../const":44}],786:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90240,7 +90240,7 @@ var ShortestBetween = function (angle1, angle2)
 
 module.exports = ShortestBetween;
 
-},{}],248:[function(require,module,exports) {
+},{}],517:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90266,7 +90266,7 @@ module.exports = {
 
 };
 
-},{"./Between":553,"./BetweenY":554,"./BetweenPoints":555,"./BetweenPointsY":556,"./Reverse":557,"./RotateTo":558,"./ShortestBetween":559,"./Normalize":560,"./Wrap":561,"./WrapDegrees":562}],720:[function(require,module,exports) {
+},{"./Between":784,"./BetweenY":780,"./BetweenPoints":781,"./BetweenPointsY":782,"./Reverse":783,"./RotateTo":785,"./ShortestBetween":786,"./Normalize":787,"./Wrap":788,"./WrapDegrees":789}],790:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90296,7 +90296,7 @@ var DistancePower = function (x1, y1, x2, y2, pow)
 
 module.exports = DistancePower;
 
-},{}],721:[function(require,module,exports) {
+},{}],791:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90326,7 +90326,7 @@ var DistanceSquared = function (x1, y1, x2, y2)
 
 module.exports = DistanceSquared;
 
-},{}],249:[function(require,module,exports) {
+},{}],518:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90345,7 +90345,7 @@ module.exports = {
 
 };
 
-},{"./DistanceBetween":286,"./DistancePower":720,"./DistanceSquared":721}],250:[function(require,module,exports) {
+},{"./DistanceBetween":357,"./DistancePower":790,"./DistanceSquared":791}],522:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90373,7 +90373,7 @@ module.exports = {
 
 };
 
-},{"./back":613,"./bounce":612,"./circular":614,"./cubic":615,"./elastic":616,"./expo":617,"./linear":618,"./quadratic":620,"./quartic":619,"./quintic":621,"./sine":622,"./stepped":623}],563:[function(require,module,exports) {
+},{"./back":917,"./bounce":914,"./circular":916,"./cubic":915,"./elastic":919,"./expo":925,"./linear":918,"./quadratic":922,"./quartic":920,"./quintic":924,"./sine":926,"./stepped":921}],796:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90400,7 +90400,7 @@ var Ceil = function (value, epsilon)
 
 module.exports = Ceil;
 
-},{}],564:[function(require,module,exports) {
+},{}],792:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90428,7 +90428,7 @@ var Equal = function (a, b, epsilon)
 
 module.exports = Equal;
 
-},{}],565:[function(require,module,exports) {
+},{}],793:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90455,7 +90455,7 @@ var Floor = function (value, epsilon)
 
 module.exports = Floor;
 
-},{}],566:[function(require,module,exports) {
+},{}],794:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90483,7 +90483,7 @@ var GreaterThan = function (a, b, epsilon)
 
 module.exports = GreaterThan;
 
-},{}],567:[function(require,module,exports) {
+},{}],795:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90511,7 +90511,7 @@ var LessThan = function (a, b, epsilon)
 
 module.exports = LessThan;
 
-},{}],251:[function(require,module,exports) {
+},{}],519:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90532,7 +90532,7 @@ module.exports = {
 
 };
 
-},{"./Ceil":563,"./Equal":564,"./Floor":565,"./GreaterThan":566,"./LessThan":567}],168:[function(require,module,exports) {
+},{"./Ceil":796,"./Equal":792,"./Floor":793,"./GreaterThan":794,"./LessThan":795}],233:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90568,7 +90568,7 @@ var Factorial = function (value)
 
 module.exports = Factorial;
 
-},{}],161:[function(require,module,exports) {
+},{}],224:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90595,7 +90595,7 @@ var Bernstein = function (n, i)
 
 module.exports = Bernstein;
 
-},{"./Factorial":168}],731:[function(require,module,exports) {
+},{"./Factorial":233}],799:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90630,7 +90630,7 @@ var BezierInterpolation = function (v, k)
 
 module.exports = BezierInterpolation;
 
-},{"../Bernstein":161}],732:[function(require,module,exports) {
+},{"../Bernstein":224}],797:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90683,7 +90683,7 @@ var CatmullRomInterpolation = function (v, k)
 
 module.exports = CatmullRomInterpolation;
 
-},{"../CatmullRom":163}],733:[function(require,module,exports) {
+},{"../CatmullRom":226}],798:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90724,7 +90724,7 @@ var LinearInterpolation = function (v, k)
 
 module.exports = LinearInterpolation;
 
-},{"../Linear":175}],252:[function(require,module,exports) {
+},{"../Linear":237}],521:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90743,7 +90743,7 @@ module.exports = {
     QuadraticBezier: require('./QuadraticBezierInterpolation')
 };
 
-},{"./BezierInterpolation":731,"./CatmullRomInterpolation":732,"./CubicBezierInterpolation":291,"./LinearInterpolation":733,"./QuadraticBezierInterpolation":295}],569:[function(require,module,exports) {
+},{"./BezierInterpolation":799,"./CatmullRomInterpolation":797,"./CubicBezierInterpolation":365,"./LinearInterpolation":798,"./QuadraticBezierInterpolation":363}],803:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90767,7 +90767,7 @@ var IsValuePowerOfTwo = function (value)
 
 module.exports = IsValuePowerOfTwo;
 
-},{}],253:[function(require,module,exports) {
+},{}],523:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90786,7 +90786,7 @@ module.exports = {
 
 };
 
-},{"./GetPowerOfTwo":568,"./IsSizePowerOfTwo":389,"./IsValuePowerOfTwo":569}],734:[function(require,module,exports) {
+},{"./GetPowerOfTwo":403,"./IsSizePowerOfTwo":120,"./IsValuePowerOfTwo":803}],800:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90822,7 +90822,7 @@ var SnapCeil = function (value, gap, start)
 
 module.exports = SnapCeil;
 
-},{}],735:[function(require,module,exports) {
+},{}],801:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90858,7 +90858,7 @@ var SnapFloor = function (value, gap, start)
 
 module.exports = SnapFloor;
 
-},{}],736:[function(require,module,exports) {
+},{}],802:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90894,7 +90894,7 @@ var SnapTo = function (value, gap, start)
 
 module.exports = SnapTo;
 
-},{}],254:[function(require,module,exports) {
+},{}],524:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90913,7 +90913,7 @@ module.exports = {
 
 };
 
-},{"./SnapCeil":734,"./SnapFloor":735,"./SnapTo":736}],160:[function(require,module,exports) {
+},{"./SnapCeil":800,"./SnapFloor":801,"./SnapTo":802}],227:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90944,7 +90944,7 @@ var Average = function (values)
 
 module.exports = Average;
 
-},{}],164:[function(require,module,exports) {
+},{}],230:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -90975,7 +90975,7 @@ var CeilTo = function (value, place, base)
 
 module.exports = CeilTo;
 
-},{}],167:[function(require,module,exports) {
+},{}],231:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91000,7 +91000,7 @@ var Difference = function (a, b)
 
 module.exports = Difference;
 
-},{}],170:[function(require,module,exports) {
+},{}],235:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91031,7 +91031,7 @@ var FloorTo = function (value, place, base)
 
 module.exports = FloorTo;
 
-},{}],172:[function(require,module,exports) {
+},{}],236:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91056,7 +91056,7 @@ var GetSpeed = function (distance, time)
 
 module.exports = GetSpeed;
 
-},{}],173:[function(require,module,exports) {
+},{}],238:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91083,7 +91083,7 @@ var IsEven = function (value)
 
 module.exports = IsEven;
 
-},{}],174:[function(require,module,exports) {
+},{}],244:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91108,7 +91108,7 @@ var IsEvenStrict = function (value)
 
 module.exports = IsEvenStrict;
 
-},{}],176:[function(require,module,exports) {
+},{}],240:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91134,7 +91134,7 @@ var MaxAdd = function (value, amount, max)
 
 module.exports = MaxAdd;
 
-},{}],177:[function(require,module,exports) {
+},{}],248:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91160,7 +91160,7 @@ var MinSub = function (value, amount, min)
 
 module.exports = MinSub;
 
-},{}],178:[function(require,module,exports) {
+},{}],239:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91215,7 +91215,7 @@ var Percent = function (value, min, max, upperMax)
 
 module.exports = Percent;
 
-},{}],180:[function(require,module,exports) {
+},{}],249:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91247,7 +91247,7 @@ var RandomXY = function (vector, scale)
 
 module.exports = RandomXY;
 
-},{}],183:[function(require,module,exports) {
+},{}],245:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91278,7 +91278,7 @@ var Rotate = function (point, angle)
 
 module.exports = Rotate;
 
-},{}],186:[function(require,module,exports) {
+},{}],250:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91303,7 +91303,7 @@ var RoundAwayFromZero = function (value)
 
 module.exports = RoundAwayFromZero;
 
-},{}],187:[function(require,module,exports) {
+},{}],253:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91334,7 +91334,7 @@ var RoundTo = function (value, place, base)
 
 module.exports = RoundTo;
 
-},{}],188:[function(require,module,exports) {
+},{}],255:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91391,7 +91391,7 @@ var SinCosTableGenerator = function (length, sinAmp, cosAmp, frequency)
 
 module.exports = SinCosTableGenerator;
 
-},{}],192:[function(require,module,exports) {
+},{}],257:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91417,7 +91417,7 @@ var Within = function (a, b, tolerance)
 
 module.exports = Within;
 
-},{}],34:[function(require,module,exports) {
+},{}],85:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91497,7 +91497,7 @@ PhaserMath = Extend(false, PhaserMath, CONST);
 
 module.exports = PhaserMath;
 
-},{"./const":159,"../utils/object/Extend":20,"./angle/":248,"./distance/":249,"./easing/":250,"./fuzzy/":251,"./interpolation/":252,"./pow2/":253,"./snap/":254,"./Average":160,"./Bernstein":161,"./Between":162,"./CatmullRom":163,"./CeilTo":164,"./Clamp":165,"./DegToRad":166,"./Difference":167,"./Factorial":168,"./FloatBetween":169,"./FloorTo":170,"./FromPercent":171,"./GetSpeed":172,"./IsEven":173,"./IsEvenStrict":174,"./Linear":175,"./MaxAdd":176,"./MinSub":177,"./Percent":178,"./RadToDeg":179,"./RandomXY":180,"./RandomXYZ":181,"./RandomXYZW":182,"./Rotate":183,"./RotateAround":184,"./RotateAroundDistance":185,"./RoundAwayFromZero":186,"./RoundTo":187,"./SinCosTableGenerator":188,"./SmootherStep":189,"./SmoothStep":190,"./TransformXY":191,"./Within":192,"./Wrap":193,"./Vector2":194,"./Vector3":195,"./Vector4":196,"./Matrix3":197,"./Matrix4":198,"./Quaternion":199,"./RotateVec3":200}],335:[function(require,module,exports) {
+},{"./const":44,"../utils/object/Extend":14,"./angle/":517,"./distance/":518,"./easing/":522,"./fuzzy/":519,"./interpolation/":521,"./pow2/":523,"./snap/":524,"./Average":227,"./Bernstein":224,"./Between":225,"./CatmullRom":226,"./CeilTo":230,"./Clamp":228,"./DegToRad":229,"./Difference":231,"./Factorial":233,"./FloatBetween":232,"./FloorTo":235,"./FromPercent":234,"./GetSpeed":236,"./IsEven":238,"./IsEvenStrict":244,"./Linear":237,"./MaxAdd":240,"./MinSub":248,"./Percent":239,"./RadToDeg":241,"./RandomXY":249,"./RandomXYZ":243,"./RandomXYZW":242,"./Rotate":245,"./RotateAround":247,"./RotateAroundDistance":246,"./RoundAwayFromZero":250,"./RoundTo":253,"./SinCosTableGenerator":255,"./SmootherStep":251,"./SmoothStep":252,"./TransformXY":47,"./Within":257,"./Wrap":254,"./Vector2":96,"./Vector3":256,"./Vector4":258,"./Matrix3":264,"./Matrix4":259,"./Quaternion":260,"./RotateVec3":261}],769:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91589,7 +91589,7 @@ module.exports = {
 
 };
 
-},{}],935:[function(require,module,exports) {
+},{}],1020:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91660,7 +91660,7 @@ var Acceleration = {
 
 module.exports = Acceleration;
 
-},{}],936:[function(require,module,exports) {
+},{}],1014:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91730,7 +91730,7 @@ var Angular = {
 
 module.exports = Angular;
 
-},{}],937:[function(require,module,exports) {
+},{}],1015:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91818,7 +91818,7 @@ var Bounce = {
 
 module.exports = Bounce;
 
-},{}],938:[function(require,module,exports) {
+},{}],1016:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -91938,7 +91938,7 @@ var Debug = {
 
 module.exports = Debug;
 
-},{}],939:[function(require,module,exports) {
+},{}],1017:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92009,7 +92009,7 @@ var Drag = {
 
 module.exports = Drag;
 
-},{}],940:[function(require,module,exports) {
+},{}],1018:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92115,7 +92115,7 @@ var Enable = {
 
 module.exports = Enable;
 
-},{}],941:[function(require,module,exports) {
+},{}],1019:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92186,7 +92186,7 @@ var Friction = {
 
 module.exports = Friction;
 
-},{}],942:[function(require,module,exports) {
+},{}],1021:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92257,7 +92257,7 @@ var Gravity = {
 
 module.exports = Gravity;
 
-},{}],943:[function(require,module,exports) {
+},{}],1022:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92295,7 +92295,7 @@ var Immovable = {
 
 module.exports = Immovable;
 
-},{}],944:[function(require,module,exports) {
+},{}],1023:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92331,7 +92331,7 @@ var Mass = {
 
 module.exports = Mass;
 
-},{}],945:[function(require,module,exports) {
+},{}],1024:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92406,7 +92406,7 @@ var Size = {
 
 module.exports = Size;
 
-},{}],946:[function(require,module,exports) {
+},{}],1025:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92495,7 +92495,7 @@ var Velocity = {
 
 module.exports = Velocity;
 
-},{}],772:[function(require,module,exports) {
+},{}],931:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92523,7 +92523,7 @@ module.exports = {
 
 };
 
-},{"./Acceleration":935,"./Angular":936,"./Bounce":937,"./Debug":938,"./Drag":939,"./Enable":940,"./Friction":941,"./Gravity":942,"./Immovable":943,"./Mass":944,"./Size":945,"./Velocity":946}],341:[function(require,module,exports) {
+},{"./Acceleration":1020,"./Angular":1014,"./Bounce":1015,"./Debug":1016,"./Drag":1017,"./Enable":1018,"./Friction":1019,"./Gravity":1021,"./Immovable":1022,"./Mass":1023,"./Size":1024,"./Velocity":1025}],778:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92612,7 +92612,7 @@ var ArcadeImage = new Class({
 
 module.exports = ArcadeImage;
 
-},{"../../utils/Class":16,"./components":772,"../../gameobjects/image/Image":655}],342:[function(require,module,exports) {
+},{"../../utils/Class":10,"./components":931,"../../gameobjects/image/Image":284}],774:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92705,7 +92705,7 @@ var ArcadeSprite = new Class({
 
 module.exports = ArcadeSprite;
 
-},{"../../utils/Class":16,"./components":772,"../../gameobjects/sprite/Sprite":660}],340:[function(require,module,exports) {
+},{"../../utils/Class":10,"./components":931,"../../gameobjects/sprite/Sprite":289}],776:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -92973,7 +92973,7 @@ var PhysicsGroup = new Class({
 
 module.exports = PhysicsGroup;
 
-},{"./ArcadeSprite":342,"../../utils/Class":16,"./const":335,"../../utils/object/GetFastValue":268,"../../gameobjects/group/Group":654}],344:[function(require,module,exports) {
+},{"./ArcadeSprite":774,"../../utils/Class":10,"./const":769,"../../utils/object/GetFastValue":102,"../../gameobjects/group/Group":285}],775:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -93116,7 +93116,7 @@ var StaticPhysicsGroup = new Class({
 
 module.exports = StaticPhysicsGroup;
 
-},{"./ArcadeSprite":342,"../../utils/Class":16,"./const":335,"../../gameobjects/group/Group":654}],339:[function(require,module,exports) {
+},{"./ArcadeSprite":774,"../../utils/Class":10,"./const":769,"../../gameobjects/group/Group":285}],773:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -93370,7 +93370,7 @@ var Factory = new Class({
 
 module.exports = Factory;
 
-},{"./ArcadeImage":341,"./ArcadeSprite":342,"../../utils/Class":16,"./const":335,"./PhysicsGroup":340,"./StaticPhysicsGroup":344}],774:[function(require,module,exports) {
+},{"./ArcadeImage":778,"./ArcadeSprite":774,"../../utils/Class":10,"./const":769,"./PhysicsGroup":776,"./StaticPhysicsGroup":775}],806:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -93408,7 +93408,7 @@ var Merge = function (obj1, obj2)
 
 module.exports = Merge;
 
-},{"./Clone":771}],337:[function(require,module,exports) {
+},{"./Clone":436}],772:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95279,7 +95279,7 @@ var Body = new Class({
 
 module.exports = Body;
 
-},{"../../geom/circle/Contains":397,"../../utils/Class":16,"./const":335,"../../geom/rectangle/Rectangle":266,"../../geom/rectangle/Contains":490,"../../math/Vector2":194}],338:[function(require,module,exports) {
+},{"../../geom/circle/Contains":372,"../../utils/Class":10,"./const":769,"../../geom/rectangle/Rectangle":64,"../../geom/rectangle/Contains":114,"../../math/Vector2":96}],771:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95455,7 +95455,7 @@ var Collider = new Class({
 
 module.exports = Collider;
 
-},{"../../utils/Class":16}],799:[function(require,module,exports) {
+},{"../../utils/Class":10}],867:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95530,7 +95530,7 @@ var GetOverlapX = function (body1, body2, overlapOnly, bias)
 
 module.exports = GetOverlapX;
 
-},{}],800:[function(require,module,exports) {
+},{}],868:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95605,7 +95605,7 @@ var GetOverlapY = function (body1, body2, overlapOnly, bias)
 
 module.exports = GetOverlapY;
 
-},{}],85:[function(require,module,exports) {
+},{}],263:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95799,7 +95799,7 @@ var ProcessQueue = new Class({
 
 module.exports = ProcessQueue;
 
-},{"../utils/Class":16}],803:[function(require,module,exports) {
+},{"../utils/Class":10}],876:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95836,7 +95836,7 @@ var ProcessTileCallbacks = function (tile, sprite)
 
 module.exports = ProcessTileCallbacks;
 
-},{}],282:[function(require,module,exports) {
+},{}],378:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -95950,7 +95950,7 @@ function defaultCompare (a, b)
 
 module.exports = QuickSelect;
 
-},{}],86:[function(require,module,exports) {
+},{}],265:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96555,7 +96555,7 @@ function multiSelect (arr, left, right, n, compare)
 
 module.exports = rbush;
 
-},{"../utils/array/QuickSelect":282}],1006:[function(require,module,exports) {
+},{"../utils/array/QuickSelect":378}],932:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96596,7 +96596,7 @@ var ProcessTileSeparationX = function (body, x)
 
 module.exports = ProcessTileSeparationX;
 
-},{}],970:[function(require,module,exports) {
+},{}],909:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96667,7 +96667,7 @@ var TileCheckX = function (body, tile, tileLeft, tileRight, tileBias)
 
 module.exports = TileCheckX;
 
-},{"./ProcessTileSeparationX":1006}],1007:[function(require,module,exports) {
+},{"./ProcessTileSeparationX":932}],945:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96708,7 +96708,7 @@ var ProcessTileSeparationY = function (body, y)
 
 module.exports = ProcessTileSeparationY;
 
-},{}],971:[function(require,module,exports) {
+},{}],910:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96779,7 +96779,7 @@ var TileCheckY = function (body, tile, tileTop, tileBottom, tileBias)
 
 module.exports = TileCheckY;
 
-},{"./ProcessTileSeparationY":1007}],805:[function(require,module,exports) {
+},{"./ProcessTileSeparationY":945}],878:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96812,7 +96812,7 @@ var TileIntersectsBody = function (tileWorldRect, body)
 
 module.exports = TileIntersectsBody;
 
-},{}],804:[function(require,module,exports) {
+},{}],877:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -96921,7 +96921,7 @@ var SeparateTile = function (i, body, tile, tileWorldRect, tilemapLayer, tileBia
 
 module.exports = SeparateTile;
 
-},{"./TileCheckX":970,"./TileCheckY":971,"./TileIntersectsBody":805}],801:[function(require,module,exports) {
+},{"./TileCheckX":909,"./TileCheckY":910,"./TileIntersectsBody":878}],869:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -97004,7 +97004,7 @@ var SeparateX = function (body1, body2, overlapOnly, bias)
 
 module.exports = SeparateX;
 
-},{"./GetOverlapX":799}],802:[function(require,module,exports) {
+},{"./GetOverlapX":867}],870:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -97087,7 +97087,7 @@ var SeparateY = function (body1, body2, overlapOnly, bias)
 
 module.exports = SeparateY;
 
-},{"./GetOverlapY":800}],343:[function(require,module,exports) {
+},{"./GetOverlapY":868}],777:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -97939,7 +97939,7 @@ var StaticBody = new Class({
 
 module.exports = StaticBody;
 
-},{"../../geom/circle/Contains":397,"../../utils/Class":16,"./const":335,"../../geom/rectangle/Contains":490,"../../math/Vector2":194}],345:[function(require,module,exports) {
+},{"../../geom/circle/Contains":372,"../../utils/Class":10,"./const":769,"../../geom/rectangle/Contains":114,"../../math/Vector2":96}],779:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -99799,7 +99799,7 @@ var World = new Class({
 
 module.exports = World;
 
-},{"./Body":337,"../../math/Clamp":165,"../../utils/Class":16,"./Collider":338,"./const":335,"../../math/distance/DistanceBetween":286,"eventemitter3":67,"./GetOverlapX":799,"./GetOverlapY":800,"../../utils/object/GetValue":230,"../../structs/ProcessQueue":85,"./tilemap/ProcessTileCallbacks":803,"../../geom/rectangle/Rectangle":266,"../../structs/RTree":86,"./tilemap/SeparateTile":804,"./SeparateX":801,"./SeparateY":802,"../../structs/Set":87,"./StaticBody":343,"./tilemap/TileIntersectsBody":805,"../../math/Vector2":194,"../../math/Wrap":193}],336:[function(require,module,exports) {
+},{"./Body":772,"../../math/Clamp":228,"../../utils/Class":10,"./Collider":771,"./const":769,"../../math/distance/DistanceBetween":357,"eventemitter3":36,"./GetOverlapX":867,"./GetOverlapY":868,"../../utils/object/GetValue":53,"../../structs/ProcessQueue":263,"./tilemap/ProcessTileCallbacks":876,"../../geom/rectangle/Rectangle":64,"../../structs/RTree":265,"./tilemap/SeparateTile":877,"./SeparateX":869,"./SeparateY":870,"../../structs/Set":266,"./StaticBody":777,"./tilemap/TileIntersectsBody":878,"../../math/Vector2":96,"../../math/Wrap":254}],770:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -100266,7 +100266,7 @@ PluginManager.register('ArcadePhysics', ArcadePhysics, 'arcadePhysics');
 
 module.exports = ArcadePhysics;
 
-},{"../../utils/Class":16,"./Factory":339,"../../utils/object/GetFastValue":268,"../../utils/object/Merge":774,"../../boot/PluginManager":60,"./World":345,"../../math/distance/DistanceBetween":286,"../../math/DegToRad":166}],229:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Factory":773,"../../utils/object/GetFastValue":102,"../../utils/object/Merge":806,"../../boot/PluginManager":20,"./World":779,"../../math/distance/DistanceBetween":357,"../../math/DegToRad":229}],515:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -100307,7 +100307,7 @@ Arcade = Extend(false, Arcade, CONST);
 
 module.exports = Arcade;
 
-},{"./const":335,"../../utils/object/Extend":20,"./ArcadePhysics":336,"./Body":337,"./Collider":338,"./Factory":339,"./PhysicsGroup":340,"./ArcadeImage":341,"./ArcadeSprite":342,"./StaticBody":343,"./StaticPhysicsGroup":344,"./World":345}],347:[function(require,module,exports) {
+},{"./const":769,"../../utils/object/Extend":14,"./ArcadePhysics":770,"./Body":772,"./Collider":771,"./Factory":773,"./PhysicsGroup":776,"./ArcadeImage":778,"./ArcadeSprite":774,"./StaticBody":777,"./StaticPhysicsGroup":775,"./World":779}],752:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -100376,7 +100376,7 @@ module.exports = {
 
 };
 
-},{}],806:[function(require,module,exports) {
+},{}],861:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -100428,7 +100428,7 @@ var GetVelocity = function (delta, vel, accel, friction, max)
 
 module.exports = GetVelocity;
 
-},{"../../math/Clamp":165}],354:[function(require,module,exports) {
+},{"../../math/Clamp":228}],758:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -100488,7 +100488,7 @@ module.exports = {
 
 };
 
-},{}],807:[function(require,module,exports) {
+},{}],862:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -100579,7 +100579,7 @@ var UpdateMotion = function (body, res)
 
 module.exports = UpdateMotion;
 
-},{}],346:[function(require,module,exports) {
+},{}],753:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101194,7 +101194,7 @@ var Body = new Class({
 
 module.exports = Body;
 
-},{"../../utils/Class":16,"./COLLIDES":347,"./GetVelocity":806,"./TYPE":354,"./UpdateMotion":807}],808:[function(require,module,exports) {
+},{"../../utils/Class":10,"./COLLIDES":752,"./GetVelocity":861,"./TYPE":758,"./UpdateMotion":862}],863:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101261,7 +101261,7 @@ module.exports = {
 
 };
 
-},{}],348:[function(require,module,exports) {
+},{}],757:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101621,7 +101621,7 @@ var CollisionMap = new Class({
 
 module.exports = CollisionMap;
 
-},{"../../utils/Class":16,"./DefaultDefs":808}],947:[function(require,module,exports) {
+},{"../../utils/Class":10,"./DefaultDefs":863}],1004:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101693,7 +101693,7 @@ var Acceleration = {
 
 module.exports = Acceleration;
 
-},{}],948:[function(require,module,exports) {
+},{}],1002:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101762,7 +101762,7 @@ var BodyScale = {
 
 module.exports = BodyScale;
 
-},{}],949:[function(require,module,exports) {
+},{}],1008:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101841,7 +101841,7 @@ var BodyType = {
 
 module.exports = BodyType;
 
-},{"../TYPE":354}],950:[function(require,module,exports) {
+},{"../TYPE":758}],1003:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -101915,7 +101915,7 @@ var Bounce = {
 
 module.exports = Bounce;
 
-},{}],951:[function(require,module,exports) {
+},{}],1005:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102032,7 +102032,7 @@ var CheckAgainst = {
 
 module.exports = CheckAgainst;
 
-},{"../TYPE":354}],952:[function(require,module,exports) {
+},{"../TYPE":758}],1006:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102183,7 +102183,7 @@ var Collides = {
 
 module.exports = Collides;
 
-},{"../COLLIDES":347}],953:[function(require,module,exports) {
+},{"../COLLIDES":752}],1007:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102303,7 +102303,7 @@ var Debug = {
 
 module.exports = Debug;
 
-},{}],954:[function(require,module,exports) {
+},{}],1009:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102375,7 +102375,7 @@ var Friction = {
 
 module.exports = Friction;
 
-},{}],955:[function(require,module,exports) {
+},{}],1010:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102432,7 +102432,7 @@ var Gravity = {
 
 module.exports = Gravity;
 
-},{}],956:[function(require,module,exports) {
+},{}],1011:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102477,7 +102477,7 @@ var Offset = {
 
 module.exports = Offset;
 
-},{}],957:[function(require,module,exports) {
+},{}],1012:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102548,7 +102548,7 @@ var SetGameObject = {
 
 module.exports = SetGameObject;
 
-},{}],958:[function(require,module,exports) {
+},{}],1013:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102643,7 +102643,7 @@ var Velocity = {
 
 module.exports = Velocity;
 
-},{}],773:[function(require,module,exports) {
+},{}],929:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102671,7 +102671,7 @@ module.exports = {
 
 };
 
-},{"./Acceleration":947,"./BodyScale":948,"./BodyType":949,"./Bounce":950,"./CheckAgainst":951,"./Collides":952,"./Debug":953,"./Friction":954,"./Gravity":955,"./Offset":956,"./SetGameObject":957,"./Velocity":958}],351:[function(require,module,exports) {
+},{"./Acceleration":1004,"./BodyScale":1002,"./BodyType":1008,"./Bounce":1003,"./CheckAgainst":1005,"./Collides":1006,"./Debug":1007,"./Friction":1009,"./Gravity":1010,"./Offset":1011,"./SetGameObject":1012,"./Velocity":1013}],755:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102800,7 +102800,7 @@ var ImpactBody = new Class({
 
 module.exports = ImpactBody;
 
-},{"../../utils/Class":16,"./components":773}],350:[function(require,module,exports) {
+},{"../../utils/Class":10,"./components":929}],759:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -102955,7 +102955,7 @@ var ImpactImage = new Class({
 
 module.exports = ImpactImage;
 
-},{"../../utils/Class":16,"./components":773,"../../gameobjects/image/Image":655}],353:[function(require,module,exports) {
+},{"../../utils/Class":10,"./components":929,"../../gameobjects/image/Image":284}],763:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -103114,7 +103114,7 @@ var ImpactSprite = new Class({
 
 module.exports = ImpactSprite;
 
-},{"../../utils/Class":16,"./components":773,"../../gameobjects/sprite/Sprite":660}],349:[function(require,module,exports) {
+},{"../../utils/Class":10,"./components":929,"../../gameobjects/sprite/Sprite":289}],754:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -103255,7 +103255,7 @@ var Factory = new Class({
 
 module.exports = Factory;
 
-},{"../../utils/Class":16,"./ImpactBody":351,"./ImpactImage":350,"./ImpactSprite":353}],963:[function(require,module,exports) {
+},{"../../utils/Class":10,"./ImpactBody":755,"./ImpactImage":759,"./ImpactSprite":763}],905:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -103307,7 +103307,7 @@ var SeperateX = function (world, left, right, weak)
 
 module.exports = SeperateX;
 
-},{}],964:[function(require,module,exports) {
+},{}],906:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -103388,7 +103388,7 @@ var SeperateY = function (world, top, bottom, weak)
 
 module.exports = SeperateY;
 
-},{}],776:[function(require,module,exports) {
+},{}],864:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -103458,7 +103458,7 @@ var Solver = function (world, bodyA, bodyB)
 
 module.exports = Solver;
 
-},{"./COLLIDES":347,"./SeperateX":963,"./SeperateY":964}],355:[function(require,module,exports) {
+},{"./COLLIDES":752,"./SeperateX":905,"./SeperateY":906}],762:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -104501,7 +104501,7 @@ var World = new Class({
 
 module.exports = World;
 
-},{"./Body":346,"../../utils/Class":16,"./COLLIDES":347,"./CollisionMap":348,"eventemitter3":67,"../../utils/object/GetFastValue":268,"../../utils/object/HasValue":775,"../../structs/Set":87,"./Solver":776,"../../tilemaps/Formats":204,"./TYPE":354}],352:[function(require,module,exports) {
+},{"./Body":753,"../../utils/Class":10,"./COLLIDES":752,"./CollisionMap":757,"eventemitter3":36,"../../utils/object/GetFastValue":102,"../../utils/object/HasValue":472,"../../structs/Set":266,"./Solver":864,"../../tilemaps/Formats":271,"./TYPE":758}],756:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -104676,7 +104676,7 @@ PluginManager.register('ImpactPhysics', ImpactPhysics, 'impactPhysics');
 
 module.exports = ImpactPhysics;
 
-},{"../../utils/Class":16,"./Factory":349,"../../utils/object/GetFastValue":268,"../../utils/object/Merge":774,"../../boot/PluginManager":60,"./World":355}],232:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Factory":754,"../../utils/object/GetFastValue":102,"../../utils/object/Merge":806,"../../boot/PluginManager":20,"./World":762}],514:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -104713,7 +104713,7 @@ module.exports = {
 
 };
 
-},{"./Body":346,"./COLLIDES":347,"./CollisionMap":348,"./Factory":349,"./ImpactImage":350,"./ImpactBody":351,"./ImpactPhysics":352,"./ImpactSprite":353,"./TYPE":354,"./World":355}],838:[function(require,module,exports) {
+},{"./Body":753,"./COLLIDES":752,"./CollisionMap":757,"./Factory":754,"./ImpactImage":759,"./ImpactBody":755,"./ImpactPhysics":756,"./ImpactSprite":763,"./TYPE":758,"./World":762}],901:[function(require,module,exports) {
 /**
 * The `Matter.Vector` module contains methods for creating and manipulating vectors.
 * Vectors are the basis of all the geometry related operations in the engine.
@@ -104953,7 +104953,7 @@ module.exports = Vector;
     ];
 
 })();
-},{}],828:[function(require,module,exports) {
+},{}],893:[function(require,module,exports) {
 /**
 * The `Matter.Common` module contains utility functions that are common to all modules.
 *
@@ -105490,7 +105490,7 @@ module.exports = Common;
 
 })();
 
-},{}],839:[function(require,module,exports) {
+},{}],902:[function(require,module,exports) {
 /**
 * The `Matter.Vertices` module contains methods for creating and manipulating sets of vertices.
 * A set of vertices is an array of `Matter.Vector` with additional indexing properties inserted by `Vertices.create`.
@@ -105950,7 +105950,7 @@ var Common = require('../core/Common');
 
 })();
 
-},{"../geometry/Vector":838,"../core/Common":828}],830:[function(require,module,exports) {
+},{"../geometry/Vector":901,"../core/Common":893}],897:[function(require,module,exports) {
 /**
 * The `Matter.Events` module contains methods to fire and listen to events on other objects.
 *
@@ -106062,7 +106062,7 @@ var Common = require('./Common');
 
 })();
 
-},{"./Common":828}],831:[function(require,module,exports) {
+},{"./Common":893}],892:[function(require,module,exports) {
 /**
 * The `Matter.Sleeping` module contains methods to manage the sleeping state of bodies.
 *
@@ -106193,7 +106193,7 @@ var Events = require('./Events');
 
 })();
 
-},{"./Events":830}],836:[function(require,module,exports) {
+},{"./Events":897}],900:[function(require,module,exports) {
 /**
 * The `Matter.Bounds` module contains methods for creating and manipulating axis-aligned bounding boxes (AABB).
 *
@@ -106315,7 +106315,7 @@ module.exports = Bounds;
     
 })();
 
-},{}],835:[function(require,module,exports) {
+},{}],898:[function(require,module,exports) {
 /**
 * The `Matter.Axes` module contains methods for creating and manipulating sets of axes.
 *
@@ -106381,7 +106381,7 @@ var Common = require('../core/Common');
 
 })();
 
-},{"../geometry/Vector":838,"../core/Common":828}],817:[function(require,module,exports) {
+},{"../geometry/Vector":901,"../core/Common":893}],884:[function(require,module,exports) {
 /**
 * The `Matter.Body` module contains methods for creating and manipulating body models.
 * A `Matter.Body` is a rigid body that can be simulated by a `Matter.Engine`.
@@ -107585,7 +107585,7 @@ var Axes = require('../geometry/Axes');
 
 })();
 
-},{"../geometry/Vertices":839,"../geometry/Vector":838,"../core/Sleeping":831,"../core/Common":828,"../geometry/Bounds":836,"../geometry/Axes":835}],635:[function(require,module,exports) {
+},{"../geometry/Vertices":902,"../geometry/Vector":901,"../core/Sleeping":892,"../core/Common":893,"../geometry/Bounds":900,"../geometry/Axes":898}],912:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -108192,7 +108192,7 @@ function scalar_eq(a,b,precision){
     return Math.abs(a-b) < precision;
 }
 
-},{}],833:[function(require,module,exports) {
+},{}],880:[function(require,module,exports) {
 /**
 * The `Matter.Bodies` module contains factory methods for creating rigid body models 
 * with commonly used body configurations (such as rectangles, circles and other polygons).
@@ -108525,7 +108525,7 @@ var decomp = require('../../poly-decomp');
 
 })();
 
-},{"../geometry/Vertices":839,"../core/Common":828,"../body/Body":817,"../geometry/Bounds":836,"../geometry/Vector":838,"../../poly-decomp":635}],818:[function(require,module,exports) {
+},{"../geometry/Vertices":902,"../core/Common":893,"../body/Body":884,"../geometry/Bounds":900,"../geometry/Vector":901,"../../poly-decomp":912}],881:[function(require,module,exports) {
 /**
 * The `Matter.Composite` module contains methods for creating and manipulating composite bodies.
 * A composite body is a collection of `Matter.Body`, `Matter.Constraint` and other `Matter.Composite`, therefore composites form a tree structure.
@@ -109211,7 +109211,7 @@ var Body = require('./Body');
 
 })();
 
-},{"../core/Events":830,"../core/Common":828,"./Body":817}],827:[function(require,module,exports) {
+},{"../core/Events":897,"../core/Common":893,"./Body":884}],891:[function(require,module,exports) {
 /**
 * The `Matter.Constraint` module contains methods for creating and manipulating constraints.
 * Constraints are used for specifying that a fixed distance must be maintained between two bodies (or a body and a fixed world-space position).
@@ -109665,7 +109665,7 @@ var Common = require('../core/Common');
 
 })();
 
-},{"../geometry/Vertices":839,"../geometry/Vector":838,"../core/Sleeping":831,"../geometry/Bounds":836,"../geometry/Axes":835,"../core/Common":828}],834:[function(require,module,exports) {
+},{"../geometry/Vertices":902,"../geometry/Vector":901,"../core/Sleeping":892,"../geometry/Bounds":900,"../geometry/Axes":898,"../core/Common":893}],896:[function(require,module,exports) {
 /**
 * The `Matter.Composites` module contains factory methods for creating composite bodies
 * with commonly used configurations (such as stacks and chains).
@@ -109994,7 +109994,7 @@ var Bodies = require('./Bodies');
 
 })();
 
-},{"../body/Composite":818,"../constraint/Constraint":827,"../core/Common":828,"../body/Body":817,"./Bodies":833}],973:[function(require,module,exports) {
+},{"../body/Composite":881,"../constraint/Constraint":891,"../core/Common":893,"../body/Body":884,"./Bodies":880}],995:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110030,7 +110030,7 @@ var Bounce = {
 
 module.exports = Bounce;
 
-},{}],974:[function(require,module,exports) {
+},{}],990:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110114,7 +110114,7 @@ var Collision = {
 
 module.exports = Collision;
 
-},{}],975:[function(require,module,exports) {
+},{}],991:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110257,7 +110257,7 @@ var Force = {
 
 module.exports = Force;
 
-},{"../lib/body/Body":817}],976:[function(require,module,exports) {
+},{"../lib/body/Body":884}],992:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110339,7 +110339,7 @@ var Friction = {
 
 module.exports = Friction;
 
-},{}],977:[function(require,module,exports) {
+},{}],993:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110375,7 +110375,7 @@ var Gravity = {
 
 module.exports = Gravity;
 
-},{}],978:[function(require,module,exports) {
+},{}],994:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110430,7 +110430,7 @@ var Mass = {
 
 module.exports = Mass;
 
-},{"../lib/body/Body":817}],979:[function(require,module,exports) {
+},{"../lib/body/Body":884}],999:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110481,7 +110481,7 @@ var Static = {
 
 module.exports = Static;
 
-},{"../lib/body/Body":817}],980:[function(require,module,exports) {
+},{"../lib/body/Body":884}],1001:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110530,7 +110530,7 @@ var Sensor = {
 
 module.exports = Sensor;
 
-},{}],981:[function(require,module,exports) {
+},{}],996:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110747,7 +110747,7 @@ var SetBody = {
 
 module.exports = SetBody;
 
-},{"../lib/factory/Bodies":833,"../lib/body/Body":817,"../../../utils/object/GetFastValue":268}],982:[function(require,module,exports) {
+},{"../lib/factory/Bodies":880,"../lib/body/Body":884,"../../../utils/object/GetFastValue":102}],997:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -110864,7 +110864,7 @@ var Sleep = {
 
 module.exports = Sleep;
 
-},{"../lib/core/Events":830}],983:[function(require,module,exports) {
+},{"../lib/core/Events":897}],998:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111152,7 +111152,7 @@ var Transform = {
 
 module.exports = Transform;
 
-},{"../lib/body/Body":817,"../../../math/const":159,"../../../math/angle/Wrap":561,"../../../math/angle/WrapDegrees":562}],984:[function(require,module,exports) {
+},{"../lib/body/Body":884,"../../../math/const":44,"../../../math/angle/Wrap":788,"../../../math/angle/WrapDegrees":789}],1000:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111248,7 +111248,7 @@ var Velocity = {
 
 module.exports = Velocity;
 
-},{"../lib/body/Body":817}],842:[function(require,module,exports) {
+},{"../lib/body/Body":884}],930:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111276,7 +111276,7 @@ module.exports = {
 
 };
 
-},{"./Bounce":973,"./Collision":974,"./Force":975,"./Friction":976,"./Gravity":977,"./Mass":978,"./Static":979,"./Sensor":980,"./SetBody":981,"./Sleep":982,"./Transform":983,"./Velocity":984}],886:[function(require,module,exports) {
+},{"./Bounce":995,"./Collision":990,"./Force":991,"./Friction":992,"./Gravity":993,"./Mass":994,"./Static":999,"./Sensor":1001,"./SetBody":996,"./Sleep":997,"./Transform":998,"./Velocity":1000}],865:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111383,7 +111383,7 @@ var MatterGameObject = function (world, gameObject, options)
 
 module.exports = MatterGameObject;
 
-},{"./components":842,"../../utils/object/GetFastValue":268,"../../math/Vector2":194}],547:[function(require,module,exports) {
+},{"./components":930,"../../utils/object/GetFastValue":102,"../../math/Vector2":96}],760:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111524,7 +111524,7 @@ var MatterImage = new Class({
 
 module.exports = MatterImage;
 
-},{"./lib/factory/Bodies":833,"../../utils/Class":16,"./components":842,"../../gameobjects/GameObject":542,"../../utils/object/GetFastValue":268,"../../gameobjects/image/Image":655,"../../gameobjects/components/Pipeline":789,"../../math/Vector2":194}],550:[function(require,module,exports) {
+},{"./lib/factory/Bodies":880,"../../utils/Class":10,"./components":930,"../../gameobjects/GameObject":208,"../../utils/object/GetFastValue":102,"../../gameobjects/image/Image":284,"../../gameobjects/components/Pipeline":601,"../../math/Vector2":96}],764:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111672,7 +111672,7 @@ var MatterSprite = new Class({
 
 module.exports = MatterSprite;
 
-},{"../../gameobjects/components/Animation":781,"./lib/factory/Bodies":833,"../../utils/Class":16,"./components":842,"../../gameobjects/GameObject":542,"../../utils/object/GetFastValue":268,"../../gameobjects/components/Pipeline":789,"../../gameobjects/sprite/Sprite":660,"../../math/Vector2":194}],551:[function(require,module,exports) {
+},{"../../gameobjects/components/Animation":593,"./lib/factory/Bodies":880,"../../utils/Class":10,"./components":930,"../../gameobjects/GameObject":208,"../../utils/object/GetFastValue":102,"../../gameobjects/components/Pipeline":601,"../../gameobjects/sprite/Sprite":289,"../../math/Vector2":96}],767:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -111996,7 +111996,7 @@ var MatterTileBody = new Class({
 
 module.exports = MatterTileBody;
 
-},{"./lib/factory/Bodies":833,"./lib/body/Body":817,"../../utils/Class":16,"./components":842,"../../utils/object/GetFastValue":268,"../../utils/object/HasValue":775,"./lib/geometry/Vertices":839}],826:[function(require,module,exports) {
+},{"./lib/factory/Bodies":880,"./lib/body/Body":884,"../../utils/Class":10,"./components":930,"../../utils/object/GetFastValue":102,"../../utils/object/HasValue":472,"./lib/geometry/Vertices":902}],890:[function(require,module,exports) {
 /**
 * The `Matter.SAT` module contains methods for detecting collisions using the Separating Axis Theorem.
 *
@@ -112268,7 +112268,7 @@ var Vector = require('../geometry/Vector');
 
 })();
 
-},{"../geometry/Vertices":839,"../geometry/Vector":838}],823:[function(require,module,exports) {
+},{"../geometry/Vertices":902,"../geometry/Vector":901}],887:[function(require,module,exports) {
 /**
 * The `Matter.Pair` module contains methods for creating and manipulating collision pairs.
 *
@@ -112404,7 +112404,7 @@ module.exports = Pair;
 
 })();
 
-},{}],820:[function(require,module,exports) {
+},{}],883:[function(require,module,exports) {
 /**
 * The `Matter.Detector` module contains methods for detecting collisions given a set of pairs.
 *
@@ -112513,7 +112513,7 @@ var Bounds = require('../geometry/Bounds');
 
 })();
 
-},{"./SAT":826,"./Pair":823,"../geometry/Bounds":836}],887:[function(require,module,exports) {
+},{"./SAT":890,"./Pair":887,"../geometry/Bounds":900}],866:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -112800,7 +112800,7 @@ var PointerConstraint = new Class({
 
 module.exports = PointerConstraint;
 
-},{"./lib/geometry/Bounds":836,"../../utils/Class":16,"./lib/body/Composite":818,"./lib/constraint/Constraint":827,"./lib/collision/Detector":820,"../../utils/object/GetFastValue":268,"../../utils/object/Merge":774,"./lib/core/Sleeping":831,"../../math/Vector2":194,"./lib/geometry/Vertices":839}],546:[function(require,module,exports) {
+},{"./lib/geometry/Bounds":900,"../../utils/Class":10,"./lib/body/Composite":881,"./lib/constraint/Constraint":891,"./lib/collision/Detector":883,"../../utils/object/GetFastValue":102,"../../utils/object/Merge":806,"./lib/core/Sleeping":892,"../../math/Vector2":96,"./lib/geometry/Vertices":902}],765:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -113406,7 +113406,7 @@ var Factory = new Class({
 
 module.exports = Factory;
 
-},{"./lib/factory/Bodies":833,"../../utils/Class":16,"./lib/factory/Composites":834,"./lib/constraint/Constraint":827,"./MatterGameObject":886,"./MatterImage":547,"./MatterSprite":550,"./MatterTileBody":551,"./PointerConstraint":887}],832:[function(require,module,exports) {
+},{"./lib/factory/Bodies":880,"../../utils/Class":10,"./lib/factory/Composites":896,"./lib/constraint/Constraint":891,"./MatterGameObject":865,"./MatterImage":760,"./MatterSprite":764,"./MatterTileBody":767,"./PointerConstraint":866}],894:[function(require,module,exports) {
 /**
 * The `Matter.Plugin` module contains functions for registering and installing plugins on modules.
 *
@@ -113752,7 +113752,7 @@ var Common = require('./Common');
 
 })();
 
-},{"./Common":828}],816:[function(require,module,exports) {
+},{"./Common":893}],879:[function(require,module,exports) {
 /**
 * The `Matter` module is the top level namespace. It also includes a function for installing plugins on top of the library.
 *
@@ -113840,7 +113840,7 @@ var Common = require('./Common');
 
 })();
 
-},{"./Plugin":832,"./Common":828}],819:[function(require,module,exports) {
+},{"./Plugin":894,"./Common":893}],882:[function(require,module,exports) {
 /**
 * The `Matter.World` module contains methods for creating and manipulating the world composite.
 * A `Matter.World` is a `Matter.Composite` body, which is a collection of `Matter.Body`, `Matter.Constraint` and other `Matter.Composite`.
@@ -113972,7 +113972,7 @@ var Common = require('../core/Common');
 
 })();
 
-},{"./Composite":818,"../constraint/Constraint":827,"../core/Common":828}],821:[function(require,module,exports) {
+},{"./Composite":881,"../constraint/Constraint":891,"../core/Common":893}],886:[function(require,module,exports) {
 /**
 * The `Matter.Grid` module contains methods for creating and manipulating collision broadphase grid structures.
 *
@@ -114295,7 +114295,7 @@ var Common = require('../core/Common');
     
 })();
 
-},{"./Pair":823,"./Detector":820,"../core/Common":828}],822:[function(require,module,exports) {
+},{"./Pair":887,"./Detector":883,"../core/Common":893}],885:[function(require,module,exports) {
 /**
 * The `Matter.Pairs` module contains methods for creating and manipulating collision pair sets.
 *
@@ -114456,7 +114456,7 @@ var Common = require('../core/Common');
 
 })();
 
-},{"./Pair":823,"../core/Common":828}],824:[function(require,module,exports) {
+},{"./Pair":887,"../core/Common":893}],888:[function(require,module,exports) {
 /**
 * The `Matter.Query` module contains methods for performing collision queries.
 *
@@ -114570,7 +114570,7 @@ var Vertices = require('../geometry/Vertices');
 
 })();
 
-},{"../geometry/Vector":838,"./SAT":826,"../geometry/Bounds":836,"../factory/Bodies":833,"../geometry/Vertices":839}],825:[function(require,module,exports) {
+},{"../geometry/Vector":901,"./SAT":890,"../geometry/Bounds":900,"../factory/Bodies":880,"../geometry/Vertices":902}],889:[function(require,module,exports) {
 /**
 * The `Matter.Resolver` module contains methods for resolving collision pairs.
 *
@@ -114923,7 +114923,7 @@ var Bounds = require('../geometry/Bounds');
 
 })();
 
-},{"../geometry/Vertices":839,"../geometry/Vector":838,"../core/Common":828,"../geometry/Bounds":836}],972:[function(require,module,exports) {
+},{"../geometry/Vertices":902,"../geometry/Vector":901,"../core/Common":893,"../geometry/Bounds":900}],928:[function(require,module,exports) {
 // @if DEBUG
 /**
 * _Internal Class_, not generally used outside of the engine's internals.
@@ -115018,7 +115018,7 @@ var Common = require('./Common');
 })();
 // @endif
 
-},{"../body/Composite":818,"./Common":828}],829:[function(require,module,exports) {
+},{"../body/Composite":881,"./Common":893}],895:[function(require,module,exports) {
 /**
 * The `Matter.Engine` module contains methods for creating and manipulating engines.
 * An engine is a controller that manages updating the simulation of the world.
@@ -115529,7 +115529,7 @@ var Body = require('../body/Body');
 
 })();
 
-},{"../body/World":819,"./Sleeping":831,"../collision/Resolver":825,"../collision/Pairs":822,"./Metrics":972,"../collision/Grid":821,"./Events":830,"../body/Composite":818,"../constraint/Constraint":827,"./Common":828,"../body/Body":817}],837:[function(require,module,exports) {
+},{"../body/World":882,"./Sleeping":892,"../collision/Resolver":889,"../collision/Pairs":885,"./Metrics":928,"../collision/Grid":886,"./Events":897,"../body/Composite":881,"../constraint/Constraint":891,"./Common":893,"../body/Body":884}],899:[function(require,module,exports) {
 /**
 * The `Matter.Svg` module contains methods for converting SVG images into an array of vector points.
 *
@@ -115750,7 +115750,7 @@ var Bounds = require('../geometry/Bounds');
     };
 
 })();
-},{"../geometry/Bounds":836}],548:[function(require,module,exports) {
+},{"../geometry/Bounds":900}],761:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -115799,7 +115799,7 @@ Matter.World.clear = Matter.Composite.clear;
 
 module.exports = Matter;
 
-},{"./lib/core/Matter":816,"./lib/body/Body":817,"./lib/body/Composite":818,"./lib/body/World":819,"./lib/collision/Detector":820,"./lib/collision/Grid":821,"./lib/collision/Pairs":822,"./lib/collision/Pair":823,"./lib/collision/Query":824,"./lib/collision/Resolver":825,"./lib/collision/SAT":826,"./lib/constraint/Constraint":827,"./lib/core/Common":828,"./lib/core/Engine":829,"./lib/core/Events":830,"./lib/core/Sleeping":831,"./lib/core/Plugin":832,"./lib/factory/Bodies":833,"./lib/factory/Composites":834,"./lib/geometry/Axes":835,"./lib/geometry/Bounds":836,"./lib/geometry/Svg":837,"./lib/geometry/Vector":838,"./lib/geometry/Vertices":839}],840:[function(require,module,exports) {
+},{"./lib/core/Matter":879,"./lib/body/Body":884,"./lib/body/Composite":881,"./lib/body/World":882,"./lib/collision/Detector":883,"./lib/collision/Grid":886,"./lib/collision/Pairs":885,"./lib/collision/Pair":887,"./lib/collision/Query":888,"./lib/collision/Resolver":889,"./lib/collision/SAT":890,"./lib/constraint/Constraint":891,"./lib/core/Common":893,"./lib/core/Engine":895,"./lib/core/Events":897,"./lib/core/Sleeping":892,"./lib/core/Plugin":894,"./lib/factory/Bodies":880,"./lib/factory/Composites":896,"./lib/geometry/Axes":898,"./lib/geometry/Bounds":900,"./lib/geometry/Svg":899,"./lib/geometry/Vector":901,"./lib/geometry/Vertices":902}],904:[function(require,module,exports) {
 var Matter = require('../../CustomMain');
 
 /**
@@ -115937,7 +115937,7 @@ module.exports = MatterAttractors;
  * @returns {(Vector|undefined)} a force vector (optional)
  */
 
-},{"../../CustomMain":548}],841:[function(require,module,exports) {
+},{"../../CustomMain":761}],903:[function(require,module,exports) {
 var Matter = require('../../CustomMain');
 
 /**
@@ -116115,7 +116115,7 @@ module.exports = MatterWrap;
  * @property {Matter.Bounds} composite.plugin.wrap
  * @memberof Matter.Composite
  */
-},{"../../CustomMain":548}],552:[function(require,module,exports) {
+},{"../../CustomMain":761}],768:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -116823,7 +116823,7 @@ var World = new Class({
 
 module.exports = World;
 
-},{"./lib/factory/Bodies":833,"../../utils/Class":16,"./lib/body/Composite":818,"./lib/core/Engine":829,"eventemitter3":67,"../../utils/object/GetFastValue":268,"../../utils/object/GetValue":230,"./lib/body/Body":817,"./lib/core/Events":830,"./lib/body/World":819,"./MatterTileBody":551}],549:[function(require,module,exports) {
+},{"./lib/factory/Bodies":880,"../../utils/Class":10,"./lib/body/Composite":881,"./lib/core/Engine":895,"eventemitter3":36,"../../utils/object/GetFastValue":102,"../../utils/object/GetValue":53,"./lib/body/Body":884,"./lib/core/Events":897,"./lib/body/World":882,"./MatterTileBody":767}],766:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117048,7 +117048,7 @@ PluginManager.register('MatterPhysics', MatterPhysics, 'matterPhysics');
 
 module.exports = MatterPhysics;
 
-},{"../../utils/Class":16,"./Factory":546,"../../utils/object/GetFastValue":268,"../../utils/object/GetValue":230,"./lib/plugins/MatterAttractors":840,"./lib/core/Matter":816,"./lib/plugins/MatterWrap":841,"../../utils/object/Merge":774,"./lib/core/Plugin":832,"../../boot/PluginManager":60,"./World":552}],233:[function(require,module,exports) {
+},{"../../utils/Class":10,"./Factory":765,"../../utils/object/GetFastValue":102,"../../utils/object/GetValue":53,"./lib/plugins/MatterAttractors":904,"./lib/core/Matter":879,"./lib/plugins/MatterWrap":903,"../../utils/object/Merge":806,"./lib/core/Plugin":894,"../../boot/PluginManager":20,"./World":768}],516:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117072,7 +117072,7 @@ module.exports = {
 
 };
 
-},{"./Factory":546,"./MatterImage":547,"./CustomMain":548,"./MatterPhysics":549,"./poly-decomp":635,"./MatterSprite":550,"./MatterTileBody":551,"./World":552}],35:[function(require,module,exports) {
+},{"./Factory":765,"./MatterImage":760,"./CustomMain":761,"./MatterPhysics":766,"./poly-decomp":912,"./MatterSprite":764,"./MatterTileBody":767,"./World":768}],83:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117091,7 +117091,7 @@ module.exports = {
 
 };
 
-},{"./arcade":229,"./impact":232,"./matter-js":233}],753:[function(require,module,exports) {
+},{"./arcade":515,"./impact":514,"./matter-js":516}],530:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117111,7 +117111,7 @@ module.exports = {
 
 };
 
-},{"./CanvasRenderer":238,"./utils/BlitImage":386,"./utils/DrawImage":387,"./utils/GetBlendModes":388}],754:[function(require,module,exports) {
+},{"./CanvasRenderer":65,"./utils/BlitImage":131,"./utils/DrawImage":132,"./utils/GetBlendModes":133}],531:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117135,7 +117135,7 @@ module.exports = {
 
 };
 
-},{"./CanvasSnapshot":385,"./WebGLSnapshot":391}],969:[function(require,module,exports) {
+},{"./CanvasSnapshot":119,"./WebGLSnapshot":122}],923:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117155,7 +117155,7 @@ module.exports = {
 
 };
 
-},{"./BitmapMaskPipeline":422,"./FlatTintPipeline":423,"./ForwardDiffuseLightPipeline":424,"./TextureTintPipeline":425}],755:[function(require,module,exports) {
+},{"./BitmapMaskPipeline":134,"./FlatTintPipeline":135,"./ForwardDiffuseLightPipeline":136,"./TextureTintPipeline":137}],520:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117182,7 +117182,7 @@ module.exports = {
 
 };
 
-},{"./Utils":390,"./WebGLPipeline":811,"./WebGLRenderer":239,"./pipelines":969}],37:[function(require,module,exports) {
+},{"./Utils":121,"./WebGLPipeline":376,"./WebGLRenderer":66,"./pipelines":923}],84:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117212,7 +117212,7 @@ module.exports = {
 
 };
 
-},{"./canvas":753,"./snapshot":754,"./webgl":755}],202:[function(require,module,exports) {
+},{"./canvas":530,"./snapshot":531,"./webgl":520}],268:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117804,7 +117804,7 @@ PluginManager.register('ScenePlugin', ScenePlugin, 'scenePlugin');
 
 module.exports = ScenePlugin;
 
-},{"../utils/Class":16,"./const":201,"../boot/PluginManager":60}],38:[function(require,module,exports) {
+},{"../utils/Class":10,"./const":38,"../boot/PluginManager":20}],89:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117832,7 +117832,7 @@ Scene = Extend(false, Scene, CONST);
 
 module.exports = Scene;
 
-},{"./const":201,"../utils/object/Extend":20,"./SceneManager":61,"./ScenePlugin":202,"./Settings":203,"./Systems":48}],39:[function(require,module,exports) {
+},{"./const":38,"../utils/object/Extend":14,"./SceneManager":28,"./ScenePlugin":268,"./Settings":41,"./Systems":17}],86:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117888,7 +117888,7 @@ module.exports = {
 
 };
 
-},{"./SoundManagerCreator":62,"./BaseSound":88,"./BaseSoundManager":89,"./webaudio/WebAudioSound":92,"./webaudio/WebAudioSoundManager":93,"./html5/HTML5AudioSound":94,"./html5/HTML5AudioSoundManager":95,"./noaudio/NoAudioSound":96,"./noaudio/NoAudioSoundManager":97}],40:[function(require,module,exports) {
+},{"./SoundManagerCreator":27,"./BaseSound":223,"./BaseSoundManager":105,"./webaudio/WebAudioSound":111,"./webaudio/WebAudioSoundManager":58,"./html5/HTML5AudioSound":110,"./html5/HTML5AudioSoundManager":56,"./noaudio/NoAudioSound":112,"./noaudio/NoAudioSoundManager":57}],87:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117909,7 +117909,7 @@ module.exports = {
 
 };
 
-},{"./List":83,"./Map":84,"./ProcessQueue":85,"./RTree":86,"./Set":87}],701:[function(require,module,exports) {
+},{"./List":262,"./Map":42,"./ProcessQueue":263,"./RTree":265,"./Set":266}],267:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117940,7 +117940,7 @@ var CONST = {
 
 module.exports = CONST;
 
-},{}],41:[function(require,module,exports) {
+},{}],88:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117970,7 +117970,7 @@ Textures = Extend(false, Textures, CONST);
 
 module.exports = Textures;
 
-},{"./const":701,"../utils/object/Extend":20,"./parsers":269,"./Frame":702,"./Texture":260,"./TextureManager":63,"./TextureSource":703}],587:[function(require,module,exports) {
+},{"./const":267,"../utils/object/Extend":14,"./parsers":392,"./Frame":99,"./Texture":51,"./TextureManager":29,"./TextureSource":100}],825:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -117996,7 +117996,7 @@ var IsInLayerBounds = function (tileX, tileY, layer)
 
 module.exports = IsInLayerBounds;
 
-},{}],580:[function(require,module,exports) {
+},{}],817:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118048,7 +118048,7 @@ var GetTileAt = function (tileX, tileY, nonNull, layer)
 
 module.exports = GetTileAt;
 
-},{"./IsInLayerBounds":587}],570:[function(require,module,exports) {
+},{"./IsInLayerBounds":825}],810:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118119,7 +118119,7 @@ var CalculateFacesAt = function (tileX, tileY, layer)
 
 module.exports = CalculateFacesAt;
 
-},{"./GetTileAt":580}],581:[function(require,module,exports) {
+},{"./GetTileAt":817}],823:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118204,7 +118204,7 @@ var GetTilesWithin = function (tileX, tileY, width, height, filteringOptions, la
 
 module.exports = GetTilesWithin;
 
-},{"../../utils/object/GetFastValue":268}],571:[function(require,module,exports) {
+},{"../../utils/object/GetFastValue":102}],808:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118265,7 +118265,7 @@ var CalculateFacesWithin = function (tileX, tileY, width, height, layer)
 
 module.exports = CalculateFacesWithin;
 
-},{"./GetTileAt":580,"./GetTilesWithin":581}],572:[function(require,module,exports) {
+},{"./GetTileAt":817,"./GetTilesWithin":823}],809:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118325,7 +118325,7 @@ var Copy = function (srcTileX, srcTileY, width, height, destTileX, destTileY, re
 
 module.exports = Copy;
 
-},{"./GetTilesWithin":581,"./CalculateFacesWithin":571}],605:[function(require,module,exports) {
+},{"./GetTilesWithin":823,"./CalculateFacesWithin":808}],843:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118365,7 +118365,7 @@ var TileToWorldX = function (tileX, camera, layer)
 
 module.exports = TileToWorldX;
 
-},{}],607:[function(require,module,exports) {
+},{}],849:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118405,7 +118405,7 @@ var TileToWorldY = function (tileY, camera, layer)
 
 module.exports = TileToWorldY;
 
-},{}],595:[function(require,module,exports) {
+},{}],832:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118444,7 +118444,7 @@ var ReplaceByIndex = function (findIndex, newIndex, tileX, tileY, width, height,
 
 module.exports = ReplaceByIndex;
 
-},{"./GetTilesWithin":581}],573:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],818:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118527,7 +118527,7 @@ var CreateFromTiles = function (indexes, replacements, spriteConfig, scene, came
 
 module.exports = CreateFromTiles;
 
-},{"./TileToWorldX":605,"./TileToWorldY":607,"./GetTilesWithin":581,"./ReplaceByIndex":595}],574:[function(require,module,exports) {
+},{"./TileToWorldX":843,"./TileToWorldY":849,"./GetTilesWithin":823,"./ReplaceByIndex":832}],811:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118591,7 +118591,7 @@ var CullTiles = function (layer, camera, outputArray)
 
 module.exports = CullTiles;
 
-},{}],846:[function(require,module,exports) {
+},{}],871:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118622,7 +118622,7 @@ var SetTileCollision = function (tile, collides)
 
 module.exports = SetTileCollision;
 
-},{}],575:[function(require,module,exports) {
+},{}],812:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118672,7 +118672,7 @@ var Fill = function (index, tileX, tileY, width, height, recalculateFaces, layer
 
 module.exports = Fill;
 
-},{"./GetTilesWithin":581,"./CalculateFacesWithin":571,"./SetTileCollision":846}],576:[function(require,module,exports) {
+},{"./GetTilesWithin":823,"./CalculateFacesWithin":808,"./SetTileCollision":871}],813:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118717,7 +118717,7 @@ var FilterTiles = function (callback, context, tileX, tileY, width, height, filt
 module.exports = FilterTiles;
 
 
-},{"./GetTilesWithin":581}],577:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],814:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118800,7 +118800,7 @@ var FindByIndex = function (findIndex, skip, reverse, layer)
 
 module.exports = FindByIndex;
 
-},{}],578:[function(require,module,exports) {
+},{}],815:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118853,7 +118853,7 @@ var FindTile = function (callback, context, tileX, tileY, width, height, filteri
 
 module.exports = FindTile;
 
-},{"./GetTilesWithin":581}],579:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],816:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118901,7 +118901,7 @@ var ForEachTile = function (callback, context, tileX, tileY, width, height, filt
 
 module.exports = ForEachTile;
 
-},{"./GetTilesWithin":581}],609:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],845:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118948,7 +118948,7 @@ var WorldToTileX = function (worldX, snapToFloor, camera, layer)
 
 module.exports = WorldToTileX;
 
-},{}],611:[function(require,module,exports) {
+},{}],848:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -118995,7 +118995,7 @@ var WorldToTileY = function (worldY, snapToFloor, camera, layer)
 
 module.exports = WorldToTileY;
 
-},{}],582:[function(require,module,exports) {
+},{}],819:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -119032,7 +119032,7 @@ var GetTileAtWorldXY = function (worldX, worldY, nonNull, camera, layer)
 
 module.exports = GetTileAtWorldXY;
 
-},{"./GetTileAt":580,"./WorldToTileX":609,"./WorldToTileY":611}],583:[function(require,module,exports) {
+},{"./GetTileAt":817,"./WorldToTileX":845,"./WorldToTileY":848}],820:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -119127,7 +119127,7 @@ var GetTilesWithinShape = function (shape, filteringOptions, camera, layer)
 
 module.exports = GetTilesWithinShape;
 
-},{"../../geom/":30,"./GetTilesWithin":581,"../../geom/intersects/":242,"../../utils/NOOP":59,"./TileToWorldX":605,"./TileToWorldY":607,"./WorldToTileX":609,"./WorldToTileY":611}],584:[function(require,module,exports) {
+},{"../../geom/":80,"./GetTilesWithin":823,"../../geom/intersects/":501,"../../utils/NOOP":25,"./TileToWorldX":843,"./TileToWorldY":849,"./WorldToTileX":845,"./WorldToTileY":848}],821:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -119175,7 +119175,7 @@ var GetTilesWithinWorldXY = function (worldX, worldY, width, height, filteringOp
 
 module.exports = GetTilesWithinWorldXY;
 
-},{"./GetTilesWithin":581,"./WorldToTileX":609,"./WorldToTileY":611}],585:[function(require,module,exports) {
+},{"./GetTilesWithin":823,"./WorldToTileX":845,"./WorldToTileY":848}],822:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -119213,7 +119213,7 @@ var HasTileAt = function (tileX, tileY, layer)
 
 module.exports = HasTileAt;
 
-},{"./IsInLayerBounds":587}],586:[function(require,module,exports) {
+},{"./IsInLayerBounds":825}],824:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -119248,7 +119248,7 @@ var HasTileAtWorldXY = function (worldX, worldY, camera, layer)
 
 module.exports = HasTileAtWorldXY;
 
-},{"./HasTileAt":585,"./WorldToTileX":609,"./WorldToTileY":611}],207:[function(require,module,exports) {
+},{"./HasTileAt":822,"./WorldToTileX":845,"./WorldToTileY":848}],273:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120066,7 +120066,7 @@ var Tile = new Class({
 
 module.exports = Tile;
 
-},{"../utils/Class":16,"../gameobjects/components":384,"../geom/rectangle":246}],588:[function(require,module,exports) {
+},{"../utils/Class":10,"../gameobjects/components":500,"../geom/rectangle":505}],826:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120141,7 +120141,7 @@ var PutTileAt = function (tile, tileX, tileY, recalculateFaces, layer)
 module.exports = PutTileAt;
 
 
-},{"../Tile":207,"./IsInLayerBounds":587,"./CalculateFacesAt":570,"./SetTileCollision":846}],589:[function(require,module,exports) {
+},{"../Tile":273,"./IsInLayerBounds":825,"./CalculateFacesAt":810,"./SetTileCollision":871}],827:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120179,7 +120179,7 @@ var PutTileAtWorldXY = function (tile, worldX, worldY, recalculateFaces, camera,
 
 module.exports = PutTileAtWorldXY;
 
-},{"./PutTileAt":588,"./WorldToTileX":609,"./WorldToTileY":611}],590:[function(require,module,exports) {
+},{"./PutTileAt":826,"./WorldToTileX":845,"./WorldToTileY":848}],829:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120239,7 +120239,7 @@ var PutTilesAt = function (tilesArray, tileX, tileY, recalculateFaces, layer)
 module.exports = PutTilesAt;
 
 
-},{"./CalculateFacesWithin":571,"./PutTileAt":588}],591:[function(require,module,exports) {
+},{"./CalculateFacesWithin":808,"./PutTileAt":826}],828:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120292,7 +120292,7 @@ var Randomize = function (tileX, tileY, width, height, indexes, layer)
 
 module.exports = Randomize;
 
-},{"./GetTilesWithin":581,"../../utils/array/GetRandomElement":848}],592:[function(require,module,exports) {
+},{"./GetTilesWithin":823,"../../utils/array/GetRandomElement":468}],839:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120349,7 +120349,7 @@ var RemoveTileAt = function (tileX, tileY, replaceWithNull, recalculateFaces, la
 
 module.exports = RemoveTileAt;
 
-},{"../Tile":207,"./IsInLayerBounds":587,"./CalculateFacesAt":570}],593:[function(require,module,exports) {
+},{"../Tile":273,"./IsInLayerBounds":825,"./CalculateFacesAt":810}],830:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120387,7 +120387,7 @@ var RemoveTileAtWorldXY = function (worldX, worldY, replaceWithNull, recalculate
 
 module.exports = RemoveTileAtWorldXY;
 
-},{"./RemoveTileAt":592,"./WorldToTileX":609,"./WorldToTileY":611}],594:[function(require,module,exports) {
+},{"./RemoveTileAt":839,"./WorldToTileX":845,"./WorldToTileY":848}],831:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120468,7 +120468,7 @@ var RenderDebug = function (graphics, styleConfig, layer)
 
 module.exports = RenderDebug;
 
-},{"./GetTilesWithin":581,"../../display/color":224}],849:[function(require,module,exports) {
+},{"./GetTilesWithin":823,"../../display/color":498}],872:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120502,7 +120502,7 @@ var SetLayerCollisionIndex = function (tileIndex, collides, layer)
 
 module.exports = SetLayerCollisionIndex;
 
-},{}],596:[function(require,module,exports) {
+},{}],833:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120559,7 +120559,7 @@ var SetCollision = function (indexes, collides, recalculateFaces, layer)
 
 module.exports = SetCollision;
 
-},{"./SetTileCollision":846,"./CalculateFacesWithin":571,"./SetLayerCollisionIndex":849}],597:[function(require,module,exports) {
+},{"./SetTileCollision":871,"./CalculateFacesWithin":808,"./SetLayerCollisionIndex":872}],834:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120621,7 +120621,7 @@ var SetCollisionBetween = function (start, stop, collides, recalculateFaces, lay
 
 module.exports = SetCollisionBetween;
 
-},{"./SetTileCollision":846,"./CalculateFacesWithin":571,"./SetLayerCollisionIndex":849}],598:[function(require,module,exports) {
+},{"./SetTileCollision":871,"./CalculateFacesWithin":808,"./SetLayerCollisionIndex":872}],835:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120672,7 +120672,7 @@ var SetCollisionByExclusion = function (indexes, collides, recalculateFaces, lay
 
 module.exports = SetCollisionByExclusion;
 
-},{"./SetTileCollision":846,"./CalculateFacesWithin":571,"./SetLayerCollisionIndex":849}],599:[function(require,module,exports) {
+},{"./SetTileCollision":871,"./CalculateFacesWithin":808,"./SetLayerCollisionIndex":872}],836:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120742,7 +120742,7 @@ var SetCollisionByProperty = function (properties, collides, recalculateFaces, l
 
 module.exports = SetCollisionByProperty;
 
-},{"./SetTileCollision":846,"./CalculateFacesWithin":571,"../../utils/object/HasValue":775}],600:[function(require,module,exports) {
+},{"./SetTileCollision":871,"./CalculateFacesWithin":808,"../../utils/object/HasValue":472}],838:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120796,7 +120796,7 @@ var SetCollisionFromCollisionGroup = function (collides, recalculateFaces, layer
 
 module.exports = SetCollisionFromCollisionGroup;
 
-},{"./SetTileCollision":846,"./CalculateFacesWithin":571}],601:[function(require,module,exports) {
+},{"./SetTileCollision":871,"./CalculateFacesWithin":808}],837:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120839,7 +120839,7 @@ var SetTileIndexCallback = function (indexes, callback, callbackContext, layer)
 
 module.exports = SetTileIndexCallback;
 
-},{}],602:[function(require,module,exports) {
+},{}],840:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120877,7 +120877,7 @@ var SetTileLocationCallback = function (tileX, tileY, width, height, callback, c
 
 module.exports = SetTileLocationCallback;
 
-},{"./GetTilesWithin":581}],603:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],841:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120917,7 +120917,7 @@ var Shuffle = function (tileX, tileY, width, height, layer)
 
 module.exports = Shuffle;
 
-},{"./GetTilesWithin":581,"../../utils/array/Shuffle":290}],604:[function(require,module,exports) {
+},{"./GetTilesWithin":823,"../../utils/array/Shuffle":358}],842:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -120963,7 +120963,7 @@ var SwapByIndex = function (indexA, indexB, tileX, tileY, width, height, layer)
 
 module.exports = SwapByIndex;
 
-},{"./GetTilesWithin":581}],606:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],844:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121002,7 +121002,7 @@ var TileToWorldXY = function (tileX, tileY, point, camera, layer)
 
 module.exports = TileToWorldXY;
 
-},{"./TileToWorldX":605,"./TileToWorldY":607,"../../math/Vector2":194}],608:[function(require,module,exports) {
+},{"./TileToWorldX":843,"./TileToWorldY":849,"../../math/Vector2":96}],846:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121077,7 +121077,7 @@ var WeightedRandomize = function (tileX, tileY, width, height, weightedIndexes, 
 
 module.exports = WeightedRandomize;
 
-},{"./GetTilesWithin":581}],610:[function(require,module,exports) {
+},{"./GetTilesWithin":823}],847:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121118,7 +121118,7 @@ var WorldToTileXY = function (worldX, worldY, snapToFloor, point, camera, layer)
 
 module.exports = WorldToTileXY;
 
-},{"./WorldToTileX":609,"./WorldToTileY":611,"../../math/Vector2":194}],255:[function(require,module,exports) {
+},{"./WorldToTileX":845,"./WorldToTileY":848,"../../math/Vector2":96}],528:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121176,7 +121176,7 @@ module.exports = {
 
 };
 
-},{"./CalculateFacesAt":570,"./CalculateFacesWithin":571,"./Copy":572,"./CreateFromTiles":573,"./CullTiles":574,"./Fill":575,"./FilterTiles":576,"./FindByIndex":577,"./FindTile":578,"./ForEachTile":579,"./GetTileAt":580,"./GetTileAtWorldXY":582,"./GetTilesWithin":581,"./GetTilesWithinShape":583,"./GetTilesWithinWorldXY":584,"./HasTileAt":585,"./HasTileAtWorldXY":586,"./IsInLayerBounds":587,"./PutTileAt":588,"./PutTileAtWorldXY":589,"./PutTilesAt":590,"./Randomize":591,"./RemoveTileAt":592,"./RemoveTileAtWorldXY":593,"./RenderDebug":594,"./ReplaceByIndex":595,"./SetCollision":596,"./SetCollisionBetween":597,"./SetCollisionByExclusion":598,"./SetCollisionByProperty":599,"./SetCollisionFromCollisionGroup":600,"./SetTileIndexCallback":601,"./SetTileLocationCallback":602,"./Shuffle":603,"./SwapByIndex":604,"./TileToWorldX":605,"./TileToWorldXY":606,"./TileToWorldY":607,"./WeightedRandomize":608,"./WorldToTileX":609,"./WorldToTileXY":610,"./WorldToTileY":611}],212:[function(require,module,exports) {
+},{"./CalculateFacesAt":810,"./CalculateFacesWithin":808,"./Copy":809,"./CreateFromTiles":818,"./CullTiles":811,"./Fill":812,"./FilterTiles":813,"./FindByIndex":814,"./FindTile":815,"./ForEachTile":816,"./GetTileAt":817,"./GetTileAtWorldXY":819,"./GetTilesWithin":823,"./GetTilesWithinShape":820,"./GetTilesWithinWorldXY":821,"./HasTileAt":822,"./HasTileAtWorldXY":824,"./IsInLayerBounds":825,"./PutTileAt":826,"./PutTileAtWorldXY":827,"./PutTilesAt":829,"./Randomize":828,"./RemoveTileAt":839,"./RemoveTileAtWorldXY":830,"./RenderDebug":831,"./ReplaceByIndex":832,"./SetCollision":833,"./SetCollisionBetween":834,"./SetCollisionByExclusion":835,"./SetCollisionByProperty":836,"./SetCollisionFromCollisionGroup":838,"./SetTileIndexCallback":837,"./SetTileLocationCallback":840,"./Shuffle":841,"./SwapByIndex":842,"./TileToWorldX":843,"./TileToWorldXY":844,"./TileToWorldY":849,"./WeightedRandomize":846,"./WorldToTileX":845,"./WorldToTileXY":847,"./WorldToTileY":848}],326:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121392,7 +121392,7 @@ var LayerData = new Class({
 
 module.exports = LayerData;
 
-},{"../../utils/Class":16,"../../utils/object/GetFastValue":268}],213:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetFastValue":102}],327:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121590,7 +121590,7 @@ var MapData = new Class({
 
 module.exports = MapData;
 
-},{"../../utils/Class":16,"../../utils/object/GetFastValue":268}],625:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetFastValue":102}],439:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121678,7 +121678,7 @@ var Parse2DArray = function (name, data, tileWidth, tileHeight, insertNull)
 
 module.exports = Parse2DArray;
 
-},{"../Formats":204,"../mapdata/LayerData":212,"../mapdata/MapData":213,"../Tile":207}],626:[function(require,module,exports) {
+},{"../Formats":271,"../mapdata/LayerData":326,"../mapdata/MapData":327,"../Tile":273}],440:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121722,7 +121722,7 @@ var ParseCSV = function (name, data, tileWidth, tileHeight, insertNull)
 
 module.exports = ParseCSV;
 
-},{"../Formats":204,"./Parse2DArray":625}],989:[function(require,module,exports) {
+},{"../Formats":271,"./Parse2DArray":439}],873:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121761,7 +121761,7 @@ var Base64Decode = function (data)
 
 module.exports = Base64Decode;
 
-},{}],990:[function(require,module,exports) {
+},{}],874:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121847,7 +121847,7 @@ var ParseGID = function (gid)
 
 module.exports = ParseGID;
 
-},{}],880:[function(require,module,exports) {
+},{}],546:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -121969,7 +121969,7 @@ var ParseTileLayers = function (json, insertNull)
 
 module.exports = ParseTileLayers;
 
-},{"./Base64Decode":989,"../../../utils/object/GetFastValue":268,"../../mapdata/LayerData":212,"./ParseGID":990,"../../Tile":207}],881:[function(require,module,exports) {
+},{"./Base64Decode":873,"../../../utils/object/GetFastValue":102,"../../mapdata/LayerData":326,"./ParseGID":874,"../../Tile":273}],547:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122017,7 +122017,7 @@ var ParseImageLayers = function (json)
 
 module.exports = ParseImageLayers;
 
-},{"../../../utils/object/GetFastValue":268}],211:[function(require,module,exports) {
+},{"../../../utils/object/GetFastValue":102}],275:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122405,7 +122405,7 @@ var Tileset = new Class({
 
 module.exports = Tileset;
 
-},{"../utils/Class":16}],205:[function(require,module,exports) {
+},{"../utils/Class":10}],272:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122573,7 +122573,7 @@ var ImageCollection = new Class({
 
 module.exports = ImageCollection;
 
-},{"../utils/Class":16}],1031:[function(require,module,exports) {
+},{"../utils/Class":10}],907:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122612,7 +122612,7 @@ var Pick = function (object, keys)
 
 module.exports = Pick;
 
-},{"../../../utils/object/HasValue":775}],991:[function(require,module,exports) {
+},{"../../../utils/object/HasValue":472}],875:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122690,7 +122690,7 @@ var ParseObject = function (tiledObject, offsetX, offsetY)
 
 module.exports = ParseObject;
 
-},{"./Pick":1031,"./ParseGID":990}],882:[function(require,module,exports) {
+},{"./Pick":907,"./ParseGID":874}],548:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122791,7 +122791,7 @@ var ParseTilesets = function (json)
 
 module.exports = ParseTilesets;
 
-},{"../../Tileset":211,"../../ImageCollection":205,"./ParseObject":991}],214:[function(require,module,exports) {
+},{"../../Tileset":275,"../../ImageCollection":272,"./ParseObject":875}],328:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122893,7 +122893,7 @@ var ObjectLayer = new Class({
 
 module.exports = ObjectLayer;
 
-},{"../../utils/Class":16,"../../utils/object/GetFastValue":268}],883:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../utils/object/GetFastValue":102}],550:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -122948,7 +122948,7 @@ var ParseObjectLayers = function (json)
 
 module.exports = ParseObjectLayers;
 
-},{"../../../utils/object/GetFastValue":268,"./ParseObject":991,"../../mapdata/ObjectLayer":214}],884:[function(require,module,exports) {
+},{"../../../utils/object/GetFastValue":102,"./ParseObject":875,"../../mapdata/ObjectLayer":328}],551:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123017,7 +123017,7 @@ var BuildTilesetIndex = function (mapData)
 
 module.exports = BuildTilesetIndex;
 
-},{}],885:[function(require,module,exports) {
+},{}],552:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123086,7 +123086,7 @@ var AssignTileProperties = function (mapData)
 
 module.exports = AssignTileProperties;
 
-},{"../../../utils/object/Extend":20}],628:[function(require,module,exports) {
+},{"../../../utils/object/Extend":14}],453:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123158,7 +123158,7 @@ var ParseJSONTiled = function (name, json, insertNull)
 
 module.exports = ParseJSONTiled;
 
-},{"../../Formats":204,"../../mapdata/MapData":213,"./ParseTileLayers":880,"./ParseImageLayers":881,"./ParseTilesets":882,"./ParseObjectLayers":883,"./BuildTilesetIndex":884,"./AssignTileProperties":885}],888:[function(require,module,exports) {
+},{"../../Formats":271,"../../mapdata/MapData":327,"./ParseTileLayers":546,"./ParseImageLayers":547,"./ParseTilesets":548,"./ParseObjectLayers":550,"./BuildTilesetIndex":551,"./AssignTileProperties":552}],549:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123238,7 +123238,7 @@ var ParseTileLayers = function (json, insertNull)
 
 module.exports = ParseTileLayers;
 
-},{"../../mapdata/LayerData":212,"../../Tile":207}],889:[function(require,module,exports) {
+},{"../../mapdata/LayerData":326,"../../Tile":273}],545:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123285,7 +123285,7 @@ var ParseTilesets = function (json)
 
 module.exports = ParseTilesets;
 
-},{"../../Tileset":211}],627:[function(require,module,exports) {
+},{"../../Tileset":275}],452:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123348,7 +123348,7 @@ var ParseWeltmeister = function (name, json, insertNull)
 
 module.exports = ParseWeltmeister;
 
-},{"../../Formats":204,"../../mapdata/MapData":213,"./ParseTileLayers":888,"./ParseTilesets":889}],624:[function(require,module,exports) {
+},{"../../Formats":271,"../../mapdata/MapData":327,"./ParseTileLayers":549,"./ParseTilesets":545}],388:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123414,7 +123414,7 @@ var Parse = function (name, mapFormat, data, tileWidth, tileHeight, insertNull)
 
 module.exports = Parse;
 
-},{"../Formats":204,"./Parse2DArray":625,"./ParseCSV":626,"./tiled/ParseJSONTiled":628,"./impact/ParseWeltmeister":627}],256:[function(require,module,exports) {
+},{"../Formats":271,"./Parse2DArray":439,"./ParseCSV":440,"./tiled/ParseJSONTiled":453,"./impact/ParseWeltmeister":452}],532:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123436,7 +123436,7 @@ module.exports = {
 
 };
 
-},{"./Parse":624,"./Parse2DArray":625,"./ParseCSV":626,"./impact/ParseWeltmeister":627,"./tiled/ParseJSONTiled":628}],968:[function(require,module,exports) {
+},{"./Parse":388,"./Parse2DArray":439,"./ParseCSV":440,"./impact/ParseWeltmeister":452,"./tiled/ParseJSONTiled":453}],473:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123473,7 +123473,7 @@ var DynamicTilemapLayerWebGLRenderer = function (renderer, src, interpolationPer
 
 module.exports = DynamicTilemapLayerWebGLRenderer;
 
-},{"../../gameobjects/GameObject":542}],967:[function(require,module,exports) {
+},{"../../gameobjects/GameObject":208}],474:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123561,7 +123561,7 @@ var DynamicTilemapLayerCanvasRenderer = function (renderer, src, interpolationPe
 
 module.exports = DynamicTilemapLayerCanvasRenderer;
 
-},{"../../gameobjects/GameObject":542}],704:[function(require,module,exports) {
+},{"../../gameobjects/GameObject":208}],413:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -123588,7 +123588,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./DynamicTilemapLayerWebGLRenderer":968,"./DynamicTilemapLayerCanvasRenderer":967}],215:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./DynamicTilemapLayerWebGLRenderer":473,"./DynamicTilemapLayerCanvasRenderer":474}],329:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -124702,7 +124702,7 @@ var DynamicTilemapLayer = new Class({
 
 module.exports = DynamicTilemapLayer;
 
-},{"../../utils/Class":16,"../../gameobjects/components":384,"./DynamicTilemapLayerRender":704,"../../gameobjects/GameObject":542,"../components":255}],814:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../gameobjects/components":500,"./DynamicTilemapLayerRender":413,"../../gameobjects/GameObject":208,"../components":528}],475:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -124739,7 +124739,7 @@ var StaticTilemapLayerWebGLRenderer = function (renderer, src, interpolationPerc
 
 module.exports = StaticTilemapLayerWebGLRenderer;
 
-},{"../../gameobjects/GameObject":542}],815:[function(require,module,exports) {
+},{"../../gameobjects/GameObject":208}],476:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -124808,7 +124808,7 @@ var StaticTilemapLayerCanvasRenderer = function (renderer, src, interpolationPer
 
 module.exports = StaticTilemapLayerCanvasRenderer;
 
-},{"../../gameobjects/GameObject":542}],543:[function(require,module,exports) {
+},{"../../gameobjects/GameObject":208}],414:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -124835,7 +124835,7 @@ module.exports = {
 
 };
 
-},{"../../utils/NOOP":59,"./StaticTilemapLayerWebGLRenderer":814,"./StaticTilemapLayerCanvasRenderer":815}],216:[function(require,module,exports) {
+},{"../../utils/NOOP":25,"./StaticTilemapLayerWebGLRenderer":475,"./StaticTilemapLayerCanvasRenderer":476}],330:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -125860,7 +125860,7 @@ var StaticTilemapLayer = new Class({
 
 module.exports = StaticTilemapLayer;
 
-},{"../../utils/Class":16,"../../gameobjects/components":384,"../../const":15,"../../gameobjects/GameObject":542,"./StaticTilemapLayerRender":543,"../components":255,"../../renderer/webgl/Utils":390}],208:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../gameobjects/components":500,"../../const":9,"../../gameobjects/GameObject":208,"./StaticTilemapLayerRender":414,"../components":528,"../../renderer/webgl/Utils":121}],277:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -128135,7 +128135,7 @@ var Tilemap = new Class({
 
 module.exports = Tilemap;
 
-},{"../utils/Class":16,"../math/DegToRad":166,"./dynamiclayer/DynamicTilemapLayer.js":215,"../utils/object/Extend":20,"./Formats":204,"./mapdata/LayerData":212,"../math/Rotate":183,"./staticlayer/StaticTilemapLayer.js":216,"./Tile":207,"./components":255,"./Tileset":211}],206:[function(require,module,exports) {
+},{"../utils/Class":10,"../math/DegToRad":229,"./dynamiclayer/DynamicTilemapLayer.js":329,"../utils/object/Extend":14,"./Formats":271,"./mapdata/LayerData":326,"../math/Rotate":245,"./staticlayer/StaticTilemapLayer.js":330,"./Tile":273,"./components":528,"./Tileset":275}],274:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -128217,7 +128217,7 @@ var ParseToTilemap = function (scene, key, tileWidth, tileHeight, width, height,
 
 module.exports = ParseToTilemap;
 
-},{"./Formats":204,"./mapdata/MapData":213,"./parsers/Parse":624,"./Tilemap":208}],209:[function(require,module,exports) {
+},{"./Formats":271,"./mapdata/MapData":327,"./parsers/Parse":388,"./Tilemap":277}],276:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -128273,7 +128273,7 @@ GameObjectCreator.register('tilemap', function (config)
 
 //  When registering a factory function 'this' refers to the GameObjectCreator context.
 
-},{"../gameobjects/GameObjectCreator":292,"./ParseToTilemap":206}],210:[function(require,module,exports) {
+},{"../gameobjects/GameObjectCreator":203,"./ParseToTilemap":274}],278:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -128335,7 +128335,7 @@ GameObjectFactory.register('tilemap', function (key, tileWidth, tileHeight, widt
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns
 
-},{"../gameobjects/GameObjectFactory":293,"./ParseToTilemap":206}],42:[function(require,module,exports) {
+},{"../gameobjects/GameObjectFactory":206,"./ParseToTilemap":274}],92:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -128369,7 +128369,7 @@ module.exports = {
 
 };
 
-},{"./components":255,"./parsers":256,"./Formats":204,"./ImageCollection":205,"./ParseToTilemap":206,"./Tile":207,"./Tilemap":208,"./TilemapCreator":209,"./TilemapFactory":210,"./Tileset":211,"./mapdata/LayerData":212,"./mapdata/MapData":213,"./mapdata/ObjectLayer":214,"./dynamiclayer/DynamicTilemapLayer":215,"./staticlayer/StaticTilemapLayer":216}],91:[function(require,module,exports) {
+},{"./components":528,"./parsers":532,"./Formats":271,"./ImageCollection":272,"./ParseToTilemap":274,"./Tile":273,"./Tilemap":277,"./TilemapCreator":276,"./TilemapFactory":278,"./Tileset":275,"./mapdata/LayerData":326,"./mapdata/MapData":327,"./mapdata/ObjectLayer":328,"./dynamiclayer/DynamicTilemapLayer":329,"./staticlayer/StaticTilemapLayer":330}],280:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -128682,7 +128682,7 @@ var TimerEvent = new Class({
 
 module.exports = TimerEvent;
 
-},{"../utils/Class":16,"../utils/object/GetFastValue":268}],90:[function(require,module,exports) {
+},{"../utils/Class":10,"../utils/object/GetFastValue":102}],279:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129046,7 +129046,7 @@ PluginManager.register('Clock', Clock, 'time');
 
 module.exports = Clock;
 
-},{"../utils/Class":16,"../boot/PluginManager":60,"./TimerEvent":91}],43:[function(require,module,exports) {
+},{"../utils/Class":10,"../boot/PluginManager":20,"./TimerEvent":280}],93:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129064,7 +129064,7 @@ module.exports = {
 
 };
 
-},{"./Clock":90,"./TimerEvent":91}],379:[function(require,module,exports) {
+},{"./Clock":279,"./TimerEvent":280}],432:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129123,7 +129123,7 @@ var GetNewValue = function (source, key, defaultValue)
 
 module.exports = GetNewValue;
 
-},{}],779:[function(require,module,exports) {
+},{}],543:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129191,7 +129191,7 @@ module.exports = [
     'yoyo'
 ];
 
-},{}],380:[function(require,module,exports) {
+},{}],434:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129245,7 +129245,7 @@ var GetProps = function (config)
 
 module.exports = GetProps;
 
-},{"../tween/ReservedProps":779}],381:[function(require,module,exports) {
+},{"../tween/ReservedProps":543}],435:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129288,7 +129288,7 @@ var GetTargets = function (config)
 
 module.exports = GetTargets;
 
-},{"../../utils/object/GetValue":230}],382:[function(require,module,exports) {
+},{"../../utils/object/GetValue":53}],438:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129330,7 +129330,7 @@ var GetTweens = function (config)
 
 module.exports = GetTweens;
 
-},{"../../utils/object/GetValue":230}],383:[function(require,module,exports) {
+},{"../../utils/object/GetValue":53}],433:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129499,7 +129499,7 @@ var GetValueOp = function (key, propertyValue)
 
 module.exports = GetValueOp;
 
-},{}],737:[function(require,module,exports) {
+},{}],437:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -129538,7 +129538,7 @@ var TWEEN_DEFAULTS = {
 
 module.exports = TWEEN_DEFAULTS;
 
-},{}],101:[function(require,module,exports) {
+},{}],324:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -130913,7 +130913,7 @@ GameObjectCreator.register('tween', function (config)
 
 module.exports = Tween;
 
-},{"../../utils/Class":16,"../../gameobjects/GameObjectCreator":292,"../../gameobjects/GameObjectFactory":293,"./const":100}],102:[function(require,module,exports) {
+},{"../../utils/Class":10,"../../gameobjects/GameObjectCreator":203,"../../gameobjects/GameObjectFactory":206,"./const":323}],325:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -131062,7 +131062,7 @@ var TweenData = function (target, key, getEnd, getStart, ease, delay, duration, 
 
 module.exports = TweenData;
 
-},{}],287:[function(require,module,exports) {
+},{}],380:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -131186,7 +131186,7 @@ var NumberTweenBuilder = function (parent, config, defaults)
 
 module.exports = NumberTweenBuilder;
 
-},{"../tween/Defaults":737,"../../utils/object/GetAdvancedValue":738,"./GetBoolean":377,"./GetEaseFunction":378,"./GetNewValue":379,"../../utils/object/GetValue":230,"./GetValueOp":383,"../tween/Tween":101,"../tween/TweenData":102}],289:[function(require,module,exports) {
+},{"../tween/Defaults":437,"../../utils/object/GetAdvancedValue":367,"./GetBoolean":402,"./GetEaseFunction":431,"./GetNewValue":432,"../../utils/object/GetValue":53,"./GetValueOp":433,"../tween/Tween":324,"../tween/TweenData":325}],382:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -131313,7 +131313,7 @@ var TweenBuilder = function (parent, config, defaults)
 
 module.exports = TweenBuilder;
 
-},{"../tween/Defaults":737,"../../utils/object/GetAdvancedValue":738,"./GetBoolean":377,"./GetEaseFunction":378,"./GetNewValue":379,"./GetProps":380,"./GetTargets":381,"../../utils/object/GetValue":230,"./GetValueOp":383,"../tween/Tween":101,"../tween/TweenData":102}],99:[function(require,module,exports) {
+},{"../tween/Defaults":437,"../../utils/object/GetAdvancedValue":367,"./GetBoolean":402,"./GetEaseFunction":431,"./GetNewValue":432,"./GetProps":434,"./GetTargets":435,"../../utils/object/GetValue":53,"./GetValueOp":433,"../tween/Tween":324,"../tween/TweenData":325}],270:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -132178,7 +132178,7 @@ Timeline.TYPES = [ 'onStart', 'onUpdate', 'onLoop', 'onComplete', 'onYoyo' ];
 
 module.exports = Timeline;
 
-},{"../utils/Class":16,"eventemitter3":67,"./builders/TweenBuilder":289,"./tween/const":100}],288:[function(require,module,exports) {
+},{"../utils/Class":10,"eventemitter3":36,"./builders/TweenBuilder":382,"./tween/const":323}],381:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -132326,7 +132326,7 @@ var TimelineBuilder = function (manager, config)
 
 module.exports = TimelineBuilder;
 
-},{"../../utils/object/Clone":771,"../tween/Defaults":737,"../../utils/object/GetAdvancedValue":738,"./GetBoolean":377,"./GetEaseFunction":378,"./GetNewValue":379,"./GetTargets":381,"./GetTweens":382,"../../utils/object/GetValue":230,"../Timeline":99,"./TweenBuilder":289}],236:[function(require,module,exports) {
+},{"../../utils/object/Clone":436,"../tween/Defaults":437,"../../utils/object/GetAdvancedValue":367,"./GetBoolean":402,"./GetEaseFunction":431,"./GetNewValue":432,"./GetTargets":435,"./GetTweens":438,"../../utils/object/GetValue":53,"../Timeline":270,"./TweenBuilder":382}],526:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -132352,7 +132352,7 @@ module.exports = {
 
 };
 
-},{"./GetBoolean":377,"./GetEaseFunction":378,"./GetNewValue":379,"./GetProps":380,"./GetTargets":381,"./GetTweens":382,"./GetValueOp":383,"./NumberTweenBuilder":287,"./TimelineBuilder":288,"./TweenBuilder":289}],98:[function(require,module,exports) {
+},{"./GetBoolean":402,"./GetEaseFunction":431,"./GetNewValue":432,"./GetProps":434,"./GetTargets":435,"./GetTweens":438,"./GetValueOp":433,"./NumberTweenBuilder":380,"./TimelineBuilder":381,"./TweenBuilder":382}],269:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133005,7 +133005,7 @@ PluginManager.register('TweenManager', TweenManager, 'tweens');
 
 module.exports = TweenManager;
 
-},{"../utils/Class":16,"./builders/NumberTweenBuilder":287,"../boot/PluginManager":60,"./builders/TimelineBuilder":288,"./tween/const":100,"./builders/TweenBuilder":289}],44:[function(require,module,exports) {
+},{"../utils/Class":10,"./builders/NumberTweenBuilder":380,"../boot/PluginManager":20,"./builders/TimelineBuilder":381,"./tween/const":323,"./builders/TweenBuilder":382}],90:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133035,7 +133035,7 @@ Tweens = Extend(false, Tweens, CONST);
 
 module.exports = Tweens;
 
-},{"./tween/const":100,"../utils/object/Extend":20,"./builders":236,"./TweenManager":98,"./tween/Tween":101,"./tween/TweenData":102,"./Timeline":99}],920:[function(require,module,exports) {
+},{"./tween/const":323,"../utils/object/Extend":14,"./builders":526,"./TweenManager":269,"./tween/Tween":324,"./tween/TweenData":325,"./Timeline":270}],854:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133079,7 +133079,7 @@ var FindClosestInSorted = function (value, array)
 
 module.exports = FindClosestInSorted;
 
-},{}],1022:[function(require,module,exports) {
+},{}],983:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133133,7 +133133,7 @@ var CheckMatrix = function (matrix)
 
 module.exports = CheckMatrix;
 
-},{}],1023:[function(require,module,exports) {
+},{}],977:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133210,7 +133210,7 @@ var MatrixToString = function (matrix)
 
 module.exports = MatrixToString;
 
-},{"../../string/Pad":257,"./CheckMatrix":1022}],1024:[function(require,module,exports) {
+},{"../../string/Pad":54,"./CheckMatrix":983}],979:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133239,7 +133239,7 @@ var ReverseColumns = function (matrix)
 
 module.exports = ReverseColumns;
 
-},{}],1025:[function(require,module,exports) {
+},{}],980:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133263,7 +133263,7 @@ var ReverseRows = function (matrix)
 
 module.exports = ReverseRows;
 
-},{}],1030:[function(require,module,exports) {
+},{}],985:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133305,7 +133305,7 @@ var TransposeMatrix = function (array)
 
 module.exports = TransposeMatrix;
 
-},{}],1028:[function(require,module,exports) {
+},{}],982:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133367,7 +133367,7 @@ var RotateMatrix = function (matrix, direction)
 
 module.exports = RotateMatrix;
 
-},{"./CheckMatrix":1022,"./TransposeMatrix":1030}],1026:[function(require,module,exports) {
+},{"./CheckMatrix":983,"./TransposeMatrix":985}],981:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133393,7 +133393,7 @@ var Rotate180 = function (matrix)
 
 module.exports = Rotate180;
 
-},{"./RotateMatrix":1028}],1027:[function(require,module,exports) {
+},{"./RotateMatrix":982}],986:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133419,7 +133419,7 @@ var RotateLeft = function (matrix)
 
 module.exports = RotateLeft;
 
-},{"./RotateMatrix":1028}],1029:[function(require,module,exports) {
+},{"./RotateMatrix":982}],984:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133445,7 +133445,7 @@ var RotateRight = function (matrix)
 
 module.exports = RotateRight;
 
-},{"./RotateMatrix":1028}],966:[function(require,module,exports) {
+},{"./RotateMatrix":982}],927:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133470,7 +133470,7 @@ module.exports = {
 
 };
 
-},{"./CheckMatrix":1022,"./MatrixToString":1023,"./ReverseColumns":1024,"./ReverseRows":1025,"./Rotate180":1026,"./RotateLeft":1027,"./RotateMatrix":1028,"./RotateRight":1029,"./TransposeMatrix":1030}],921:[function(require,module,exports) {
+},{"./CheckMatrix":983,"./MatrixToString":977,"./ReverseColumns":979,"./ReverseRows":980,"./Rotate180":981,"./RotateLeft":986,"./RotateMatrix":982,"./RotateRight":984,"./TransposeMatrix":985}],853:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133543,7 +133543,7 @@ var NumberArrayStep = function (start, end, step)
 
 module.exports = NumberArrayStep;
 
-},{"../../math/RoundAwayFromZero":186}],924:[function(require,module,exports) {
+},{"../../math/RoundAwayFromZero":250}],856:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133586,7 +133586,7 @@ var SpliceOne = function (array, index)
 
 module.exports = SpliceOne;
 
-},{}],923:[function(require,module,exports) {
+},{}],855:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133620,7 +133620,7 @@ var RemoveRandomElement = function (array, start, length)
 
 module.exports = RemoveRandomElement;
 
-},{"./SpliceOne":924}],756:[function(require,module,exports) {
+},{"./SpliceOne":856}],525:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133648,7 +133648,7 @@ module.exports = {
 
 };
 
-},{"./FindClosestInSorted":920,"./GetRandomElement":848,"./matrix":966,"./NumberArray":777,"./NumberArrayStep":921,"./QuickSelect":282,"./Range":922,"./RemoveRandomElement":923,"./RotateLeft":273,"./RotateRight":274,"./Shuffle":290,"./SpliceOne":924}],931:[function(require,module,exports) {
+},{"./FindClosestInSorted":854,"./GetRandomElement":468,"./matrix":927,"./NumberArray":852,"./NumberArrayStep":853,"./QuickSelect":378,"./Range":400,"./RemoveRandomElement":855,"./RotateLeft":353,"./RotateRight":354,"./Shuffle":358,"./SpliceOne":856}],804:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133683,7 +133683,7 @@ var GetMinMaxValue = function (source, key, min, max, defaultValue)
 
 module.exports = GetMinMaxValue;
 
-},{"./GetValue":230,"../../math/Clamp":165}],932:[function(require,module,exports) {
+},{"./GetValue":53,"../../math/Clamp":228}],805:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133716,7 +133716,7 @@ var HasAll = function (source, keys)
 
 module.exports = HasAll;
 
-},{}],934:[function(require,module,exports) {
+},{}],807:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133755,7 +133755,7 @@ var MergeRight = function (obj1, obj2)
 
 module.exports = MergeRight;
 
-},{"./Clone":771}],757:[function(require,module,exports) {
+},{"./Clone":436}],527:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133783,7 +133783,7 @@ module.exports = {
 
 };
 
-},{"./Clone":771,"./Extend":20,"./GetAdvancedValue":738,"./GetFastValue":268,"./GetMinMaxValue":931,"./GetValue":230,"./HasAll":932,"./HasAny":933,"./HasValue":775,"./IsPlainObject":49,"./Merge":774,"./MergeRight":934}],925:[function(require,module,exports) {
+},{"./Clone":436,"./Extend":14,"./GetAdvancedValue":367,"./GetFastValue":102,"./GetMinMaxValue":804,"./GetValue":53,"./HasAll":805,"./HasAny":469,"./HasValue":472,"./IsPlainObject":35,"./Merge":806,"./MergeRight":807}],851:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133814,7 +133814,7 @@ var Format = function (string, values)
 
 module.exports = Format;
 
-},{}],926:[function(require,module,exports) {
+},{}],850:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133839,7 +133839,7 @@ var ReverseString = function (string)
 
 module.exports = ReverseString;
 
-},{}],758:[function(require,module,exports) {
+},{}],529:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133859,7 +133859,7 @@ module.exports = {
 
 };
 
-},{"./Format":925,"./Pad":257,"./Reverse":926,"./UppercaseFirst":305}],45:[function(require,module,exports) {
+},{"./Format":851,"./Pad":54,"./Reverse":850,"./UppercaseFirst":101}],91:[function(require,module,exports) {
 /**
  * @author       Richard Davey <rich@photonstorm.com>
  * @copyright    2018 Photon Storm Ltd.
@@ -133878,7 +133878,7 @@ module.exports = {
 
 };
 
-},{"./array/":756,"./object/":757,"./string/":758}],13:[function(require,module,exports) {
+},{"./array/":525,"./object/":527,"./string/":529}],7:[function(require,module,exports) {
 var global = (1,eval)("this");
 /**
  * @author       Richard Davey <rich@photonstorm.com>
@@ -133944,7 +133944,93 @@ global.Phaser = Phaser;
  *  -- Dick Brandon
  */
 
-},{"./polyfills":21,"./const":15,"./utils/object/Extend":20,"./actions":22,"./animations":23,"./cache":31,"./cameras":24,"./utils/Class":16,"./create":25,"./curves":26,"./data":36,"./display":27,"./dom":28,"./events/EventEmitter":17,"./boot/Game":18,"./gameobjects":29,"./geom":30,"./input":33,"./loader":32,"./math":34,"./physics":35,"./renderer":37,"./scene/Scene":19,"./scene":38,"./sound":39,"./structs":40,"./textures":41,"./tilemaps":42,"./time":43,"./tweens":44,"./utils":45}],1035:[function(require,module,exports) {
+},{"./polyfills":69,"./const":9,"./utils/object/Extend":14,"./actions":70,"./animations":72,"./cache":71,"./cameras":73,"./utils/Class":10,"./create":74,"./curves":77,"./data":75,"./display":76,"./dom":79,"./events/EventEmitter":11,"./boot/Game":12,"./gameobjects":78,"./geom":80,"./input":81,"./loader":82,"./math":85,"./physics":83,"./renderer":84,"./scene/Scene":13,"./scene":89,"./sound":86,"./structs":87,"./textures":88,"./tilemaps":92,"./time":93,"./tweens":90,"./utils":91}],8:[function(require,module,exports) {
+"use strict";
+
+exports.__esModule = true;
+var Data = /** @class */function () {
+    function Data(str) {
+        var _this = this;
+        this.map = {};
+        str.replace(/\r?\n/g, '').split('&').forEach(function (tmp) {
+            var i = tmp.indexOf('=');
+            var key = tmp.slice(0, i);
+            var val = tmp.slice(i + 1);
+            if (val != '' && isFinite(val)) {
+                _this.map[key] = parseFloat(val);
+            } else {
+                _this.map[key] = val;
+            }
+        });
+        if (this.map.BPM != undefined) {
+            this.setBpm(this.map.BPM);
+        }
+    }
+    Data.prototype.setBpm = function (bpm) {
+        this.map.BPM = bpm;
+        var measure = 240 / bpm;
+        for (var x = 8; x <= 64; x += 8) {
+            this.map['u' + x] = measure / x;
+        }
+        return this.map.unit_time = this.map.u16;
+    };
+    Data.prototype.getNotes = function (difficulty) {
+        var _this = this;
+        var seq = this.map['seq' + difficulty];
+        if (seq == undefined) {
+            return null;
+        }
+        var data = [];
+        var time = this.map.start_time;
+        var unitTime = this.map.unit_time;
+        var chars = seq.split('');
+        var getArg = function getArg() {
+            var tmp = '';
+            for (chars.shift(); chars[0] != ')'; tmp += chars.shift()) {}
+            chars.shift();
+            return isFinite(tmp) ? parseFloat(tmp) : _this.map[tmp];
+        };
+        var c;
+        while (c = chars.shift()) {
+            switch (c) {
+                case ',':
+                    time += unitTime;
+                    break;
+                case '[':
+                    unitTime /= 1.5;
+                    break;
+                case ']':
+                    unitTime *= 1.5;
+                    break;
+                case '1':
+                case '2':
+                case "3":
+                case "4":
+                    data.push(new NoteData(time, parseInt(c)));
+                    break;
+                case 'm':
+                    unitTime = this.setBpm(getArg());
+                    break;
+                case 'x':
+                    /*TODO*/
+                    getArg();
+                    break;
+            }
+        }
+        return data;
+    };
+    return Data;
+}();
+exports.Data = Data;
+var NoteData = /** @class */function () {
+    function NoteData(time, type) {
+        this.time = time;
+        this.type = type;
+    }
+    return NoteData;
+}();
+exports.NoteData = NoteData;
+},{}],6:[function(require,module,exports) {
 "use strict";
 
 var __extends = this && this.__extends || function () {
@@ -133966,24 +134052,63 @@ var __extends = this && this.__extends || function () {
 exports.__esModule = true;
 /// <reference path="../phaser.d.ts"/>
 require("phaser");
+var data_1 = require("./data");
 var MainScene = /** @class */function (_super) {
     __extends(MainScene, _super);
     function MainScene() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     MainScene.prototype.preload = function () {
-        this.load.image("logo", "https://avatars1.githubusercontent.com/u/38001038?s=400&u=3d2b8655cdb52443b6ecefca664c83863d4336c8&v=4");
+        this.load.image("notes", "notes.png");
+        this.load.text("data", "data.txt");
+        this.load.audio("bgm", "bgm.mp3", null);
+        this.load.audio("dong", "dong.mp3", null);
+        this.load.audio("ka", "ka.mp3", null);
     };
     MainScene.prototype.create = function () {
-        this.phaserSprite = this.add.sprite(400, 300, "logo");
+        var _this = this;
+        var tex = this.textures.get("notes");
+        for (var i = 1; i <= 4; i++) {
+            tex.add(i, 0, 48 * i, 0, 48, 48);
+        }
+        this.data_ = new data_1.Data(this.cache.text.get("data"));
+        this.notes = this.data_.getNotes(4).map(function (data) {
+            return new Note(_this, data);
+        });
+        this.bgm = this.sound.add("bgm");
+        this.bgm.play();
     };
     MainScene.prototype.update = function () {
-        this.phaserSprite.x++;
+        var time = this.bgm.seek + 0.22;
+        this.notes.forEach(function (note) {
+            return note.update(time);
+        });
     };
     return MainScene;
 }(Phaser.Scene);
 exports.MainScene = MainScene;
-},{"phaser":13}],6:[function(require,module,exports) {
+var Note = /** @class */function () {
+    function Note(scene, data) {
+        this.scene = scene;
+        this.data = data;
+        this.isActive = true;
+        this.sprite = scene.add.sprite(0, 30, "notes", data.type);
+    }
+    Note.prototype.update = function (time) {
+        if (!this.isActive) {
+            return;
+        }
+        var diff = this.data.time - time;
+        this.sprite.x = 30 + diff * 500;
+        if (diff <= 0) {
+            this.isActive = false;
+            this.sprite.x = -100;
+            this.scene.sound.play(this.data.type % 2 == 1 ? 'dong' : 'ka');
+        }
+    };
+    return Note;
+}();
+},{"phaser":7,"./data":8}],5:[function(require,module,exports) {
 "use strict";
 /// <reference path="../phaser.d.ts"/>
 
@@ -133996,7 +134121,7 @@ var game = new Phaser.Game({
     type: Phaser.WEBGL
 });
 game.scene.add("main", main_1.MainScene, true);
-},{"phaser":13,"./main":1035}],4:[function(require,module,exports) {
+},{"phaser":7,"./main":6}],4:[function(require,module,exports) {
 'use strict';
 
 var _test = require('./test.ts');
@@ -134004,7 +134129,7 @@ var _test = require('./test.ts');
 var _test2 = _interopRequireDefault(_test);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./test.ts":6}],1036:[function(require,module,exports) {
+},{"./test.ts":5}],1026:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -134034,7 +134159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56717' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54430' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -134173,5 +134298,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[1036,4])
+},{}]},{},[1026,4])
 //# sourceMappingURL=/core.2b489087.map
