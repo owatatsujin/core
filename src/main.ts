@@ -1,6 +1,7 @@
 /// <reference path="../phaser.d.ts"/>
 import "phaser";
 import { Data, NoteData } from "./data";
+import { Input } from "./input";
 
 import notesPath from "./assets/notes.png";
 import dataPath from "./assets/data.txt";
@@ -12,6 +13,7 @@ export class MainScene extends Phaser.Scene {
     private data_: Data;
     private notes: Note[];
     private bgm: Phaser.Sound.BaseSound;
+    private inputManager: Input;
 
     preload(): void {
         this.load.image("notes", notesPath);
@@ -19,6 +21,7 @@ export class MainScene extends Phaser.Scene {
         this.load.audio("bgm", bgmPath, null);
         this.load.audio("dong", dongPath, null);
         this.load.audio("ka", kaPath, null);
+        this.inputManager = new Input(this.input);
     }
 
     create(): void {
@@ -36,6 +39,12 @@ export class MainScene extends Phaser.Scene {
     update(): void {
         var time = this.bgm.seek + 0.22;
         this.notes.forEach(note => note.update(time));
+        var inputs = this.inputManager.get();
+        for(var i = 0; i < 4; i++) {
+            if(inputs[i]) {
+                this.sound.play(['dong', 'ka'][i % 2]);
+            }
+        }
     }
 }
 
@@ -56,7 +65,6 @@ class Note {
         if (diff <= 0) {
             this.isActive = false;
             this.sprite.x = -100;
-            this.scene.sound.play(this.data.type % 2 == 1 ? 'dong' : 'ka');
         }
     }
 }
