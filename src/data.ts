@@ -1,6 +1,5 @@
 export class Data {
     private map: { [key: string]: string | number } = {};
-    private notes: NoteData[][] = [];
 
     constructor(str: string) {
         str.replace(/\r?\n/g, '').split('&').forEach(tmp => {
@@ -16,13 +15,6 @@ export class Data {
         if (this.map.BPM != undefined) {
             this.setBpm(this.map.BPM as number);
         }
-        for (var i = 0; i < 4; i++) {
-            var seq = this.map['seq' + (i + 1)] as string;
-            if (seq != undefined) {
-                this.notes[i] = this.parseSeq(seq);
-            }
-        }
-        console.log(this.notes)
     }
 
     private setBpm(bpm: number): number {
@@ -34,7 +26,11 @@ export class Data {
         return this.map.unit_time = this.map.u16 as number;
     }
 
-    private parseSeq(seq: string): NoteData[] {
+    public getNotes(difficulty: number): NoteData[] {
+        var seq = this.map['seq' + difficulty] as string;
+        if (seq == undefined) {
+            return null;
+        }
         var data: NoteData[] = [];
         var time = this.map.start_time as number;
         var unitTime = this.map.unit_time as number;
@@ -61,6 +57,6 @@ export class Data {
     }
 }
 
-class NoteData {
+export class NoteData {
     constructor(public time: number, public type: number) { }
 }
