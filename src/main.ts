@@ -2,22 +2,28 @@
 import "phaser";
 import { Data, NoteData } from "./data";
 
+import notesPath from "./assets/notes.png";
+import dataPath from "./assets/data.txt";
+import bgmPath from "./assets/bgm.mp3";
+import dongPath from "./assets/dong.mp3";
+import kaPath from "./assets/ka.mp3";
+
 export class MainScene extends Phaser.Scene {
     private data_: Data;
     private notes: Note[];
     private bgm: Phaser.Sound.BaseSound;
 
     preload(): void {
-        this.load.image("notes", "notes.png");
-        this.load.text("data", "data.txt");
-        this.load.audio("bgm", "bgm.mp3", null);
-        this.load.audio("dong", "dong.mp3", null);
-        this.load.audio("ka", "ka.mp3", null);
+        this.load.image("notes", notesPath);
+        this.load.text("data", dataPath);
+        this.load.audio("bgm", bgmPath, null);
+        this.load.audio("dong", dongPath, null);
+        this.load.audio("ka", kaPath, null);
     }
 
     create(): void {
         var tex = this.textures.get("notes");
-        for(var i = 1; i <= 4; i++) {
+        for (var i = 1; i <= 4; i++) {
             tex.add(i, 0, 48 * i, 0, 48, 48);
         }
 
@@ -42,12 +48,12 @@ class Note {
     }
 
     public update(time: number): void {
-        if(!this.isActive) {
+        if (!this.isActive) {
             return;
         }
         var diff = this.data.time - time;
         this.sprite.x = 30 + diff * 500;
-        if(diff <= 0) {
+        if (diff <= 0) {
             this.isActive = false;
             this.sprite.x = -100;
             this.scene.sound.play(this.data.type % 2 == 1 ? 'dong' : 'ka');
