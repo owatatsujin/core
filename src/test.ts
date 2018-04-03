@@ -4,8 +4,8 @@ import "phaser";
 import { MainScene } from "./main";
 
 var game = new Phaser.Game({
-    width: 800,
-    height: 600,
+    width: 1136,
+    height: 640,
     type: Phaser.WEBGL
 } as GameConfig);
 

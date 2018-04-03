@@ -20,10 +20,10 @@ export class Input {
         }
         var pointer = this.input.activePointer;
         if(pointer.justDown) {
-            var x = pointer.x - 400;
-            var y = pointer.y - 600;
+            var x = pointer.x - 568;
+            var y = pointer.y - 590;
             var leftOrRight = x < 0 ? 0 : 2;
-            var donOrKa = x * x + y * y < 90000 ? 0 : 1;
+            var donOrKa = x * x + y * y < 250 * 250 ? 0 : 1;
             this.now[leftOrRight + donOrKa] = true;
         }
         return this.now;

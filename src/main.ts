@@ -3,6 +3,7 @@ import "phaser";
 import { Data, NoteData } from "./data";
 import { Input } from "./input";
 
+import bgPath from "./assets/bg.jpg";
 import notesPath from "./assets/notes.png";
 import dataPath from "./assets/data.txt";
 import bgmPath from "./assets/bgm.mp3";
@@ -11,11 +12,12 @@ import kaPath from "./assets/ka.mp3";
 
 export class MainScene extends Phaser.Scene {
     private data_: Data;
-    private notes: Note[];
+    private notes: Note[] = [];
     private bgm: Phaser.Sound.BaseSound;
     private inputManager: Input;
 
     preload(): void {
+        this.load.image("bg", bgPath);
         this.load.image("notes", notesPath);
         this.load.text("data", dataPath);
         this.load.audio("bgm", bgmPath, null);
@@ -25,13 +27,17 @@ export class MainScene extends Phaser.Scene {
     }
 
     create(): void {
+        this.add.image(568, 320, "bg");
         var tex = this.textures.get("notes");
         for (var i = 1; i <= 4; i++) {
             tex.add(i, 0, 48 * i, 0, 48, 48);
         }
 
         this.data_ = new Data(this.cache.text.get("data"));
-        this.notes = this.data_.getNotes(4).map(data => new Note(this, data));
+        var noteDatas = this.data_.getNotes(4);
+        for(var i = noteDatas.length - 1; i >= 0; i--) {
+            this.notes.push(new Note(this, noteDatas[i]));
+        }
         this.bgm = this.sound.add("bgm");
         this.bgm.play();
     }
@@ -53,7 +59,8 @@ class Note {
     public sprite: Phaser.GameObjects.Sprite;
 
     constructor(private scene: Phaser.Scene, public data: NoteData) {
-        this.sprite = scene.add.sprite(0, 30, "notes", data.type);
+        this.sprite = scene.add.sprite(0, 222, "notes", data.type);
+        this.sprite.setScale(2);
     }
 
     public update(time: number): void {
@@ -61,7 +68,7 @@ class Note {
             return;
         }
         var diff = this.data.time - time;
-        this.sprite.x = 30 + diff * 500;
+        this.sprite.x = 394 + diff * 700;
         if (diff <= 0) {
             this.isActive = false;
             this.sprite.x = -100;
