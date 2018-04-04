@@ -2123,68 +2123,68 @@ declare namespace Phaser {
             /**
              * A reference to the Phaser.Game instance that owns this CacheManager.
              */
-            protected game: Phaser.Game;
+            game: Phaser.Game;
 
             /**
              * A Cache storing all binary files, typically added via the Loader.
              */
-            protected binary: Phaser.Cache.BaseCache;
+            binary: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all bitmap font data files, typically added via the Loader.
              * 
              * Only the font data is stored in this cache, the textures are part of the Texture Manager.
              */
-            protected bitmapFont: Phaser.Cache.BaseCache;
+            bitmapFont: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all JSON data files, typically added via the Loader.
              */
-            protected json: Phaser.Cache.BaseCache;
+            json: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all physics data files, typically added via the Loader.
              */
-            protected physics: Phaser.Cache.BaseCache;
+            physics: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all shader source files, typically added via the Loader.
              */
-            protected shader: Phaser.Cache.BaseCache;
+            shader: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all non-streaming audio files, typically added via the Loader.
              */
-            protected audio: Phaser.Cache.BaseCache;
+            audio: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all text files, typically added via the Loader.
              */
-            protected text: Phaser.Cache.BaseCache;
+            text: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all WaveFront OBJ files, typically added via the Loader.
              */
-            protected obj: Phaser.Cache.BaseCache;
+            obj: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all tilemap data files, typically added via the Loader.
              * 
              * Only the data is stored in this cache, the textures are part of the Texture Manager.
              */
-            protected tilemap: Phaser.Cache.BaseCache;
+            tilemap: Phaser.Cache.BaseCache;
 
             /**
              * A Cache storing all xml data files, typically added via the Loader.
              */
-            protected xml: Phaser.Cache.BaseCache;
+            xml: Phaser.Cache.BaseCache;
 
             /**
              * An object that contains your own custom BaseCache entries.
              * 
              * Add to this via the `addCustom` method.
              */
-            protected custom: {[key: string]: Phaser.Cache.BaseCache};
+            custom: {[key: string]: Phaser.Cache.BaseCache};
 
             /**
              * Add your own custom Cache for storing your own files.
