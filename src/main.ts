@@ -40,10 +40,16 @@ export class MainScene extends Phaser.Scene {
             this.notes.push(new Note(this, noteDatas[i]));
         }
         this.bgm = this.sound.add("bgm");
-        this.bgm.play();
     }
 
     update(): void {
+        if(!this.bgm.isPlaying) {
+            if(this.input.activePointer.isDown) {
+                this.bgm.play();
+            } else {
+                return;
+            }
+        }
         var time = this.bgm.seek + 0.22;
         this.notes.forEach(note => note.update(time));
         var inputs = this.inputManager.get();
