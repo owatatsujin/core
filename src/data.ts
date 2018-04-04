@@ -14,13 +14,16 @@ export class Data {
         }
     }
 
-    private setBpm(bpm: number): number {
+    private setBpm(bpm: number): number[] {
         this.map.BPM = bpm;
         const measure = 240 / bpm;
         for(let x = 8; x <= 64; x += 8) {
             this.map['u' + x] = measure / x;
         }
-        return this.map.unit_time = this.map.u16 as number;
+        return [
+            this.map.unit_time = this.map.u16 as number,
+            this.map.scroll_time = this.map.u16 as number * 3.4
+        ];
     }
 
     public getNotes(difficulty: number): NoteData[] {
@@ -31,6 +34,7 @@ export class Data {
         const data: NoteData[] = [];
         let time = this.map.start_time as number;
         let unitTime = this.map.unit_time as number;
+        let scrollTime = this.map.scroll_time as number;
         const chars = seq.split('');
         const getArg = () => {
             let tmp = '';
@@ -48,9 +52,9 @@ export class Data {
                 case '1':
                 case '2':
                 case '3':
-                case '4': data.push(new NoteData(time, parseInt(c))); break;
-                case 'm': unitTime = this.setBpm(getArg()); break;
-                case 'x': /*TODO*/ getArg(); break;
+                case '4': data.push(new NoteData(time, scrollTime, parseInt(c))); break;
+                case 'm': [unitTime, scrollTime] = this.setBpm(getArg()); break;
+                case 'x': scrollTime /= getArg(); break;
             }
         }
         return data;
@@ -58,7 +62,11 @@ export class Data {
 }
 
 export class NoteData {
-    constructor(public time: number, public type: NoteType) { }
+    constructor(
+        public time: number,
+        public scrollTime: number,
+        public type: NoteType
+    ) {}
 }
 
 enum NoteType {

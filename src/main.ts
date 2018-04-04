@@ -75,7 +75,7 @@ class Note {
             return;
         }
         const diff = this.data.time - time;
-        this.sprite.x = 394 + diff * 700;
+        this.sprite.x = 394 + diff * 180 / this.data.scrollTime;
         if(diff <= 0) {
             this.isActive = false;
             this.sprite.x = -100;
