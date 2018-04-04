@@ -1,3 +1,4 @@
+/// <reference path="./.d.ts"/>
 /// <reference path="../phaser.d.ts"/>
 import "phaser";
 import { Data, NoteData } from "./data";
