@@ -1,3 +1,5 @@
+import { Note } from "./note";
+
 export class Data {
     private map: { [key: string]: string | number } = {};
 
@@ -26,12 +28,12 @@ export class Data {
         ];
     }
 
-    public getNotes(difficulty: number): NoteData[] {
+    public getNotes(difficulty: number): Note[] {
         const seq = this.map['seq' + difficulty] as string;
         if(seq == undefined) {
             return null;
         }
-        const data: NoteData[] = [];
+        const data: Note[] = [];
         let time = this.map.start_time as number;
         let unitTime = this.map.unit_time as number;
         let scrollTime = this.map.scroll_time as number;
@@ -52,29 +54,11 @@ export class Data {
                 case '1':
                 case '2':
                 case '3':
-                case '4': data.push(new NoteData(time, scrollTime, parseInt(c))); break;
+                case '4': data.push(new Note(time, scrollTime, parseInt(c))); break;
                 case 'm': [unitTime, scrollTime] = this.setBpm(getArg()); break;
                 case 'x': scrollTime /= getArg(); break;
             }
         }
         return data;
     }
-}
-
-export class NoteData {
-    constructor(
-        public time: number,
-        public scrollTime: number,
-        public type: NoteType
-    ) {}
-}
-
-enum NoteType {
-    Don = 1,
-    Ka = 2,
-    BigDon = 3,
-    BigKa = 4,
-    Renda = 5,
-    BigRenda = 6,
-    Baloon = 7,
 }

@@ -1,7 +1,7 @@
 /// <reference path='../phaser.d.ts'/>
 import 'phaser';
 
-export class Input {
+export class InputManager {
     private prev: boolean[] = new Array(4);
     private now: boolean[] = new Array(4);
     private keys: Phaser.Input.Keyboard.Key[] = [];

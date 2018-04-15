@@ -1,8 +1,8 @@
 /// <reference path='./.d.ts'/>
 /// <reference path='../phaser.d.ts'/>
 import 'phaser';
-import { Data, NoteData } from './data';
-import { Input } from './input';
+import { Data } from './data';
+import { NoteManager } from './noteManager';
 
 import bgPath from './assets/bg.jpg';
 import notesPath from './assets/notes.png';
@@ -13,9 +13,8 @@ import kaPath from './assets/ka.mp3';
 
 export class MainScene extends Phaser.Scene {
     private dataObj: Data;
-    private notes: Note[] = [];
     private bgm: Phaser.Sound.BaseSound;
-    private inputManager: Input;
+    private noteManager: NoteManager;
 
     preload(): void {
         this.load.image('bg', bgPath);
@@ -24,7 +23,6 @@ export class MainScene extends Phaser.Scene {
         this.load.audio('bgm', bgmPath, null);
         this.load.audio('dong', dongPath, null);
         this.load.audio('ka', kaPath, null);
-        this.inputManager = new Input(this.input);
     }
 
     create(): void {
@@ -35,10 +33,8 @@ export class MainScene extends Phaser.Scene {
         }
 
         this.dataObj = new Data(this.cache.text.get('data'));
-        const noteDatas = this.dataObj.getNotes(4);
-        for(let i = noteDatas.length - 1; i >= 0; i--) {
-            this.notes.push(new Note(this, noteDatas[i]));
-        }
+        const notes = this.dataObj.getNotes(4);
+        this.noteManager = new NoteManager(this, notes);
         this.bgm = this.sound.add('bgm');
     }
 
@@ -51,34 +47,6 @@ export class MainScene extends Phaser.Scene {
             }
         }
         const time = this.bgm.seek + 0.22;
-        this.notes.forEach(note => note.update(time));
-        const inputs = this.inputManager.get();
-        for(let i = 0; i < 4; i++) {
-            if(inputs[i]) {
-                this.sound.play(['dong', 'ka'][i % 2]);
-            }
-        }
-    }
-}
-
-class Note {
-    public isActive = true;
-    public sprite: Phaser.GameObjects.Sprite;
-
-    constructor(private scene: Phaser.Scene, public data: NoteData) {
-        this.sprite = scene.add.sprite(0, 222, 'notes', data.type);
-        this.sprite.setScale(2);
-    }
-
-    public update(time: number): void {
-        if(!this.isActive) {
-            return;
-        }
-        const diff = this.data.time - time;
-        this.sprite.x = 394 + diff * 180 / this.data.scrollTime;
-        if(diff <= 0) {
-            this.isActive = false;
-            this.sprite.x = -100;
-        }
+        this.noteManager.update(time);
     }
 }
