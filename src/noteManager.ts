@@ -2,15 +2,18 @@
 
 import { Note } from "./note";
 import { InputManager } from './inputManager';
+import { judges, JudgeType } from './judge';
 
 export class NoteManager {
     private inputManager: InputManager;
     private displayNotes: Note[] = [];
-    private judgeTimes: number[] = [0.16, 0.035, -0.035, -0.12, -0.2];
 
     private combo: number = 0;
     private comboText: Phaser.GameObjects.Text;
     private zureText: Phaser.GameObjects.Text;
+
+    // 判定結果
+    private judgeResults: JudgeType[] = [];
 
     constructor(private scene: Phaser.Scene, private waitingNotes: Note[]) {
         this.inputManager = new InputManager(scene.input);
@@ -25,6 +28,26 @@ export class NoteManager {
         this.zureText = scene.add.text(380, 290, "", {
             color: 'black'
         })
+    }
+
+    /**
+     * 判定結果を受け取り関連処理を行う
+     * @param type 判定結果
+     */
+    private judgeResult(type: JudgeType) {
+
+        this.judgeResults.push(type);
+
+        console.log(judges[type].name);
+
+        if (type === JudgeType.Fuka) {
+            this.combo = 0;
+            this.comboText.setText('');
+        }
+        else {
+            this.combo++;
+            this.comboText.setText(this.combo.toString());
+        }
     }
 
     public update(time: number): void {
@@ -45,10 +68,10 @@ export class NoteManager {
 
         for(let i = 0; i < this.displayNotes.length; ) {
             this.displayNotes[i].update(time);
-            if(this.displayNotes[i].time + this.judgeTimes[0] < time) {
+            // ノーツが押されなかった場合 ( 不可判定 )
+            if(this.displayNotes[i].time + judges[JudgeType.Ka].time < time) {
                 this.displayNotes.splice(i, 1)[0].sprite.destroy();
-                this.combo = 0;
-                this.comboText.setText("");
+                this.judgeResult(JudgeType.Fuka);
             } else {
                 i++;
             }
@@ -60,15 +83,18 @@ export class NoteManager {
             return;
         }
         const note = this.displayNotes[0];
-        if(note.time + this.judgeTimes[4] > time) {
+
+        // 判定外
+        if(time + judges[JudgeType.Fuka].time < note.time) {
             return;
         }
         if((note.type - type) % 2 == 0) {
             return;
         }
+        // 判定結果
+        var judge = judges.find(judge => Math.abs(note.time - time) <= judge.time);
         this.displayNotes.shift().sprite.destroy();
-        this.combo++;
-        this.comboText.setText(this.combo.toString());
+        this.judgeResult(judge.type);
 
         const zure = Math.floor((note.time - time) * 1000);
         this.zureText.style.color = zure >= 0 ? 'red' : 'blue';
