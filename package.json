@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npx parcel index.html",
-    "build": "rm -r docs && npx parcel build index.html --out-dir docs --public-url '.'"
+    "build": "rm -r docs && npx parcel build index.html --out-dir docs --public-url '.'",
+    "build_win": "rd /s docs && npx parcel build index.html --out-dir docs --public-url \"./\""
   },
   "repository": {
     "type": "git",
