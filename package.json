@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/owatatsujin/core#readme",
   "dependencies": {
-    "phaser": "^3.3.0"
+    "phaser": "^3.7.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.7.0",
-    "typescript": "^2.8.1"
+    "typescript": "^2.8.3"
   }
 }
