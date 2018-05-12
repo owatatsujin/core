@@ -38,7 +38,8 @@ export class NoteManager {
 
         this.judgeResults.push(type);
 
-        console.log(judges[type].name);
+        // 判定を表示する
+        judges[type].show(this.scene);
 
         if (type === JudgeType.Fuka) {
             this.combo = 0;
