@@ -1,13 +1,12 @@
 /// <reference path='./.d.ts'/>
 /// <reference path='../phaser.d.ts'/>
 import 'phaser';
+import Music from './music';
 import { Data } from './data';
 import { NoteManager } from './noteManager';
 
 import bgPath from './assets/bg.jpg';
 import notesPath from './assets/notes.png';
-import dataPath from './assets/data.txt';
-import bgmPath from './assets/bgm.mp3';
 import dongPath from './assets/dong.mp3';
 import kaPath from './assets/ka.mp3';
 
@@ -16,11 +15,18 @@ export class MainScene extends Phaser.Scene {
     private bgm: Phaser.Sound.BaseSound;
     private noteManager: NoteManager;
 
+    private music: Music;
+
+    init(music: Music): void {
+        this.music = music;
+    }
+
     preload(): void {
+        this.load.crossOrigin = 'anonymous';
         this.load.image('bg', bgPath);
         this.load.image('notes', notesPath);
-        this.load.text('data', dataPath);
-        this.load.audio('bgm', bgmPath, null);
+        this.load.text('data', this.music.data);
+        this.load.audio('bgm', this.music.bgm, null);
         this.load.audio('dong', dongPath, null);
         this.load.audio('ka', kaPath, null);
     }
