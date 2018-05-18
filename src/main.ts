@@ -22,7 +22,6 @@ export class MainScene extends Phaser.Scene {
     }
 
     preload(): void {
-        this.load.crossOrigin = 'anonymous';
         this.load.image('bg', bgPath);
         this.load.image('notes', notesPath);
         this.load.text('data', this.music.data);

@@ -33,12 +33,13 @@ class Owatatsujin {
 // テスト用譜面データ
 let bgm = "https://cdn.rawgit.com/owatatsujin/core/5c38d90c/docs/bgm.a10a4f6f.mp3";
 let data = "https://cdn.rawgit.com/owatatsujin/core/5c38d90c/docs/data.c237335e.txt";
+const cors = "https://cors-anywhere.herokuapp.com";
 
 // クエリパラメータに src があったら読み込み先を変える
 const { src } = queryString.parse(location.search);
 if (src) {
-    bgm = urlJoin(src, 'bgm.mp3');
-    data = urlJoin(src, 'data.txt');
+    bgm = urlJoin(cors, src, 'bgm.mp3');
+    data = urlJoin(cors, src, 'data.txt');
 }
 
 new Owatatsujin({ bgm, data });
