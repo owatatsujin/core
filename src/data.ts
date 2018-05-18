@@ -8,8 +8,13 @@ export class Data {
             const i = tmp.indexOf('=');
             const key = tmp.slice(0, i);
             const val = tmp.slice(i + 1);
-            const num = parseFloat(val);
-            this.map[key] = (val != '' && isFinite(num)) ? num : val;
+
+            // 数値判定
+            if (/^[+,-]?([1-9]\d*|0)(\.\d+)?$/.test(val.trim())) {
+                this.map[key] = parseFloat(val);
+            } else {
+                this.map[key] = val;
+            }
         });
         if(this.map.BPM != undefined) {
             this.setBpm(this.map.BPM as number);
